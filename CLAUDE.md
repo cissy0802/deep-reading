@@ -40,7 +40,7 @@
 - 文件名 `{slug}-read{N}.html` + `{slug}-read{N}.en.html`，放仓库根目录。
 - 发布前更新 `index.html`（在 `<!-- entries -->` 前插入新条目）+ `index.en.html`（插入 `.en` 条目）。
 - **index 条目副标题要短且齐（硬规则）**：书名后 `—` 那句只留**一个最尖的钩子**，中文 ≤ 约 18 字、英文 ≤ 约 12 词，**一句话、不加分号、不塞两层意思**（曾出现「…；…」两段式、越写越长——严禁）。要点留到正文里讲，index 只负责勾人点进来。
-- **同一作者的书在 index 里放一起，用 `read{N}a / read{N}b` 分组**：当要做的书是某本**已发布 read** 的同作者姊妹篇（续作/镜像，如《人类简史》→《未来简史》、《枪炮》→《崩溃》），别再顺号往后排，而是**紧挨着姊妹篇插入**、把两条的编号标成 `Read {N}a` / `Read {N}b`（原书变 Na、新书变 Nb）。文件名/slug 同理走 `{slug}-read{N}b.html`。TOPICS 里也尽量把同作者书排相邻；已完成的姊妹篇若当初顺号排了（如未来简史=Read 8），**等这次真去做它的姊妹篇时再一并改成 a/b**，别为改而改。
+- **同一作者的书在 index 里放一起，用 `read{N}a / read{N}b` 分组**：当要做的书是某本**已发布 read** 的同作者姊妹篇（续作/镜像，如《人类简史》→《未来简史》、《枪炮》→《崩溃》），别再顺号往后排，而是**紧挨着姊妹篇插入**、把两条的编号标成 `Read {N}a` / `Read {N}b`（原书变 Na、新书变 Nb）。文件名/slug 同理走 `{slug}-read{N}b.html`。TOPICS 里也尽量把同作者书排相邻（如已把《未来简史》挪到 `3b:` 紧跟 `3:`《人类简史》）。**已发布的姊妹篇回改 a/b 的样板**：《人类简史》= `sapiens-read3`（显示 Read 3a，文件名不动、只改显示标号）、《未来简史》= 由 `homo-deus-read8` 改名为 `homo-deus-read3b`（连带改页面 `READ 3b`、langbar、index 位置、TOPICS 标号）；腾出的 `read8` 号位另放新书（现为《禅与摩托车维修艺术》）。回改会换 URL、旧评论可能丢，值不值得由 BigCat 定。
 - **不要**手动加 `comments.js` / `search.js` / `index-button.js` / `i18n-tts.js`（GitHub Action 自动注入）；也别在页里硬写 `← Hub`。
 - 用 `./publish.sh` 发布：它自动 add/commit/push 到 `main`，并校验体量、index 引用、div 平衡、重复编号、TOPICS 未被改等。
 - git：`user.name=BigCat` / `user.email=chengchen0802@gmail.com`。

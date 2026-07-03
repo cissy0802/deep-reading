@@ -466,7 +466,7 @@ def main():
         files = [Path(f) if Path(f).is_absolute() else REPO_DIR / f for f in args.files]
     else:
         files = sorted(
-            p for p in REPO_DIR.iterdir() if re.match(r".+-(day|read)\d+\.html$", p.name)
+            p for p in REPO_DIR.iterdir() if re.match(r".+-(day|read)\d+[a-z]?\.html$", p.name)
         )
 
     for path in files:
