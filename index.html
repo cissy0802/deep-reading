@@ -9,11 +9,17 @@ header h1{font-size:2rem;font-weight:800;color:#6fc3b4;letter-spacing:2px}
 header p{margin-top:8px;font-size:1rem;color:#8aa39d}
 header .subtitle{font-size:0.9rem;color:#5fb0a3;margin-top:6px;font-style:italic}
 .list{margin-top:32px}
+.section-head{margin:44px 0 6px;text-align:center;font-size:0.95rem;font-weight:700;color:#6fc3b4;letter-spacing:1px}
 .entry{display:flex;align-items:baseline;gap:16px;padding:18px 20px;background:#1e2329;border-radius:6px;box-shadow:0 1px 10px rgba(0,0,0,0.35);margin-bottom:14px;transition:all 0.15s;text-decoration:none;color:inherit;border-left:3px solid #3f8b7f}
 .entry:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.5);background:#222931}
 .entry .num{flex-shrink:0;font-size:0.85rem;color:#5fb0a3;font-weight:700;min-width:64px}
 .entry .title{font-size:1.05rem;font-weight:600;color:#bfe3db}
 .entry .meta{font-size:0.88rem;color:#8aa39d;margin-left:auto;text-align:right;font-style:italic}
+.entry.todo{background:#191d22;box-shadow:none;border-left-color:#333c42;cursor:default}
+.entry.todo:hover{transform:none;box-shadow:none;background:#191d22}
+.entry.todo .num{color:#5c6663}
+.entry.todo .title{color:#727d78;font-weight:600}
+.entry.todo .meta{color:#5c6663}
 footer{text-align:center;padding:40px 0 12px;font-size:0.82rem;color:#5c6663}
 @media(max-width:600px){header h1{font-size:1.5rem}.entry{flex-direction:column;gap:4px}.entry .meta{margin-left:0;text-align:left}}
 </style></head><body>
@@ -47,8 +53,39 @@ footer{text-align:center;padding:40px 0 12px;font-size:0.82rem;color:#5c6663}
 <a class="entry" href="amusing-ourselves-read25.html"><span class="num">Read 25</span><span class="title">《娱乐至死》— 我们终将毁于我们所热爱的东西</span><span class="meta">尼尔·波兹曼</span></a>
 <a class="entry" href="antifragile-read26.html"><span class="num">Read 26</span><span class="title">《反脆弱》— 有些东西越折腾越强</span><span class="meta">纳西姆·塔勒布</span></a>
 <a class="entry" href="poor-charlies-almanack-read27.html"><span class="num">Read 27</span><span class="title">《穷查理宝典》— 持续不犯蠢，胜过偶尔的聪明绝顶</span><span class="meta">查理·芒格</span></a>
-<a class="entry" href="wild-courage-read100.html"><span class="num">Read 100</span><span class="title">《野性的勇气》— 九个骂人的词，其实是成事的九台发动机</span><span class="meta">珍妮·伍德</span></a>
+<div class="entry todo"><span class="num">Read 28</span><span class="title">《自卑与超越》— 自卑感如何驱动人，又如何转向「社会兴趣」</span><span class="meta">阿尔弗雷德·阿德勒</span></div>
+<div class="entry todo"><span class="num">Read 29</span><span class="title">《观看之道》— 我们如何「看」：图像、广告与权力</span><span class="meta">约翰·伯格</span></div>
+<div class="entry todo"><span class="num">Read 30</span><span class="title">《瓦尔登湖》— 在简朴与独处里，重新问什么是必需的生活</span><span class="meta">梭罗</span></div>
+<div class="entry todo"><span class="num">Read 31</span><span class="title">《六祖坛经》— 顿悟、本来无一物、明心见性</span><span class="meta">慧能</span></div>
+<div class="entry todo"><span class="num">Read 32</span><span class="title">《具身心智》— 心与世界，在身体的行动中一道「生成」</span><span class="meta">瓦雷拉 / 汤普森 / 罗施</span></div>
+<div class="entry todo"><span class="num">Read 33</span><span class="title">《Reality+（现实+）》— 虚拟世界也是真实的，我们或许就活在模拟里</span><span class="meta">大卫·查尔莫斯</span></div>
+<div class="entry todo"><span class="num">Read 34</span><span class="title">《复杂》— 简单规则如何长出复杂的世界</span><span class="meta">梅拉妮·米歇尔</span></div>
+<div class="entry todo"><span class="num">Read 35</span><span class="title">《论语》— 仁、礼、忠恕：儒家入世的一脉</span><span class="meta">孔子</span></div>
+<div class="entry todo"><span class="num">Read 36</span><span class="title">《传习录》— 心即理、知行合一、致良知</span><span class="meta">王阳明</span></div>
+<div class="entry todo"><span class="num">Read 37</span><span class="title">《孙子兵法》— 不战而屈人之兵：东方战略的源代码</span><span class="meta">孙武</span></div>
+<div class="entry todo"><span class="num">Read 38</span><span class="title">《查拉图斯特拉如是说》— 上帝已死，超人与永恒轮回</span><span class="meta">尼采</span></div>
+<div class="entry todo"><span class="num">Read 39</span><span class="title">《西西弗神话》— 应当想象西西弗是幸福的</span><span class="meta">加缪</span></div>
+<div class="entry todo"><span class="num">Read 40</span><span class="title">《哲学研究》— 意义，在用法之中</span><span class="meta">维特根斯坦</span></div>
+<div class="entry todo"><span class="num">Read 41</span><span class="title">《论自由》— 伤害原则与思想言论自由的奠基</span><span class="meta">约翰·密尔</span></div>
+<div class="entry todo"><span class="num">Read 42</span><span class="title">《艾希曼在耶路撒冷》— 平庸之恶：恶源于停止思考</span><span class="meta">汉娜·阿伦特</span></div>
+<div class="entry todo"><span class="num">Read 43</span><span class="title">《君主论》— 权力如何获取与维持，德性让位于「有效」</span><span class="meta">马基雅维利</span></div>
+<div class="entry todo"><span class="num">Read 44</span><span class="title">《资本论》(选读) — 剩余价值与异化：对资本主义的解剖</span><span class="meta">卡尔·马克思</span></div>
+<div class="entry todo"><span class="num">Read 45</span><span class="title">《科学革命的结构》— 科学不是线性累积，而是范式的更替</span><span class="meta">托马斯·库恩</span></div>
+<div class="entry todo"><span class="num">Read 46</span><span class="title">《一九八四》— 老大哥、双重思想、新话</span><span class="meta">乔治·奥威尔</span></div>
+<div class="entry todo"><span class="num">Read 47</span><span class="title">《美丽新世界》— 以快乐与满足驯服的反乌托邦</span><span class="meta">阿道司·赫胥黎</span></div>
+<div class="entry todo"><span class="num">Read 48</span><span class="title">《超级智能》— 通向通用人工智能的路径与「对齐」难题</span><span class="meta">尼克·博斯特罗姆</span></div>
+<div class="entry todo"><span class="num">Read 49</span><span class="title">《梦的解析》— 潜意识与梦：精神分析的奠基</span><span class="meta">西格蒙德·弗洛伊德</span></div>
+<div class="entry todo"><span class="num">Read 50</span><span class="title">《人及其象征》— 集体无意识、原型与个体化</span><span class="meta">卡尔·荣格</span></div>
+<div class="entry todo"><span class="num">Read 51</span><span class="title">《人性中的善良天使》— 用数据讲：暴力为何在长程下降</span><span class="meta">史蒂芬·平克</span></div>
+<div class="entry todo"><span class="num">Read 52</span><span class="title">《论美国的民主》— 多数的暴政，与维系民主的民情</span><span class="meta">托克维尔</span></div>
+<div class="entry todo"><span class="num">Read 53</span><span class="title">《金刚经》— 应无所住而生其心</span><span class="meta">佛陀（鸠摩罗什 译）</span></div>
+<div class="entry todo"><span class="num">Read 54</span><span class="title">《Give and Take》— 给予者为何最终走得更远</span><span class="meta">亚当·格兰特</span></div>
+<div class="entry todo"><span class="num">Read 55</span><span class="title">《思维的版图》— 东亚整体思维 vs 西方分析思维</span><span class="meta">理查德·尼斯贝特</span></div>
 <!-- entries -->
+</div>
+<h2 class="section-head">清单外 · 临时想读</h2>
+<div class="list">
+<a class="entry" href="wild-courage-read100.html"><span class="num">—</span><span class="title">《野性的勇气》— 九个骂人的词，其实是成事的九台发动机</span><span class="meta">珍妮·伍德</span></a>
 </div>
 <footer>把一本书读透，胜过翻过十本。</footer>
 </div>

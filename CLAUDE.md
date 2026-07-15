@@ -48,3 +48,9 @@
 ## 4. 完成后
 调用 **PushNotification**（`status:"proactive"`，一行 < 200 字、无 markdown），例如：
 `每日精读已更新：《思考，快与慢》· 系统1/2 与我们如何被直觉骗 · cissy0802.github.io/deep-reading-daily`
+
+## index 维护：roadmap-first（写时把灰色占位转成链接，勿 append 重复）
+
+本仓 index.html / index.en.html 已改为「路线图先出」：书单里还没精读的条目已作为灰色占位行 `<div class="entry todo">…</div>`（无 href、不可点、todo 类）预先列出。写某编号 N 时：在两个 index 里找到该 N 的灰色占位行，原地改成 `<a class="entry" href="{本期文件名}">`（去掉 todo 类、加 href，内部结构不变），绝不要在末尾 append 新行（否则重复）。只有该 N 没有对应灰色占位行时才 append。
+
+off-roadmap / 临时起意 的书（不在 TOPICS.md 编号清单里、BigCat 手动加的）放进 index 的「清单外 · 临时想读」section，不要混进编号主列表；它们不参与 roadmap 灰色占位逻辑。

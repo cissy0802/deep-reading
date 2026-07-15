@@ -9,11 +9,17 @@ header h1{font-size:2rem;font-weight:800;color:#6fc3b4;letter-spacing:2px}
 header p{margin-top:8px;font-size:1rem;color:#8aa39d}
 header .subtitle{font-size:0.9rem;color:#5fb0a3;margin-top:6px;font-style:italic}
 .list{margin-top:32px}
+.section-head{margin:44px 0 6px;text-align:center;font-size:0.95rem;font-weight:700;color:#6fc3b4;letter-spacing:1px}
 .entry{display:flex;align-items:baseline;gap:16px;padding:18px 20px;background:#1e2329;border-radius:6px;box-shadow:0 1px 10px rgba(0,0,0,0.35);margin-bottom:14px;transition:all 0.15s;text-decoration:none;color:inherit;border-left:3px solid #3f8b7f}
 .entry:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.5);background:#222931}
 .entry .num{flex-shrink:0;font-size:0.85rem;color:#5fb0a3;font-weight:700;min-width:64px}
 .entry .title{font-size:1.05rem;font-weight:600;color:#bfe3db}
 .entry .meta{font-size:0.88rem;color:#8aa39d;margin-left:auto;text-align:right;font-style:italic}
+.entry.todo{background:#191d22;box-shadow:none;border-left-color:#333c42;cursor:default}
+.entry.todo:hover{transform:none;box-shadow:none;background:#191d22}
+.entry.todo .num{color:#5c6663}
+.entry.todo .title{color:#727d78;font-weight:600}
+.entry.todo .meta{color:#5c6663}
 footer{text-align:center;padding:40px 0 12px;font-size:0.82rem;color:#5c6663}
 @media(max-width:600px){header h1{font-size:1.5rem}.entry{flex-direction:column;gap:4px}.entry .meta{margin-left:0;text-align:left}}
 </style></head><body>
@@ -47,8 +53,39 @@ footer{text-align:center;padding:40px 0 12px;font-size:0.82rem;color:#5c6663}
 <a class="entry" href="amusing-ourselves-read25.en.html"><span class="num">Read 25</span><span class="title">Amusing Ourselves to Death — ruined by what we love</span><span class="meta">Neil Postman</span></a>
 <a class="entry" href="antifragile-read26.en.html"><span class="num">Read 26</span><span class="title">Antifragile — some things grow stronger when shaken</span><span class="meta">Nassim Taleb</span></a>
 <a class="entry" href="poor-charlies-almanack-read27.en.html"><span class="num">Read 27</span><span class="title">Poor Charlie's Almanack — being consistently not stupid beats occasional brilliance</span><span class="meta">Charlie Munger</span></a>
-<a class="entry" href="wild-courage-read100.en.html"><span class="num">Read 100</span><span class="title">Wild Courage — nine insults that are actually engines of success</span><span class="meta">Jenny Wood</span></a>
+<div class="entry todo"><span class="num">Read 28</span><span class="title">What Life Should Mean to You — how the sense of inferiority drives us, and turns into social interest</span><span class="meta">Alfred Adler</span></div>
+<div class="entry todo"><span class="num">Read 29</span><span class="title">Ways of Seeing — how we look is shaped by images, advertising, and power</span><span class="meta">John Berger</span></div>
+<div class="entry todo"><span class="num">Read 30</span><span class="title">Walden — in simplicity and solitude, asking again what a life actually requires</span><span class="meta">Henry David Thoreau</span></div>
+<div class="entry todo"><span class="num">Read 31</span><span class="title">The Platform Sutra — awaken suddenly and see your own nature: the core text of Chan</span><span class="meta">Huineng</span></div>
+<div class="entry todo"><span class="num">Read 32</span><span class="title">The Embodied Mind — mind and world are enacted together through the body</span><span class="meta">Varela, Thompson &amp; Rosch</span></div>
+<div class="entry todo"><span class="num">Read 33</span><span class="title">Reality+ — virtual worlds are genuinely real, and we may already live in a simulation</span><span class="meta">David Chalmers</span></div>
+<div class="entry todo"><span class="num">Read 34</span><span class="title">Complexity: A Guided Tour — how simple rules grow complex worlds</span><span class="meta">Melanie Mitchell</span></div>
+<div class="entry todo"><span class="num">Read 35</span><span class="title">The Analects — benevolence and ritual: the engaged heart of Confucianism</span><span class="meta">Confucius</span></div>
+<div class="entry todo"><span class="num">Read 36</span><span class="title">Instructions for Practical Living — mind is principle, and knowing and doing are one</span><span class="meta">Wang Yangming</span></div>
+<div class="entry todo"><span class="num">Read 37</span><span class="title">The Art of War — subdue the enemy without fighting: the source code of strategy</span><span class="meta">Sun Tzu</span></div>
+<div class="entry todo"><span class="num">Read 38</span><span class="title">Thus Spoke Zarathustra — God is dead; the overman and eternal recurrence</span><span class="meta">Friedrich Nietzsche</span></div>
+<div class="entry todo"><span class="num">Read 39</span><span class="title">The Myth of Sisyphus — one must imagine Sisyphus happy</span><span class="meta">Albert Camus</span></div>
+<div class="entry todo"><span class="num">Read 40</span><span class="title">Philosophical Investigations — meaning lives in use</span><span class="meta">Ludwig Wittgenstein</span></div>
+<div class="entry todo"><span class="num">Read 41</span><span class="title">On Liberty — the harm principle and the case for free thought</span><span class="meta">John Stuart Mill</span></div>
+<div class="entry todo"><span class="num">Read 42</span><span class="title">Eichmann in Jerusalem — the banality of evil: what happens when thinking stops</span><span class="meta">Hannah Arendt</span></div>
+<div class="entry todo"><span class="num">Read 43</span><span class="title">The Prince — how power is won and kept, virtue yielding to what works</span><span class="meta">Niccolò Machiavelli</span></div>
+<div class="entry todo"><span class="num">Read 44</span><span class="title">Capital, Selected Readings — surplus value and alienation: capitalism dissected</span><span class="meta">Karl Marx</span></div>
+<div class="entry todo"><span class="num">Read 45</span><span class="title">The Structure of Scientific Revolutions — science advances by paradigm shift, not accumulation</span><span class="meta">Thomas Kuhn</span></div>
+<div class="entry todo"><span class="num">Read 46</span><span class="title">Nineteen Eighty-Four — Big Brother, doublethink, Newspeak</span><span class="meta">George Orwell</span></div>
+<div class="entry todo"><span class="num">Read 47</span><span class="title">Brave New World — a dystopia that tames you with pleasure rather than fear</span><span class="meta">Aldous Huxley</span></div>
+<div class="entry todo"><span class="num">Read 48</span><span class="title">Superintelligence — the road to AGI and the alignment problem</span><span class="meta">Nick Bostrom</span></div>
+<div class="entry todo"><span class="num">Read 49</span><span class="title">The Interpretation of Dreams — the unconscious, laid bare through dreams</span><span class="meta">Sigmund Freud</span></div>
+<div class="entry todo"><span class="num">Read 50</span><span class="title">Man and His Symbols — the collective unconscious, archetypes, and individuation</span><span class="meta">Carl Jung</span></div>
+<div class="entry todo"><span class="num">Read 51</span><span class="title">The Better Angels of Our Nature — why violence has declined over the long run, retold with data</span><span class="meta">Steven Pinker</span></div>
+<div class="entry todo"><span class="num">Read 52</span><span class="title">Democracy in America — the tyranny of the majority, and the mores that hold it off</span><span class="meta">Alexis de Tocqueville</span></div>
+<div class="entry todo"><span class="num">Read 53</span><span class="title">The Diamond Sutra — give rise to a mind that dwells nowhere</span><span class="meta">The Buddha (tr. Kumārajīva)</span></div>
+<div class="entry todo"><span class="num">Read 54</span><span class="title">Give and Take — givers, takers, and matchers, and why givers ultimately go furthest</span><span class="meta">Adam Grant</span></div>
+<div class="entry todo"><span class="num">Read 55</span><span class="title">The Geography of Thought — Eastern holistic vs. Western analytic minds</span><span class="meta">Richard Nisbett</span></div>
 <!-- entries -->
+</div>
+<h2 class="section-head">Off-List · Ad-Hoc Reads</h2>
+<div class="list">
+<a class="entry" href="wild-courage-read100.en.html"><span class="num">—</span><span class="title">Wild Courage — nine insults that are actually engines of success</span><span class="meta">Jenny Wood</span></a>
 </div>
 <footer>Reading one book all the way through beats skimming ten.</footer>
 </div>
