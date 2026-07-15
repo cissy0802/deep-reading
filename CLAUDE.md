@@ -54,3 +54,10 @@
 本仓 index.html / index.en.html 已改为「路线图先出」：书单里还没精读的条目已作为灰色占位行 `<div class="entry todo">…</div>`（无 href、不可点、todo 类）预先列出。写某编号 N 时：在两个 index 里找到该 N 的灰色占位行，原地改成 `<a class="entry" href="{本期文件名}">`（去掉 todo 类、加 href，内部结构不变），绝不要在末尾 append 新行（否则重复）。只有该 N 没有对应灰色占位行时才 append。
 
 off-roadmap / 临时起意 的书（不在 TOPICS.md 编号清单里、BigCat 手动加的）放进 index 的「清单外 · 临时想读」section，不要混进编号主列表；它们不参与 roadmap 灰色占位逻辑。
+
+
+### 每次运行先「对齐」灰色占位（TOPICS 增长时自动补灰行）
+
+每次运行开头，先扫 `TOPICS.md`：凡是**还没写**（无对应页）**且** index 里**还没有对应行**的编号，就按编号顺序在列表相应位置补一条灰色占位行 `<div class="entry todo">…</div>`（无 href、`todo` 类），内部 span 结构照现有条目。`index.en.html` 里顺带把标题/要点翻成 house-style 英文（**勿泄漏中文**），`index.html` 用 TOPICS 中文文本裁成本仓 zh 风格。**两个 index 都要补。**
+
+这样 BigCat / deep-research 往 TOPICS 末尾加的新主题，下次运行就会自动作为灰色条目出现；等真正写它时再按上面的规则**原地**转成链接（勿另 append）。
