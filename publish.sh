@@ -40,11 +40,26 @@ MSG="${MSG:-Add #$N: $TITLE}"
 # ---------- TOPICS guard (anti echo-chamber) ----------
 # Topics are pre-curated by BigCat. Routines must NOT invent/append their own
 # topics when TOPICS.md runs out — that drifts toward self-repetition.
-if [ -f TOPICS.md ] && ! git diff --quiet TOPICS.md 2>/dev/null; then
-  echo "ERROR: TOPICS.md was modified by this run. Do NOT self-generate topics."
-  echo "       If TOPICS.md is exhausted: send a PushNotification asking BigCat"
-  echo "       to refill topics (or pause this routine), publish nothing, exit."
-  exit 1
+# ONE exception (same-run split, see CLAUDE.md §1): when this run pulls a
+# same-author sibling out into its own piece, it may APPEND sibling line(s)
+# "- {N}b: ..." (b-suffixed) to TOPICS. Anything else — new base topics,
+# deletions, edits, reordering — stays hard-blocked.
+if [ -f TOPICS.md ] && ! git diff --quiet HEAD -- TOPICS.md 2>/dev/null; then
+  DIFF=$(git diff HEAD -- TOPICS.md)
+  # Removed content lines (single leading '-', excluding the '---' file header).
+  REMOVED=$(echo "$DIFF" | grep -E '^-' | grep -vE '^---' || true)
+  # Added content lines (single leading '+', excluding '+++' header) that are
+  # NOT an allowed "- {N}b:" sibling append and NOT a blank line.
+  BAD_ADD=$(echo "$DIFF" | grep -E '^\+' | grep -vE '^\+\+\+' \
+              | grep -vE '^\+- *[0-9]+b:' | grep -vE '^\+[[:space:]]*$' || true)
+  if [ -n "$REMOVED" ] || [ -n "$BAD_ADD" ]; then
+    echo "ERROR: TOPICS.md changed beyond appending '- {N}b:' sibling line(s)."
+    echo "       Routine may ONLY append a same-author sibling (Nb) for a book done this run."
+    echo "       Do NOT self-generate new topics, delete, edit, or reorder existing lines."
+    echo "       If TOPICS is exhausted: PushNotification BigCat to refill, publish nothing, exit."
+    exit 1
+  fi
+  echo "✓ TOPICS.md: sibling '- {N}b:' append(s) only — allowed."
 fi
 
 # ---------- Per-file validations ----------
