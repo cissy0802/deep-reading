@@ -166,3 +166,8 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《The Five Dysfunctions of a Team》— Patrick Lencioni — 团队失灵的五层：从缺乏信任到无视结果
 - 《Team of Teams》— Stanley McChrystal — 规模化下的指挥与自治：让大组织像小团队一样敏捷
 - 《Think Again》— Adam Grant — 重新思考的力量：像科学家一样乐于质疑自己的观点
+- 《The Staff Engineer's Path》— Tanya Reilly — Staff+ 到了之后具体怎么做：大局观、把事推成、带起周围人
+- 《The Software Engineer's Guidebook》— Gergely Orosz — 从 senior 到 staff 的成长地图，贴近当下大厂现实
+- 《The Effective Engineer》— Edmond Lau — 用「杠杆率」思考：把精力投在回报最高的地方
+- 《Team Topologies》— Matthew Skelton & Manuel Pais — 团队与系统边界怎么切：康威定律的实操版
+- 《Accelerate》— Nicole Forsgren / Jez Humble / Gene Kim — 用 DORA 指标把「工程效能」讲成科学
