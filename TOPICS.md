@@ -171,3 +171,7 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《The Effective Engineer》— Edmond Lau — 用「杠杆率」思考：把精力投在回报最高的地方
 - 《Team Topologies》— Matthew Skelton & Manuel Pais — 团队与系统边界怎么切：康威定律的实操版
 - 《Accelerate》— Nicole Forsgren / Jez Humble / Gene Kim — 用 DORA 指标把「工程效能」讲成科学
+- 《The Software Architect Elevator》— Gregor Hohpe — Principal/架构师在「顶楼(战略)与机房(代码)」之间坐电梯来回
+- 《Thinking in Systems》— Donella Meadows — 系统思维与「杠杆点」：Principal 看组织与技术系统的心智模型
+- 《Good Strategy Bad Strategy》— Richard Rumelt — 什么是真策略、什么是废话式策略：专治 OKR 空话
+- 《Superforecasting》— Philip Tetlock & Dan Gardner — 高不确定下的校准判断：怎样把预测做成一门手艺
