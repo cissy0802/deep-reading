@@ -159,3 +159,10 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《High Output Management》— Andy Grove — 科技管理的祖师爷：产出导向与「经理的杠杆率」
 - 《The Manager's Path》— Camille Fournier — 从 tech lead 到 VP，每一层带人怎么做
 - 《The Making of a Manager》— Julie Zhuo — 新经理第一年的第一手手册
+- 《Staff Engineer》— Will Larson — 不走管理、走资深技术专家线：Staff+ 工程师怎么定位与晋升
+- 《The Great CEO Within》— Matt Mochary — 硅谷高管教练手册：极其操作化的公司运营 playbook
+- 《Turn the Ship Around!》— David Marquet — 核潜艇长的「授权式领导」：把执行者变成主人
+- 《Measure What Matters》— John Doerr — OKR 圣经：目标与关键结果如何驱动组织聚焦
+- 《The Five Dysfunctions of a Team》— Patrick Lencioni — 团队失灵的五层：从缺乏信任到无视结果
+- 《Team of Teams》— Stanley McChrystal — 规模化下的指挥与自治：让大组织像小团队一样敏捷
+- 《Think Again》— Adam Grant — 重新思考的力量：像科学家一样乐于质疑自己的观点
