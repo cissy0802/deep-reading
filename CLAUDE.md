@@ -53,7 +53,7 @@
 
 ## 3. 文件约定 / 发布（同所有 routine 站）
 - 文件名 `{slug}-read{N}.html` + `{slug}-read{N}.en.html`，放仓库根目录。
-- 发布前更新 `index.html`（在 `<!-- entries -->` 前插入新条目）+ `index.en.html`（插入 `.en` 条目）。
+- 发布前更新 `index.html` + `index.en.html`：按下方「index 维护」把新书归到对应主题分区，并从「路线图」区删掉它的灰行（旧的 `<!-- entries -->` 标记已废弃）。
 - **index 条目副标题要短且齐（硬规则）**：书名后 `—` 那句只留**一个最尖的钩子**，中文 ≤ 约 18 字、英文 ≤ 约 12 词，**一句话、不加分号、不塞两层意思**（曾出现「…；…」两段式、越写越长——严禁）。要点留到正文里讲，index 只负责勾人点进来。
 - **同一作者的书在 index 里放一起，用 `read{N}a / read{N}b` 分组**：当要做的书是某本**已发布 read** 的同作者姊妹篇（续作/镜像，如《人类简史》→《未来简史》、《枪炮》→《崩溃》），别再顺号往后排，而是**紧挨着姊妹篇插入**、把两条的编号标成 `Read {N}a` / `Read {N}b`（原书变 Na、新书变 Nb）。文件名/slug 同理走 `{slug}-read{N}b.html`。TOPICS 里也尽量把同作者书排相邻（如已把《未来简史》挪到 `3b:` 紧跟 `3:`《人类简史》）。**已发布的姊妹篇回改 a/b 的样板**：《人类简史》= `sapiens-read3`（显示 Read 3a，文件名不动、只改显示标号）、《未来简史》= 由 `homo-deus-read8` 改名为 `homo-deus-read3b`（连带改页面 `READ 3b`、langbar、index 位置、TOPICS 标号）；腾出的 `read8` 号位另放新书（现为《禅与摩托车维修艺术》）。回改会换 URL、旧评论可能丢，值不值得由 BigCat 定。
 - **不要**手动加 `comments.js` / `search.js` / `index-button.js` / `i18n-tts.js`（GitHub Action 自动注入）；也别在页里硬写 `← Hub`。
@@ -64,20 +64,22 @@
 调用 **PushNotification**（`status:"proactive"`，一行 < 200 字、无 markdown），例如：
 `每日精读已更新：《思考，快与慢》· 系统1/2 与我们如何被直觉骗 · cissy0802.github.io/deep-reading-daily`
 
-## index 维护：roadmap-first（写时把灰色占位转成链接，勿 append 重复）
+## index 维护：主题分区 + 可折叠（写时归类，并从「路线图」删灰行）
 
-本仓 index.html / index.en.html 已改为「路线图先出」：书单里还没精读的条目已作为灰色占位行 `<div class="entry todo">…</div>`（无 href、不可点、todo 类）预先列出。写某编号 N 时：在两个 index 里找到该 N 的灰色占位行，原地改成 `<a class="entry" href="{本期文件名}">`（去掉 todo 类、加 href，内部结构不变），绝不要在末尾 append 新行（否则重复）。只有该 N 没有对应灰色占位行时才 append。
+index.html / index.en.html 已改成**主题分区**结构：每个分区是一个可折叠的 `<details>`（**默认全部收起**，点开展开），`<summary>` 写「主题名 + 数量」。分区顺序（两个 index 一致，英文页用英文名）：
+1. 认知 · 心理 · 自我 ／ 2. 哲学 · 思想 ／ 3. 东方思想 ／ 4. 科学 · 自然 ／ 5. 社会 · 历史 · 文明 ／ 6. 经济 · 决策 ／ 7. 文学
+8. **清单外 · 临时想读**（放所有 `read100+` 的清单外书，编号显示「—」）
+9. **路线图 · 即将精读**（放所有**还没写**的灰色占位 `<div class="entry todo">`，按编号顺序）
 
-清单外 / 临时起意 的书（在 TOPICS.md 末尾「清单外 · 临时想读」区、不编号）放进 index 的「清单外 · 临时想读」section，不要混进编号主列表。**它们也走 roadmap 灰色占位逻辑**，只是编号显示「—」而非 `Read N`：未写的清单外候选以灰色占位行 `<div class="entry todo"><span class="num">—</span>…</div>` 预列在该区（顺序同 TOPICS）；真正写它时，在该区找到对应灰行、**原地**改成 `<a class="entry" href="{slug}-read{N}.html">`（去 todo 类、加 href、num 仍是「—」），绝不 append 重复。
+**写完一本书后，两个 index 各改两处：**
+1. **加链接**：在**对应主题**的 `<details>` 里加一条 `<a class="entry" href="…"><span class="num">…</span><span class="title">…</span><span class="meta">作者</span></a>`。清单内的书按题材归进 1–7 某个主题（自己判断最贴哪个）、num 用 `Read N`；清单外的书一律进「清单外」区、num 用 `—`。
+2. **删灰行**：到「路线图 · 即将精读」区，把这本书对应的那条灰色 `<div class="entry todo">` **删掉**（它已从「待写」变「已写」）。
+顺手把该主题 `<summary>` 的数量 +1、路线图数量 -1（数量给人看，偏一两个不致命，但尽量维护）。**别再用 `<!-- entries -->`。**
 
+**同作者姊妹篇（Na/Nb）**：放进同一主题、相邻两条，显示 `Read {N}a`/`Read {N}b`（见 §3 的回改样板）。
 
-### 每次运行先「对齐」灰色占位（TOPICS 增长时自动补灰行）
-
-每次运行开头，先扫 `TOPICS.md`：凡是**还没写**（无对应页）**且** index 里**还没有对应行**的编号，就按编号顺序在列表相应位置补一条灰色占位行 `<div class="entry todo">…</div>`（无 href、`todo` 类），内部 span 结构照现有条目。`index.en.html` 里顺带把标题/要点翻成 house-style 英文（**勿泄漏中文**），`index.html` 用 TOPICS 中文文本裁成本仓 zh 风格。**两个 index 都要补。**
-
-**「清单外 · 临时想读」区同样对齐**：扫 TOPICS 末尾的清单外区，凡**还没写且 index 该区还没有对应行**的书，按顺序在该区补一条灰色占位行（`<span class="num">—</span>`、`todo` 类、无 href）。两个 index 都补。
-
-这样 BigCat / deep-research 往 TOPICS 末尾加的新主题，下次运行就会自动作为灰色条目出现；等真正写它时再按上面的规则**原地**转成链接（勿另 append）。
+### 每次运行先「对齐」路线图（TOPICS 增长时补灰行）
+每次运行开头扫 `TOPICS.md`：凡**还没写**（无对应页）**且**「路线图」区**还没有对应灰行**的书，就在「路线图 · 即将精读」区按顺序补一条灰色 `<div class="entry todo">`（无 href、`todo` 类）——主清单编号的显示 `Read N`，清单外的显示 `—`。两个 index 都补：`index.en.html` 把标题/要点翻成 house-style 英文（**勿泄漏中文**），`index.html` 用 TOPICS 中文裁成本仓 zh 风格。这样 BigCat / deep-research 往 TOPICS 加的新书，下次运行就先作为灰行进「路线图」，等真正写它时再按上面「加链接 + 删灰行」搬进对应主题。
 
 ## 新页面必带共享脚本（免触发 inject-comments 机器人提交）
 

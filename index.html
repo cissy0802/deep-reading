@@ -22,47 +22,83 @@ header .subtitle{font-size:0.9rem;color:#5fb0a3;margin-top:6px;font-style:italic
 .entry.todo .meta{color:#5c6663}
 footer{text-align:center;padding:40px 0 12px;font-size:0.82rem;color:#5c6663}
 @media(max-width:600px){header h1{font-size:1.5rem}.entry{flex-direction:column;gap:4px}.entry .meta{margin-left:0;text-align:left}}
+details{margin:12px 0}
+summary{cursor:pointer;list-style:none;text-align:center;font-size:0.98rem;font-weight:700;color:#6fc3b4;letter-spacing:1px;padding:13px 12px;background:#191d22;border:1px solid #242a2e;border-radius:6px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"\25B8  ";color:#5c6663}
+details[open] summary::before{content:"\25BE  "}
+summary .cnt{color:#5c6663;font-weight:400;font-size:0.82rem;letter-spacing:0}
+details[open] summary{margin-bottom:12px}
 </style></head><body>
 <div class="container">
 <header><h1>好书精读</h1><p>Deep Reading — BigCat's Close-Reading Shelf</p><div class="subtitle">每天一本 · 提纯精读 · 读完这页 ≈ 读完这本书</div></header>
-<div class="list">
+<details><summary>认知 · 心理 · 自我 <span class="cnt">5</span></summary>
 <a class="entry" href="thinking-fast-slow-read1.html"><span class="num">Read 1</span><span class="title">《思考，快与慢》— 两个系统，与它们系统性骗你的方式</span><span class="meta">丹尼尔·卡尼曼</span></a>
-<a class="entry" href="selfish-gene-read2.html"><span class="num">Read 2</span><span class="title">《自私的基因》— 你不是基因的目的，只是它的生存机器</span><span class="meta">理查德·道金斯</span></a>
-<a class="entry" href="sapiens-read3.html"><span class="num">Read 3a</span><span class="title">《人类简史》— 靠「虚构故事」让陌生人大规模协作</span><span class="meta">尤瓦尔·赫拉利</span></a>
-<a class="entry" href="homo-deus-read3b.html"><span class="num">Read 3b</span><span class="title">《未来简史》— 吃饱的人类要把自己升级成神，权威从人移交给算法</span><span class="meta">尤瓦尔·赫拉利</span></a>
-<a class="entry" href="guns-germs-steel-read4.html"><span class="num">Read 4a</span><span class="title">《枪炮、病菌与钢铁》— 文明的不平等，根在地理不在人种</span><span class="meta">贾雷德·戴蒙德</span></a>
-<a class="entry" href="collapse-read4b.html"><span class="num">Read 4b</span><span class="title">《崩溃》— 社会如何亲手毁掉自己，又如何避免</span><span class="meta">贾雷德·戴蒙德</span></a>
-<a class="entry" href="wealth-of-nations-read5.html"><span class="num">Read 5</span><span class="title">《国富论》— 分工与自由交换，被「看不见的手」拢成繁荣</span><span class="meta">亚当·斯密</span></a>
-<a class="entry" href="tao-te-ching-read6.html"><span class="num">Read 6</span><span class="title">《道德经》— 道从不用力，万物却都成了</span><span class="meta">老子</span></a>
-<a class="entry" href="zhuangzi-read7.html"><span class="num">Read 7</span><span class="title">《庄子》— 绑住你的不是世界，是心里的分别心</span><span class="meta">庄周</span></a><a class="entry" href="zen-motorcycle-read8.html"><span class="num">Read 8</span><span class="title">《禅与摩托车维修艺术》— 你修的从来不是车，是你自己</span><span class="meta">罗伯特·波西格</span></a><a class="entry" href="meditations-read9.html"><span class="num">Read 9</span><span class="title">《沉思录》— 世界不归你管，但你对世界的看法归你管</span><span class="meta">马可·奧勒留</span></a>
-<a class="entry" href="republic-read10.html"><span class="num">Read 10</span><span class="title">《理想国》— 正义是灵魂里理性作主、各安其位的健康秩序</span><span class="meta">柏拉图</span></a>
-<a class="entry" href="protestant-ethic-read11.html"><span class="num">Read 11</span><span class="title">《新教伦理与资本主义精神》— 拼命赚却不敢花，一场宗教焦虑的意外副产品</span><span class="meta">马克思·韦伯</span></a>
-<a class="entry" href="discipline-and-punish-read12.html"><span class="num">Read 12</span><span class="title">《规训与惩罚》— 最高效的控制，是让你自己看住自己</span><span class="meta">米歇尔·福柯</span></a>
-<a class="entry" href="second-sex-read13.html"><span class="num">Read 13</span><span class="title">《第二性》— 女人不是天生的，是被塑造成的</span><span class="meta">西蒙·德·波伏娃</span></a>
 <a class="entry" href="escape-from-freedom-read14.html"><span class="num">Read 14</span><span class="title">《逃避自由》— 人为何主动交还刚争来的自由</span><span class="meta">埃里希·弗洛姆</span></a>
 <a class="entry" href="flow-read15.html"><span class="num">Read 15</span><span class="title">《心流》— 最好的时刻，是忘我投入一件难而值得的事</span><span class="meta">米哈里·契克森米哈伊</span></a>
 <a class="entry" href="mans-search-for-meaning-read16.html"><span class="num">Read 16</span><span class="title">《活出生命的意义》— 苦难夺不走你选择姿态的最后自由</span><span class="meta">维克多·弗兰克尔</span></a>
-<a class="entry" href="godel-escher-bach-read17.html"><span class="num">Read 17</span><span class="title">《哥德尔、艾舶尔、巴赫》— 自我，是物质绕回自身绕出的怪圈</span><span class="meta">侯世达</span></a>
-<a class="entry" href="order-of-time-read18.html"><span class="num">Read 18a</span><span class="title">《时间的秩序》— 物理学剥掉时间，又把它还给了我们</span><span class="meta">卡洛·罗韦利</span></a>
-<a class="entry" href="helgoland-read18b.html"><span class="num">Read 18b</span><span class="title">《赫尔戈兰》— 没有东西自在地存在，只在相互作用中显现</span><span class="meta">卡洛·罗韦利</span></a>
-<a class="entry" href="being-you-read20.html"><span class="num">Read 20</span><span class="title">《成为你》— 意识是大脑「受控的幻觉」，连「你」也是猜出来的</span><span class="meta">安尼尔·赛斯</span></a>
-<a class="entry" href="from-the-soil-read21.html"><span class="num">Read 21</span><span class="title">《乡土中国》— 差序格局：中国人的关系像一圈圈水波纹</span><span class="meta">费孝通</span></a>
-<a class="entry" href="1587-read22.html"><span class="num">Read 22</span><span class="title">《万历十五年》— 平淡的一年，藏着一个文明的制度死局</span><span class="meta">黄仁宇</span></a>
-<a class="entry" href="brothers-karamazov-read23.html"><span class="num">Read 23a</span><span class="title">《卡拉马佐夫兄弟》— 若无上帝，是否一切都被允许</span><span class="meta">陀思妥耶夫斯基</span></a>
-<a class="entry" href="crime-and-punishment-read23b.html"><span class="num">Read 23b</span><span class="title">《罪与罚》— 一桩谋杀与良心的审判</span><span class="meta">陀思妥耶夫斯基</span></a>
-<a class="entry" href="theory-of-justice-read24.html"><span class="num">Read 24</span><span class="title">《正义论》— 如果不知道你生来是谁，会选什么样的社会</span><span class="meta">约翰·罗尔斯</span></a>
-<a class="entry" href="amusing-ourselves-read25.html"><span class="num">Read 25</span><span class="title">《娱乐至死》— 我们终将毁于我们所热爱的东西</span><span class="meta">尼尔·波兹曼</span></a>
-<a class="entry" href="antifragile-read26.html"><span class="num">Read 26</span><span class="title">《反脆弱》— 有些东西越折腾越强</span><span class="meta">纳西姆·塔勒布</span></a>
-<a class="entry" href="poor-charlies-almanack-read27.html"><span class="num">Read 27</span><span class="title">《穷查理宝典》— 持续不犯蠢，胜过偶尔的聪明绝顶</span><span class="meta">查理·芒格</span></a>
 <a class="entry" href="inferiority-superiority-read28.html"><span class="num">Read 28</span><span class="title">《自卑与超越》— 人人从自卑出发，往哪拧决定成败</span><span class="meta">阿尔弗雷德·阿德勒</span></a>
+</details>
+<details><summary>哲学 · 思想 <span class="cnt">8</span></summary>
+<a class="entry" href="zen-motorcycle-read8.html"><span class="num">Read 8</span><span class="title">《禅与摩托车维修艺术》— 你修的从来不是车，是你自己</span><span class="meta">罗伯特·波西格</span></a>
+<a class="entry" href="meditations-read9.html"><span class="num">Read 9</span><span class="title">《沉思录》— 世界不归你管，但你对世界的看法归你管</span><span class="meta">马可·奧勒留</span></a>
+<a class="entry" href="republic-read10.html"><span class="num">Read 10</span><span class="title">《理想国》— 正义是灵魂里理性作主、各安其位的健康秩序</span><span class="meta">柏拉图</span></a>
+<a class="entry" href="discipline-and-punish-read12.html"><span class="num">Read 12</span><span class="title">《规训与惩罚》— 最高效的控制，是让你自己看住自己</span><span class="meta">米歇尔·福柯</span></a>
+<a class="entry" href="second-sex-read13.html"><span class="num">Read 13</span><span class="title">《第二性》— 女人不是天生的，是被塑造成的</span><span class="meta">西蒙·德·波伏娃</span></a>
+<a class="entry" href="theory-of-justice-read24.html"><span class="num">Read 24</span><span class="title">《正义论》— 如果不知道你生来是谁，会选什么样的社会</span><span class="meta">约翰·罗尔斯</span></a>
 <a class="entry" href="ways-of-seeing-read29.html"><span class="num">Read 29</span><span class="title">《观看之道》— 看从不天真，它替谁说话</span><span class="meta">约翰·伯格</span></a>
-<a class="entry" href="walden-read30.html"><span class="num">Read 30</span><span class="title">《瓦尔登湖》— 一件东西的代价，是你为它付出的生命</span><span class="meta">梭罗</span></a>
 <a class="entry" href="nicomachean-ethics-read31.html"><span class="num">Read 31</span><span class="title">《尼各马可伦理学》— 好人是「做」出来的，不是「想」出来的</span><span class="meta">亚里士多德</span></a>
+</details>
+<details><summary>东方思想 <span class="cnt">6</span></summary>
+<a class="entry" href="tao-te-ching-read6.html"><span class="num">Read 6</span><span class="title">《道德经》— 道从不用力，万物却都成了</span><span class="meta">老子</span></a>
+<a class="entry" href="zhuangzi-read7.html"><span class="num">Read 7</span><span class="title">《庄子》— 绑住你的不是世界，是心里的分别心</span><span class="meta">庄周</span></a>
 <a class="entry" href="analects-read32.html"><span class="num">Read 32</span><span class="title">《论语》— 做人是「做」出来的，仁在礼里落地</span><span class="meta">孔子</span></a>
 <a class="entry" href="bhagavad-gita-read33.html"><span class="num">Read 33</span><span class="title">《薄伽梵歌》— 你对行动有权，对结果无权：做而不执即自由</span><span class="meta">毗耶娑（传）</span></a>
 <a class="entry" href="upanishads-read34.html"><span class="num">Read 34</span><span class="title">《奥义书》— 那个「看着」的才是你，梵我本是一</span><span class="meta">佚名</span></a>
 <a class="entry" href="dhammapada-read35.html"><span class="num">Read 35</span><span class="title">《法句经》— 心为法本：调伏自己这颗心，苦就止息</span><span class="meta">佚名</span></a>
+</details>
+<details><summary>科学 · 自然 <span class="cnt">5</span></summary>
+<a class="entry" href="selfish-gene-read2.html"><span class="num">Read 2</span><span class="title">《自私的基因》— 你不是基因的目的，只是它的生存机器</span><span class="meta">理查德·道金斯</span></a>
+<a class="entry" href="godel-escher-bach-read17.html"><span class="num">Read 17</span><span class="title">《哥德尔、艾舶尔、巴赫》— 自我，是物质绕回自身绕出的怪圈</span><span class="meta">侯世达</span></a>
+<a class="entry" href="order-of-time-read18.html"><span class="num">Read 18a</span><span class="title">《时间的秩序》— 物理学剥掉时间，又把它还给了我们</span><span class="meta">卡洛·罗韦利</span></a>
+<a class="entry" href="helgoland-read18b.html"><span class="num">Read 18b</span><span class="title">《赫尔戈兰》— 没有东西自在地存在，只在相互作用中显现</span><span class="meta">卡洛·罗韦利</span></a>
+<a class="entry" href="being-you-read20.html"><span class="num">Read 20</span><span class="title">《成为你》— 意识是大脑「受控的幻觉」，连「你」也是猜出来的</span><span class="meta">安尼尔·赛斯</span></a>
+</details>
+<details><summary>社会 · 历史 · 文明 <span class="cnt">8</span></summary>
+<a class="entry" href="sapiens-read3.html"><span class="num">Read 3a</span><span class="title">《人类简史》— 靠「虚构故事」让陌生人大规模协作</span><span class="meta">尤瓦尔·赫拉利</span></a>
+<a class="entry" href="homo-deus-read3b.html"><span class="num">Read 3b</span><span class="title">《未来简史》— 吃饱的人类要把自己升级成神，权威从人移交给算法</span><span class="meta">尤瓦尔·赫拉利</span></a>
+<a class="entry" href="guns-germs-steel-read4.html"><span class="num">Read 4a</span><span class="title">《枪炮、病菌与钢铁》— 文明的不平等，根在地理不在人种</span><span class="meta">贾雷德·戴蒙德</span></a>
+<a class="entry" href="collapse-read4b.html"><span class="num">Read 4b</span><span class="title">《崩溃》— 社会如何亲手毁掉自己，又如何避免</span><span class="meta">贾雷德·戴蒙德</span></a>
+<a class="entry" href="protestant-ethic-read11.html"><span class="num">Read 11</span><span class="title">《新教伦理与资本主义精神》— 拼命赚却不敢花，一场宗教焦虑的意外副产品</span><span class="meta">马克思·韦伯</span></a>
+<a class="entry" href="from-the-soil-read21.html"><span class="num">Read 21</span><span class="title">《乡土中国》— 差序格局：中国人的关系像一圈圈水波纹</span><span class="meta">费孝通</span></a>
+<a class="entry" href="1587-read22.html"><span class="num">Read 22</span><span class="title">《万历十五年》— 平淡的一年，藏着一个文明的制度死局</span><span class="meta">黄仁宇</span></a>
+<a class="entry" href="amusing-ourselves-read25.html"><span class="num">Read 25</span><span class="title">《娱乐至死》— 我们终将毁于我们所热爱的东西</span><span class="meta">尼尔·波兹曼</span></a>
+</details>
+<details><summary>经济 · 决策 <span class="cnt">3</span></summary>
+<a class="entry" href="wealth-of-nations-read5.html"><span class="num">Read 5</span><span class="title">《国富论》— 分工与自由交换，被「看不见的手」拢成繁荣</span><span class="meta">亚当·斯密</span></a>
+<a class="entry" href="antifragile-read26.html"><span class="num">Read 26</span><span class="title">《反脆弱》— 有些东西越折腾越强</span><span class="meta">纳西姆·塔勒布</span></a>
+<a class="entry" href="poor-charlies-almanack-read27.html"><span class="num">Read 27</span><span class="title">《穷查理宝典》— 持续不犯蠢，胜过偶尔的聪明绝顶</span><span class="meta">查理·芒格</span></a>
+</details>
+<details><summary>文学 <span class="cnt">4</span></summary>
+<a class="entry" href="brothers-karamazov-read23.html"><span class="num">Read 23a</span><span class="title">《卡拉马佐夫兄弟》— 若无上帝，是否一切都被允许</span><span class="meta">陀思妥耶夫斯基</span></a>
+<a class="entry" href="crime-and-punishment-read23b.html"><span class="num">Read 23b</span><span class="title">《罪与罚》— 一桩谋杀与良心的审判</span><span class="meta">陀思妥耶夫斯基</span></a>
+<a class="entry" href="walden-read30.html"><span class="num">Read 30</span><span class="title">《瓦尔登湖》— 一件东西的代价，是你为它付出的生命</span><span class="meta">梭罗</span></a>
 <a class="entry" href="iliad-read36.html"><span class="num">Read 36a</span><span class="title">《伊利亚特》— 一个人的愤怒，与人必有一死的悲悯</span><span class="meta">荷马</span></a>
+</details>
+<details><summary>清单外 · 临时想读 <span class="cnt">11</span></summary>
+<a class="entry" href="wild-courage-read100.html"><span class="num">—</span><span class="title">《野性的勇气》— 九个骂人的词，其实是成事的九台发动机</span><span class="meta">珍妮·伍德</span></a>
+<a class="entry" href="outlive-read101.html"><span class="num">—</span><span class="title">《超越百岁》— 别只求活得久，要为最后十年提前几十年练</span><span class="meta">彼得·阿蒂亚</span></a>
+<a class="entry" href="roar-next-level-read102.html"><span class="num">—</span><span class="title">《ROAR》与《Next Level》— 女性不是缩小版男性，一生怎么练怎么吃</span><span class="meta">斯泰西·西姆斯</span></a>
+<a class="entry" href="radical-candor-read103.html"><span class="num">—</span><span class="title">《坦诚相待》— 又关心人，又敢当面指出问题</span><span class="meta">金·斯科特</span></a>
+<a class="entry" href="elegant-puzzle-read104.html"><span class="num">—</span><span class="title">《一道优雅的难题》— 用系统思维管一个工程组织</span><span class="meta">威尔·拉尔森</span></a>
+<a class="entry" href="high-output-management-read105.html"><span class="num">—</span><span class="title">《High Output Management》— 你的产出，就是整支团队的产出</span><span class="meta">安迪·格鲁夫</span></a>
+<a class="entry" href="managers-path-read106.html"><span class="num">—</span><span class="title">《The Manager's Path》— 每升一级都是一份新工作</span><span class="meta">卡米尔·富尼耶</span></a>
+<a class="entry" href="atomic-habits-read107.html"><span class="num">—</span><span class="title">《掌控习惯》— 1% 复利与行为四定律</span><span class="meta">詹姆斯·克利尔</span></a>
+<a class="entry" href="power-of-habit-read108.html"><span class="num">—</span><span class="title">《习惯的力量》— 提示-惯常行为-奖赏的回路</span><span class="meta">查尔斯·杜希格</span></a>
+<a class="entry" href="willpower-instinct-read109.html"><span class="num">—</span><span class="title">《自控力》— 我要 / 我不要 / 我想要三种力</span><span class="meta">凯利·麦格尼格尔</span></a>
+<a class="entry" href="good-habits-bad-habits-read110.html"><span class="num">—</span><span class="title">《习惯心理学》— 43% 的行为靠情境，不靠意志力</span><span class="meta">温迪·伍德</span></a>
+</details>
+<details><summary>路线图 · 即将精读 <span class="cnt">105</span></summary>
 <div class="entry todo"><span class="num">Read 36b</span><span class="title">《奥德赛》— 归乡十年的智计与漂泊：叙事的原型</span><span class="meta">荷马</span></div>
 <div class="entry todo"><span class="num">Read 37</span><span class="title">《忏悔录》— 西方第一部内心自传：时间、记忆与皈依</span><span class="meta">奥古斯丁</span></div>
 <div class="entry todo"><span class="num">Read 38</span><span class="title">《神曲》— 地狱到天堂的灵魂之旅：中世纪的百科全书</span><span class="meta">但丁</span></div>
@@ -151,17 +187,6 @@ footer{text-align:center;padding:40px 0 12px;font-size:0.82rem;color:#5c6663}
 <div class="entry todo"><span class="num">Read 119</span><span class="title">《大师与玛格丽特》— 魔鬼造访苏联莫斯科的讽刺寓言</span><span class="meta">布尔加科夫</span></div>
 <div class="entry todo"><span class="num">Read 120</span><span class="title">《九章集》— 太一、流溢与灵魂的回归：新柏拉图主义</span><span class="meta">普罗提诺</span></div>
 <div class="entry todo"><span class="num">Read 121</span><span class="title">《玛斯纳维》— 苏非神秘主义的诗性巅峰</span><span class="meta">鲁米</span></div>
-<!-- entries -->
-</div>
-<h2 class="section-head">清单外 · 临时想读</h2>
-<div class="list">
-<a class="entry" href="wild-courage-read100.html"><span class="num">—</span><span class="title">《野性的勇气》— 九个骂人的词，其实是成事的九台发动机</span><span class="meta">珍妮·伍德</span></a>
-<a class="entry" href="outlive-read101.html"><span class="num">—</span><span class="title">《超越百岁》— 别只求活得久，要为最后十年提前几十年练</span><span class="meta">彼得·阿蒂亚</span></a>
-<a class="entry" href="roar-next-level-read102.html"><span class="num">—</span><span class="title">《ROAR》与《Next Level》— 女性不是缩小版男性，一生怎么练怎么吃</span><span class="meta">斯泰西·西姆斯</span></a>
-<a class="entry" href="radical-candor-read103.html"><span class="num">—</span><span class="title">《坦诚相待》— 又关心人，又敢当面指出问题</span><span class="meta">金·斯科特</span></a>
-<a class="entry" href="elegant-puzzle-read104.html"><span class="num">—</span><span class="title">《一道优雅的难题》— 用系统思维管一个工程组织</span><span class="meta">威尔·拉尔森</span></a>
-<a class="entry" href="high-output-management-read105.html"><span class="num">—</span><span class="title">《High Output Management》— 你的产出，就是整支团队的产出</span><span class="meta">安迪·格鲁夫</span></a>
-<a class="entry" href="managers-path-read106.html"><span class="num">—</span><span class="title">《The Manager's Path》— 每升一级都是一份新工作</span><span class="meta">卡米尔·富尼耶</span></a>
 <div class="entry todo"><span class="num">—</span><span class="title">《The Making of a Manager》— 新经理第一年的第一手手册</span><span class="meta">朱莉·卓</span></div>
 <div class="entry todo"><span class="num">—</span><span class="title">《Staff Engineer》— 不走管理、走资深技术专家线</span><span class="meta">威尔·拉尔森</span></div>
 <div class="entry todo"><span class="num">—</span><span class="title">《The Great CEO Within》— 硅谷高管教练的运营手册</span><span class="meta">马特·莫查里</span></div>
@@ -179,7 +204,7 @@ footer{text-align:center;padding:40px 0 12px;font-size:0.82rem;color:#5c6663}
 <div class="entry todo"><span class="num">—</span><span class="title">《Thinking in Systems》— 系统思维与「杠杆点」</span><span class="meta">德内拉·梅多斯</span></div>
 <div class="entry todo"><span class="num">—</span><span class="title">《Good Strategy Bad Strategy》— 真策略 vs 废话式策略</span><span class="meta">理查德·鲁梅尔特</span></div>
 <div class="entry todo"><span class="num">—</span><span class="title">《Superforecasting》— 高不确定下的校准判断</span><span class="meta">泰特洛克 &amp; 加德纳</span></div>
-</div>
+</details>
 <footer>把一本书读透，胜过翻过十本。</footer>
 </div>
 <script src="https://hub.cissychen.com/comments.js" defer></script>
