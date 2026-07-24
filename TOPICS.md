@@ -175,3 +175,7 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《Thinking in Systems》— Donella Meadows — 系统思维与「杠杆点」：Principal 看组织与技术系统的心智模型
 - 《Good Strategy Bad Strategy》— Richard Rumelt — 什么是真策略、什么是废话式策略：专治 OKR 空话
 - 《Superforecasting》— Philip Tetlock & Dan Gardner — 高不确定下的校准判断：怎样把预测做成一门手艺
+- 《Atomic Habits（掌控习惯）》— James Clear — 1% 复利、四条行为定律、环境与身份设计：习惯养成最实用的手册
+- 《The Power of Habit（习惯的力量）》— Charles Duhigg — 习惯回路 cue-routine-reward、关键习惯：故事精彩的习惯经典
+- 《The Willpower Instinct（自控力）》— Kelly McGonigal — 「我要/我不要/我想要」三种力、道德许可、自我关怀：斯坦福自控课
+- 《Good Habits, Bad Habits》— Wendy Wood — 43% 的行为是习惯：靠情境与摩擦力，而非意志力（最严谨的一本）
