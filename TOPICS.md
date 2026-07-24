@@ -148,14 +148,14 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 
 ## 清单外 · 临时想读（off-list · 不编号）
 
-> BigCat 临时起意、**不进主编号序列**的书。这一区**不编号**；文件名沿用 `{slug}-read{N}.html`，其中 N 从 **100** 起顺延取下一个空号（只作文件名、不代表精读序号），index 里归入「清单外 · 临时想读」区、编号显示「—」。
+> BigCat 临时起意、**不进主编号序列**的书。这一区**不编号**；文件名走**自己的号段** `{slug}-read{N}.html`，其中 **N 从 900 起顺延**取下一个空号（900+ 与主清单号段隔开、永不撞号；只作文件名、不代表精读序号），index 里归入「清单外 · 临时想读」区、编号显示「—」。
 > **做没做一律看文件系统**（有无对应 `*-read*.html`）。routine **不要**回改这一区来打勾标记完成（会触发 `publish.sh` 的 TOPICS 硬卡）；下面的 `✓` 只是人工备注。
 
-- ✓ 《Wild Courage 野性的勇气》— Jenny Wood — 九个骂人的词其实是成事的发动机〔wild-courage-read100〕
-- ✓ 《Outlive 超越百岁》— Peter Attia — 别只求活得久，为最后十年提前几十年练〔outlive-read101〕
-- ✓ 《ROAR》&《Next Level》— Stacy Sims — 女性不是缩小版男性，一生怎么练怎么吃〔roar-next-level-read102〕
-- ✓ 《Radical Candor 坦诚相待》— Kim Scott — 又关心人，又敢当面指出问题〔radical-candor-read103〕
-- ✓ 《An Elegant Puzzle 一道优雅的难题》— Will Larson — 用系统思维管一个工程组织〔elegant-puzzle-read104〕
+- ✓ 《Wild Courage 野性的勇气》— Jenny Wood — 九个骂人的词其实是成事的发动机〔wild-courage-read900〕
+- ✓ 《Outlive 超越百岁》— Peter Attia — 别只求活得久，为最后十年提前几十年练〔outlive-read901〕
+- ✓ 《ROAR》&《Next Level》— Stacy Sims — 女性不是缩小版男性，一生怎么练怎么吃〔roar-next-level-read902〕
+- ✓ 《Radical Candor 坦诚相待》— Kim Scott — 又关心人，又敢当面指出问题〔radical-candor-read903〕
+- ✓ 《An Elegant Puzzle 一道优雅的难题》— Will Larson — 用系统思维管一个工程组织〔elegant-puzzle-read904〕
 - 《High Output Management》— Andy Grove — 科技管理的祖师爷：产出导向与「经理的杠杆率」
 - 《The Manager's Path》— Camille Fournier — 从 tech lead 到 VP，每一层带人怎么做
 - 《The Making of a Manager》— Julie Zhuo — 新经理第一年的第一手手册
