@@ -179,3 +179,4 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《The Power of Habit（习惯的力量）》— Charles Duhigg — 习惯回路 cue-routine-reward、关键习惯：故事精彩的习惯经典
 - 《The Willpower Instinct（自控力）》— Kelly McGonigal — 「我要/我不要/我想要」三种力、道德许可、自我关怀：斯坦福自控课
 - 《Good Habits, Bad Habits》— Wendy Wood — 43% 的行为是习惯：靠情境与摩擦力，而非意志力（最严谨的一本）
+- ✓ 《Metaphors We Live By 我们赖以生存的隐喻》— George Lakoff & Mark Johnson — 隐喻是思维的骨架、不是修辞〔metaphors-we-live-by-read911〕
