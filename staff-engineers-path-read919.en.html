@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>The Staff Engineer's Path — Deep Reading 919</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Iowan Old Style",serif;background:#14171a;color:#cdd4d1;line-height:1.8}
+.container{max-width:720px;margin:0 auto;padding:30px 22px 80px}
+.top{font-size:0.8rem;color:#5fb0a3;letter-spacing:1px;margin-bottom:8px}
+h1{font-size:1.7rem;font-weight:800;color:#bfe3db;line-height:1.4;margin-bottom:8px}
+.sub{color:#8aa39d;font-size:0.92rem;font-style:italic;margin-bottom:6px}
+.langbar{margin:14px 0 0;font-size:0.85rem}
+.langbar a{color:#5fb0a3;text-decoration:none;border:1px solid #2f5d57;border-radius:14px;padding:3px 12px}
+h2{font-size:1.18rem;color:#6fc3b4;margin:40px 0 6px;padding-bottom:6px;border-bottom:1px solid #242a2e}
+h3{font-size:1.04rem;color:#bfe3db;margin:24px 0 4px}
+p{margin:11px 0}
+strong{color:#fff;font-weight:700}
+.lead{color:#dfe6e2;font-size:1.05rem}
+em{color:#9fcabf;font-style:normal}
+ul{margin:8px 0 8px 1.2em}
+li{margin:7px 0}
+.tl{background:#1b2f2b;border-left:3px solid #3f8b7f;border-radius:6px;padding:14px 18px;margin-top:10px}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+</style></head><body>
+<div class="container">
+<p class="top">DEEP READING · READ 919</p>
+<h1>The Staff Engineer's Path</h1>
+<p class="sub">Tanya Reilly · O'Reilly · 2022</p>
+<p class="langbar"><a href="staff-engineers-path-read919.html">中文 →</a></p>
+
+<h2>In One Sentence</h2>
+<p class="lead">Once you make Staff, the job stops being "write harder code" and becomes <strong>changing how a large group of people work, with no reports and no authority to compel anyone</strong> — and this is the most concrete book yet written about what that actually looks like day to day: how to see the whole board, how to decide what not to do, how to get a project spanning five teams genuinely finished, and how to raise the people around you without becoming their manager.</p>
+
+<h2>Coordinates</h2>
+<p>Tanya Reilly spent over a decade in site reliability engineering at Google and went on to be a principal engineer at Squarespace. Her 2019 talk "Being Glue" travelled unusually far in the industry — <strong>the phrase "glue work" is in the engineering vocabulary largely because of her.</strong> This book pairs with Will Larson's <em>Staff Engineer</em>: <strong>Larson answers what a staff engineer is and how you get there; Reilly answers what you actually do once you have.</strong></p>
+
+<h2>The Central Claims</h2>
+<ul>
+<li><strong>Staff+ isn't "senior, but more so" — it's a different job.</strong> The ladder doesn't get steeper, it gets swapped: you stop being measured by what you produce and start being measured by <strong>how much more the organization produces because you're in it.</strong></li>
+<li><strong>The job rests on three pillars: big-picture thinking, execution, and levelling up others.</strong> Drop any one and you become a recognizable failure mode — the architect who only draws diagrams, the hero who can only do it himself, or the brilliant engineer who ships constantly while the organization around him never changes.</li>
+<li><strong>Everything you have is finite, and the two resources engineers most often fail to count are credibility and social capital.</strong> So the real skill isn't doing more; it's <strong>choosing, and declining without guilt.</strong></li>
+</ul>
+
+<h2>The Core Concepts, One by One</h2>
+
+<h3>1. Three maps: you think you see the whole picture, you see your own square</h3>
+<p>The book's most portable tool is a metaphor of three maps. Engineers make locally sensible, globally absurd decisions, she argues, not because they're foolish but because <strong>the only map they hold is zoomed all the way in on their own team.</strong></p>
+<ul>
+<li><strong>The locator map: pull the camera back and see where you are.</strong> Like the "you are here" board in a train station — your red dot is small. What your team treats as existential may be the seventh priority of the quarter at company level. <strong>It cures a very common ailment: mistaking "the most important thing here" for "the most important thing."</strong></li>
+<li><strong>The topographic map: see what the ground is actually like.</strong> A topo map shows hills, rivers and swamps — <strong>the things that decide whether your plan is walkable and that appear in no process document</strong>: which two teams have history; which decision nominally belongs to the architecture group but really needs one senior engineer's nod; where the quicksand is (that legacy system everybody routes around, which swallows whoever touches it). She notes that alongside the formal org chart every company has a <strong>shadow org chart</strong> — where information really pools, whose word actually carries. <strong>Someone who can't read the terrain walks a flawless plan straight into a swamp and then wonders why nobody is cooperating.</strong></li>
+<li><strong>The treasure map: where are we going?</strong> This one answers what "good" looks like a year or three from now. <strong>Its usual problem is that it doesn't exist</strong>: every team is sprinting and nobody can state the destination in a sentence — so every prioritization debate degenerates into a volume contest, there being no shared endpoint to appeal to.</li>
+</ul>
+<p><strong>Why keep all three on you: it turns the useless criticism "you need more big-picture thinking" into three separate, fixable gaps.</strong> Next time a technical argument refuses to converge, before making your case again, ask: <strong>which map are we missing?</strong> Do we not know where we sit in the whole (locator), not know what's in the way (topographic), or not share a destination at all (treasure)? In my experience most "technical disagreements" are a missing third map that people spend three weeks litigating as if it were the first.</p>
+
+<h3>2. Adjusting altitude: higher is not better</h3>
+<p>The companion skill to the maps is <strong>altitude</strong>. Reilly likens your attention to a plane's cruising height: you can fly at ground level, down inside the implementation of one function, or climb to 30,000 feet and consider where the company's architecture should be in three years.</p>
+<p>The point is that <strong>there is no correct altitude, only the altitude this moment calls for — and the Staff+ skill is moving between them freely.</strong> Stay on the deck forever and you're just a highly productive senior engineer with the fuselage blocking your view. Stay at 30,000 feet and you become <strong>the person who writes beautiful vision documents and knows nothing about the actual system</strong> — no one in an engineering organization loses credibility faster, because engineers can smell someone who doesn't touch the code within about three sentences. Her advice is practical: <strong>land regularly.</strong> Do some real work — fix a bug, take an on-call shift, walk through the new-hire setup yourself — not for the output but so that your view from altitude has ground truth under it.</p>
+<p>What this changes: when someone strikes you as wrong, usually they aren't — <strong>you're speaking from different altitudes.</strong> They're discussing how this interface changes this quarter; you're discussing whether the architecture should exist in three years. Both statements can be true and still fail to meet. <strong>Align altitude first, then argue.</strong></p>
+
+<h3>3. Glue work: what the organization can't run without and doesn't count</h3>
+<p>This is Reilly's most famous idea and the one with real social weight. <strong>Glue work</strong> is everything that makes a team actually function while producing no artifact attributable to you: noticing two teams building the same thing and getting them in a room; spotting the hole in a design doc that nobody asked about; onboarding the new hire; writing down the decision that has been re-argued for three weeks; catching a project as it starts to come apart.</p>
+<p>Her observation has two layers and both need saying. <strong>First: this work is necessary.</strong> Without it projects rot in a way nobody can quite diagnose — everyone is busy, nothing moves. <strong>Second, and this is the part that stings: it usually doesn't count at promotion time.</strong> Promotion committees look for what you led, what you shipped, what impact is attributable to you — and the nature of glue work is that <strong>its results show up as somebody else's project succeeding.</strong></p>
+<p>Then the judgment she's most quoted for: <strong>this work is not distributed randomly.</strong> It lands disproportionately on women, on people from underrepresented groups, and on anyone conscientious enough to do a thing simply because they saw it needed doing. The loop is cruel: <strong>the more you hold the team together, the more likely you are to be told your contributions weren't distinctive enough.</strong></p>
+<p>Her advice runs two ways, and she concedes it isn't a complete answer. <strong>One: know what you're doing rather than drifting into it.</strong> Before taking it on, ask whether the work is important — and if it is, whether it should really depend on one person's goodwill in the margins, or become <strong>a named, owned, credited piece of work.</strong> <strong>Two: if you're going to do it, do it in a shape that can be seen</strong> — turn "I helped coordinate a bit" into "I led the alignment for the X migration and produced the decision record." Same work, different account, different fate. That isn't spin; it's <strong>correcting a genuine bookkeeping error.</strong></p>
+<p>How it changes what you see: <strong>you start looking for who the glue is.</strong> Every smoothly running organization has one or two people carrying an enormous invisible load. They are rarely the brightest names on the performance list — and when they leave, it takes about two quarters before everyone finally understands what they had been doing.</p>
+
+<h3>4. Technical vision vs. technical strategy: two words used as one</h3>
+<p>She insists on separating them, because conflating them is why so many "technical planning documents" end as wallpaper.</p>
+<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;margin:14px 0;font-size:0.9rem;text-align:left">
+<tr><td style="border:1px solid #242a2e;padding:7px 10px;background:#181c20"></td><td style="border:1px solid #242a2e;padding:7px 10px;background:#181c20;color:#6fc3b4;font-weight:700">Technical vision</td><td style="border:1px solid #242a2e;padding:7px 10px;background:#181c20;color:#6fc3b4;font-weight:700">Technical strategy</td></tr>
+<tr><td style="border:1px solid #242a2e;padding:7px 10px;color:#8aa39d;font-size:0.85rem">Answers</td><td style="border:1px solid #242a2e;padding:7px 10px">what "good" looks like when we get there</td><td style="border:1px solid #242a2e;padding:7px 10px">how we get there from where we actually are</td></tr>
+<tr><td style="border:1px solid #242a2e;padding:7px 10px;color:#8aa39d;font-size:0.85rem">Map</td><td style="border:1px solid #242a2e;padding:7px 10px">the X on the treasure map</td><td style="border:1px solid #242a2e;padding:7px 10px">the route drawn on the topographic map</td></tr>
+<tr><td style="border:1px solid #242a2e;padding:7px 10px;color:#8aa39d;font-size:0.85rem">Failure mode</td><td style="border:1px solid #242a2e;padding:7px 10px">lovely adjectives everyone agrees with and nobody is affected by</td><td style="border:1px solid #242a2e;padding:7px 10px">a list of everything, which is a list of nothing</td></tr>
+</table>
+<p style="color:#5c6663;font-size:0.82rem;margin:-2px 0 0">Vision says where, strategy says how — without the first you sprint blind, without the second you only hold meetings.</p></div>
+<p>On strategy she draws explicitly on the "kernel" from Richard Rumelt's <em>Good Strategy Bad Strategy</em>: a real strategy needs a <strong>diagnosis</strong> (what is actually wrong, not a list of symptoms), a <strong>guiding policy</strong> (given that diagnosis, which road we take and which we abandon), and <strong>a coherent set of actions</strong> (what the policy means tomorrow morning). <strong>The signature of bad strategy is a missing diagnosis: skip straight to a list of goals.</strong> "We will improve reliability, ship faster, and make the developer experience better" — nobody will oppose any of it and nobody will behave differently, because it names nothing to <strong>give up.</strong></p>
+<p>She adds one counterintuitive warning: <strong>the hard part of writing a strategy isn't writing, it's talking to everyone first.</strong> A strategy authored without participation, however correct, gets politely admired in review and then forgotten — because <strong>the value of a strategy lives in the agreement, not the document. The document is just where the agreement is stored.</strong></p>
+
+<h3>5. Finite resources: time, energy, credibility, social capital</h3>
+<p>The characteristic Staff+ pain isn't incompetence, it's that <strong>everything is worth doing and all of it is waiting on you.</strong> Her remedy is to lay out what you actually have — and two of the accounts are the ones engineers forget to track.</p>
+<p><strong>Credibility:</strong> how much people trust your technical judgment. You earn it by delivering — the thing you said would work worked, the risk you flagged materialized. You spend it <strong>when you need people to back something whose payoff won't be visible for six months.</strong> A new arrival has no balance, which is why the smart opening move is one or two short, winnable, visible pieces of work to fund the account.</p>
+<p><strong>Social capital:</strong> whether people want to work with you and will do you a favour. It is not the same thing — <strong>you can be deeply respected technically and still be someone nobody wants on their project.</strong> You earn it by helping, collaborating well, and doing what you said; you spend it every time you ask someone to jump a queue, compromise, or accept a decision they dislike.</p>
+<p><strong>Why the two-accounts metaphor matters: it translates "politics" — a thing many engineers instinctively resent — into a language they're fluent in, resource management.</strong> You needn't enjoy it, but you can do the arithmetic: how much credibility is this worth? Have I spent all quarter and deposited nothing? <strong>Someone who objects constantly and ships nothing is running a deficit; someone who ships relentlessly and never collaborates has one account overflowing and the other long overdrawn.</strong></p>
+<p>And a line she leans on hard: <strong>you can do anything, but not everything.</strong> The typical Staff failure isn't picking the wrong project — it's <strong>carrying five and moving each to 60%.</strong> Hence the almost rude question she recommends asking on a schedule: <strong>what is the most important thing I could be working on right now, and am I working on it?</strong> If not, change what you're doing or admit honestly that you chose otherwise — but don't let being busy pass for being aimed.</p>
+
+<h3>6. Landing big projects: you own the outcome, not the code</h3>
+<p>Leading something that crosses several teams and runs half a year is the archetypal staff assignment. Reilly's core claim: <strong>these projects almost never fail on technical difficulty. They fail where shared understanding quietly breaks.</strong> She takes that understanding apart into layers, each worth confirming separately:</p>
+<ul>
+<li><strong>Agreement on the problem.</strong> What are we actually solving? — the most common collapse. Three teams work flat out for two months and discover they were solving three different things.</li>
+<li><strong>Agreement on the approach.</strong> Why this and not that? <strong>Write it down, especially the options you rejected and why</strong> — otherwise someone re-proposes them every six weeks and you re-argue from scratch.</li>
+<li><strong>Agreement on who does what</strong>, and who decides. <strong>"We all own it" means nobody owns it.</strong></li>
+<li><strong>Agreement on what "done" means.</strong> Merged? Deployed? Old system switched off? — <strong>she presses on the last one, because the classic death of a migration is a new system live and an old system that never gets turned off, leaving the company paying for both forever.</strong></li>
+</ul>
+<p>Paired with this is an excellent diagnostic question: <strong>"why have we stopped?"</strong> When a project stalls the instinct is to add hours, add people, chase status. Her advice is to classify the stall first: does nobody know the next step (no plan)? are we waiting on another team (blocked dependency)? are we waiting on a decision nobody will make (a decision vacuum)? or is everyone simply working on something else (it was never really prioritized)? <strong>The four have completely different remedies, and working weekends fixes none of the last three.</strong> Her recurring point: <strong>most obstacles on a big project are social, not technical</strong> — and an engineer's default is to go optimize the technical part, because that's the part they know.</p>
+
+<h3>7. Leadership without reports: modelling, teaching, and sponsorship</h3>
+<p>The third pillar is raising the people around you, and here she draws a distinction many people blur.</p>
+<p><strong>Mentorship is advice:</strong> I tell you what I know and you go use it. <strong>Sponsorship is opportunity:</strong> I put my own reputation behind you and hand you something risky and visible — the presentation to the executive, the tech lead role on the big project. <strong>The difference is who carries the risk: mentorship is free goodwill, sponsorship stakes your own chips on someone else.</strong> Her verdict is blunt: <strong>what changes careers is overwhelmingly sponsorship, not mentorship.</strong> Anyone can offer advice; only someone with chips can hand over an opportunity — and reaching Staff is the first time you have any.</p>
+<p>Two more that land. <strong>First, your behaviour gets copied whether you intend it or not.</strong> How you talk in code review, whether you'll say "I don't understand this" in a meeting, whether you look for causes or for culprits after an incident — more junior people are learning from exactly these details what being an engineer here means. <strong>This is the most real and least noticed piece of Staff+ power: you don't need to author the norms, your ordinary conduct is the norms.</strong> Her small, sharp example: <strong>when someone senior enough says "hang on, I didn't follow that," the psychological safety of the whole room moves up a notch</strong> — every person who was afraid to ask has just been given permission.</p>
+<p><strong>Second, get the knowledge out of your head.</strong> A system only you can operate looks like job security and is actually a ceiling: <strong>you get chained to it, and the organization's capacity is capped at your calendar.</strong> Documenting, teaching, making hard things explicable is not extra credit — it's the only way out.</p>
+
+<h2>The Argument in Skeleton</h2>
+<p>The book runs from seeing to moving to multiplying, each part answering one side of a single question: <strong>how does someone with no authority change an organization?</strong></p>
+<ul>
+<li><strong>Accept that it's a new job</strong>: not harder code; the measure shifts from your output to the organization's output because of you — supported by three pillars: see the picture, land the work, raise the people.</li>
+<li><strong>Seeing takes three maps</strong> (where am I / what's the terrain / where are we going) plus the ability to change altitude at will; both people stuck at a single altitude fail, just differently.</li>
+<li><strong>Write down where we're going</strong>: vision names the destination, strategy the route; real strategy needs diagnosis, guiding policy and coherent action, and its value lives in agreement rather than in the document.</li>
+<li><strong>Then face the arithmetic</strong>: time, energy, credibility and social capital are all finite, so the craft is choosing and declining — you can do anything but not everything.</li>
+<li><strong>Big projects are four layers of agreement</strong> (problem, approach, ownership, definition of done), maintained continuously; when things stall, diagnose the type of stall, because most obstacles are social.</li>
+<li><strong>Raising people runs on modelling, teaching and sponsorship</strong>; sponsorship — staking your own chips to give someone a risky chance — is the one that actually changes trajectories.</li>
+<li>Running through all of it is the honest note about <strong>glue work</strong>: the organization can't function without it, the ledger doesn't record it, and it isn't handed out fairly.</li>
+</ul>
+
+<h2>Misreadings and Serious Objections</h2>
+<p><strong>Misreading 1: this is a guide to getting promoted to Staff.</strong> It's mostly about <strong>doing the job once you're in it.</strong> For positioning, visibility and navigating the promotion process, Larson's <em>Staff Engineer</em> is the better fit; the two are complements, not alternatives.</p>
+<p><strong>Misreading 2: "make glue work visible" solves the problem.</strong> It does the opposite — <strong>it relocates a structural problem onto the individual.</strong> If a company's promotion machinery systematically fails to score collaborative contribution, the thing to fix is the criteria, not the sufferer's self-marketing. Reilly doesn't dodge this, but the book's genre limits it to individual advice where the remedy is institutional. <strong>Honestly: this is the book's most powerful insight and also the place it is most powerless.</strong></p>
+<p><strong>Objection 1: applicability depends heavily on the kind of company.</strong> The whole book assumes a mid-to-large tech firm with an established Staff+ ladder, many teams and a promotion-review culture. <strong>At a twenty-person startup two of the three maps can be covered over one lunch; in an IT department outside tech, much of the description simply doesn't hold.</strong> Convert as you read rather than transplanting.</p>
+<p><strong>Objection 2: the evidence is experience, not research.</strong> The material comes from a decade-plus on the ground plus the shared vocabulary of the engineering-leadership community (Larson, Camille Fournier and others) — <strong>not from empirical study.</strong> Nothing here shows that people who work this way succeed more often, and survivorship bias can't be ruled out: we hear the retrospectives of people for whom it worked. As a high-quality distillation of professional experience it's excellent; <strong>read as experience it's right, read as law it will disappoint.</strong></p>
+<p><strong>Objection 3: some readers find it long and soft.</strong> Compressed, a good deal of it comes to "communicate, write things down, choose deliberately" — hardly novel; the value is in how finely she operationalizes it. <strong>If you've already run cross-team projects in a large company for a few years, stretches of it will confirm what you know</strong>; if you've just arrived at this level, the "obvious" parts are precisely the valuable ones.</p>
+<p><strong>Objection 4: one question the book never really answers.</strong> The whole influence-without-authority approach presupposes an organization that is basically healthy and responsive to good arguments. <strong>And if it isn't?</strong> If decisions are made by a couple of people on instinct and no volume of documentation gets read? The answer offered is closer to "that's information too — this place may not be right for you," which is true and of limited use to someone currently stuck in it.</p>
+
+<h2>Ten Sentences</h2>
+<div class="tl">
+<p>1. Staff+ isn't a more senior senior; it's a different job — the measure moves from <strong>what you produce</strong> to <strong>how much more the organization produces because you're there.</strong></p>
+<p>2. Three pillars — see the big picture, land the work, raise the people; drop one and you become the corresponding kind of useless.</p>
+<p>3. Carry three maps: the <strong>locator</strong> (your red dot is small), the <strong>topographic</strong> (swamps and quicksand appear in no process doc), and the <strong>treasure</strong> map (where we're going); <strong>most "technical disagreements" are a missing third map.</strong></p>
+<p>4. There's no correct altitude, only the one this moment needs: <strong>fly on the deck forever and you lose the direction; live at 30,000 feet and you lose your credibility fast.</strong></p>
+<p>5. Glue work keeps the organization running and never reaches the promotion ledger — and <strong>it is not handed out at random</strong>; so either make it a named piece of owned work, or do it in a shape that can be seen.</p>
+<p>6. Vision says where, strategy says how; <strong>the mark of bad strategy is skipping the diagnosis for a list of goals nobody opposes</strong> — because it tells no one what to give up.</p>
+<p>7. A strategy's value is in the agreement, not the document: <strong>one written without participation gets politely admired, then forgotten.</strong></p>
+<p>8. You hold four finite accounts: time, energy, <strong>credibility</strong> (earned by delivering, spent on things others can't yet see) and <strong>social capital</strong> (earned by collaborating, spent asking people to yield); <strong>you can do anything, but not everything.</strong></p>
+<p>9. Big projects run on four layers of agreement — problem, approach, ownership, definition of done; when one stalls, classify the stall, <strong>because most obstacles are social and overtime only cures the technical kind.</strong></p>
+<p>10. Mentorship is advice; <strong>sponsorship is staking your own reputation to hand someone a risky opportunity</strong> — advice is cheap, opportunities come only from people holding chips. And your ordinary conduct is the norm: <strong>when someone senior enough says "hang on, I didn't follow that," the whole room's psychological safety moves up a notch.</strong></p>
+</div>
+
+<footer>Deep Reading · Finish this page and you have the core of the book; for the details, the cases and the voice of the original, go to the text itself.</footer>
+</div>
+</body></html>
