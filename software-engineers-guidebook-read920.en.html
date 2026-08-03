@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>The Software Engineer's Guidebook — Deep Reading Read 920</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Iowan Old Style",serif;background:#14171a;color:#cdd4d1;line-height:1.8}
+.container{max-width:720px;margin:0 auto;padding:30px 22px 80px}
+.top{font-size:0.8rem;color:#5fb0a3;letter-spacing:1px;margin-bottom:8px}
+h1{font-size:1.7rem;font-weight:800;color:#bfe3db;line-height:1.4;margin-bottom:8px}
+.sub{color:#8aa39d;font-size:0.92rem;font-style:italic;margin-bottom:6px}
+.langbar{margin:14px 0 0;font-size:0.85rem}
+.langbar a{color:#5fb0a3;text-decoration:none;border:1px solid #2f5d57;border-radius:14px;padding:3px 12px}
+h2{font-size:1.18rem;color:#6fc3b4;margin:40px 0 6px;padding-bottom:6px;border-bottom:1px solid #242a2e}
+h3{font-size:1.04rem;color:#bfe3db;margin:24px 0 4px}
+p{margin:11px 0}
+strong{color:#fff;font-weight:700}
+.lead{color:#dfe6e2;font-size:1.05rem}
+em{color:#9fcabf;font-style:italic}
+ul{margin:8px 0 8px 1.2em}
+li{margin:7px 0}
+.tl{background:#1b2f2b;border-left:3px solid #3f8b7f;border-radius:6px;padding:14px 18px;margin-top:10px}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:0.92rem}
+th,td{border:1px solid #242a2e;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#1b2f2b;color:#bfe3db;font-weight:700}
+.cap{font-size:0.82rem;color:#8aa39d;font-style:italic;margin-top:-4px}
+.scroll{overflow-x:auto}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+</style></head><body>
+<div class="container">
+<p class="top">DEEP READING · READ 920</p>
+<h1>The Software Engineer's Guidebook</h1>
+<p class="sub">Gergely Orosz · 2023</p>
+<p class="langbar"><a href="software-engineers-guidebook-read920.html">中文 →</a></p>
+
+<h2>In One Sentence</h2>
+<p class="lead">This is the book that draws <strong>the whole road at once</strong>: from the developer whose code merely works, to the senior who can be handed a vague problem and trusted with it, to the tech lead who gets a team's work across the line, to the staff or principal engineer who moves an organization without managing anyone. What Orosz is really explaining at each rung is <strong>how the definition of your output changes</strong> — plus one thing most engineers are never told outright: <strong>a large share of what you're paid and how fast you grow depends not on how good you are, but on which tier of the market you're standing in, and on whether your work is visible at all.</strong></p>
+
+<h2>Where It Sits</h2>
+<p>Orosz is Hungarian; he worked at Skype/Microsoft and Skyscanner, then spent years at Uber as an engineer and engineering manager on payments. After leaving he began writing <em>The Pragmatic Engineer</em>, and became one of the most widely read practitioner voices in the industry. The book was self-published in 2023 — no publisher vetting it, and therefore no publisher trimming it. <strong>It is an insider's field record, not a theory.</strong> Set against the two staff+ classics already covered on this shelf, its position is clear: Will Larson's <em>Staff Engineer</em> is about reaching and defining the role, Tanya Reilly's <em>The Staff Engineer's Path</em> is about what you actually do once you're there, while Orosz's book <em>starts much earlier and looks much wider</em> — it begins when you are still junior, and adds a layer neither of the others has: <strong>how this industry actually works, and how it prices people.</strong></p>
+
+<h2>The Central Claims</h2>
+<ul>
+<li><strong>Each level is not "the same job, done better" — the definition of output changes.</strong> Juniors are judged on code, seniors on whether the problem got solved, tech leads on the team's output, staff+ on the organization's. Playing the next level's game by the previous level's rules is why most people stall.</li>
+<li><strong>Getting things done is the most systematically underrated skill there is.</strong> It isn't the cleverest people who move fastest; it's the ones you can hand something to and know it will land — because in an environment full of dependencies, ambiguity and half-finished work, reliably crossing the last 20% is scarce.</li>
+<li><strong>Promotion is a lagging indicator, not a reward.</strong> Nobody promotes you because you deserve it. You get the label after you are <em>already</em> doing the work of the next level, someone can see it, and someone will vouch for it.</li>
+<li><strong>The same ability is priced several times differently depending on the tier of company you're in.</strong> That's not a moral fact, it's a structural one — and not knowing it means pitting your individual effort against an entire pricing mechanism.</li>
+</ul>
+
+<h2>The Core Ideas, One by One</h2>
+
+<h3>Three tiers of the market: why the same you carries several different prices</h3>
+<p>This is Orosz's most distinctive framework, and the easiest to misuse. His observation is that engineering compensation isn't one smooth curve but <strong>several separate peaks</strong>, because companies aren't fishing in the same talent pool and don't price by the same logic.</p>
+<div class="scroll">
+<table>
+<tr><th>Tier</th><th>Typical companies</th><th>What sets the price</th><th>How you grow inside it</th></tr>
+<tr><th>Tier 1</th><td>Local traditional businesses, IT departments of non-tech firms, outsourcing shops</td><td>The local average wage; engineering sits on the same grade table as every other function</td><td>Tenure and internal grades; a low, hard ceiling</td></tr>
+<tr><th>Tier 2</th><td>Well-known local or regional tech companies, established product companies</td><td>"A bit above everyone else in town" — the reference point is still local</td><td>Skill genuinely converts into money, but the local market still caps it</td></tr>
+<tr><th>Tier 3</th><td>Global big tech, top-tier startups, remote-first companies hiring worldwide</td><td>What it costs to win globally scarce people; a large share paid in equity</td><td>Benchmarked against global peers; steeper raises and steeper jumps</td></tr>
+</table>
+</div>
+<p class="cap">Schematic. The tiers differ in pricing mechanism, not in the worth of the humans; the gap between tiers is usually multiples, not percentages.</p>
+<p><strong>The value of this framework isn't "go get another job." It's that it re-describes as structural something people experience as personal.</strong> Someone six years into a Tier 1 company, with a perfect record of "exceeds expectations," will usually read their pay ceiling as <em>I'm not good enough yet</em>, and respond by writing more code — when the problem lives somewhere else entirely: the number they want does not exist anywhere in their employer's pricing frame. <em>It's like renovating a house in a small town in the hope of reaching big-city listing prices. The craftsmanship isn't the variable. The market is.</em></p>
+<p>But Orosz does not turn this into "sprint for Tier 3." He keeps flagging the other half: the higher the tier, <strong>the more you're expected to find your own direction inside ambiguity, the thinner the margin for error, the faster the treadmill.</strong> Plenty of people are miserable in Tier 3, and plenty do very well in Tier 2 with a genuinely controllable life. <strong>What it changes in how you see things: from now on, "should I work harder?" splits into three different questions — work harder, change which game I'm in, or accept this price and buy something else with the rest of my life.</strong></p>
+
+<h3>Company type decides what a title even means</h3>
+<p>The companion idea: <strong>"senior engineer" at an early-stage startup, at a fast-scaling company, and at a mature big tech firm are three different jobs.</strong> The startup wants someone who can turn their hand to anything and force a product into existence where no process exists. The scaleup wants someone who can rebuild the foundations while the building stays open. Big tech wants someone who can push one change through many desks, across enormous existing systems and long chains of collaboration.</p>
+<p>The practical corollary is sharp: <strong>the real risk when you switch companies isn't "am I technically strong enough" but "does the thing I got good at still count as a strength here?"</strong> Someone whose superpower was aligning ten teams arrives at an eight-person startup and finds there are no ten teams to align. Someone who took pride in shipping in three days arrives at a large company, hits review boards, compliance and migration plans, and misdiagnoses the whole thing as "nobody here does any work." <em>Hence Orosz's advice is not "pick the best company" but "work out which kind of person this company needs right now, then decide whether that's who you want to become."</em></p>
+
+<h3>Getting things done: the plainest idea in the book, and the dividing line</h3>
+<p>The phrase gets polished again and again, and it sounds like a truism until he breaks it down. <strong>"Done" means travelling all the way from "my part is written" to "users are on it, it's stable in production, and the people who need to know it shipped know it shipped" — and treating every unclaimed gap along that path as yours.</strong></p>
+<p>Concretely, the gaps look like this: a dependency team hasn't scheduled your work, so you go talk to their lead about priorities; the spec contradicts itself in one line, so instead of posting a question and waiting three days you grab ten minutes and settle it; the test environment has no data, so you generate some; nothing is watching the metric after launch, so you build the dashboard. <strong>None of it is in your job description, and all of it together decides whether the thing actually happened.</strong></p>
+<p>Why is this the dividing line? Because in any organization above a certain size, <em>the hard part was never writing the logic; it was getting something that spans three teams, two quarters and a dozen fuzzy decisions to actually arrive.</em> To a manager, a person who reliably does that isn't linearly more valuable — they're a different category: they can be <em>trusted with things</em>. <strong>How it changes your view: you stop grading yourself on "I finished what was assigned to me" and start asking a much harder question — if I disappeared today, would this rot halfway?</strong></p>
+
+<h3>Output gets redefined at every rung — that's what a promotion really is</h3>
+<p>This is the spine of the book, and the one table worth memorizing.</p>
+<div class="scroll">
+<table>
+<tr><th>Stage</th><th>What your output is</th><th>The classic failure mode</th></tr>
+<tr><th>Competent developer</th><td>Reliably completing well-defined work, steady quality, no surprises</td><td>Doing only what's assigned; stopping to wait whenever things get vague</td></tr>
+<tr><th>Senior</th><td>The problem got solved — including breaking down vague requirements, weighing trade-offs, owning it into production</td><td>Technically strong, but still needs someone else to define the problem first</td></tr>
+<tr><th>Tech lead</th><td>The team's output rather than your own: slicing the project, sequencing it, clearing blockers, keeping everyone aligned</td><td>Refusing to let go and keeping the hardest code — becoming the team's own bottleneck</td></tr>
+<tr><th>Staff / principal</th><td>Org-level results: choosing the right thing, getting many people doing it right, setting technical direction that holds</td><td>Mistaking influence for "attending more meetings" or "doing harder technology"</td></tr>
+</table>
+</div>
+<p class="cap">Each rung up, "what I did" carries less weight and "what happened because of me" carries more.</p>
+<p><strong>On tech lead, Orosz insists on a point that is constantly missed: it's a role, not a level.</strong> It can rotate; you may hold it on this project and hand it over on the next; it does not necessarily lead to management and does not outrank senior. <em>People who read it as a promotion start behaving like junior managers — hoarding decisions and keeping the interesting work. People who read it as "for now, I'm responsible for this team moving" do a different set of things: cutting the boulder into parallel pieces, catching two people building the same thing, pulling out whoever has been stuck for three days.</em></p>
+
+<h3>Three radii of influence: what staff+ actually do</h3>
+<p>Orosz's account of staff+ is restrained, which is what makes it usable: <strong>the value isn't doing harder engineering, it's selection and amplification.</strong> Selection — among a dozen genuinely important things, judging which one makes the next year easier for everybody and which one merely makes this quarter look good. Amplification — the same hours spent writing code yourself versus spent making twenty people write the right thing.</p>
+<p>He sorts the ways of having effect into escalating levels: <strong>doing (personally solving something nobody else could crack) → teaching (giving the people around you that capability) → establishing (locking in a direction, a standard, a decision framework, so that from now on the default path is the right one).</strong> The third is the highest-leverage and the most invisible: one well-written design document, one meeting that finally settles "do we build this ourselves or not," pays out for two years and shows up in nobody's commit history. <strong>Which is exactly why staff+ engineers need to make work visible — not out of vanity, but because the most valuable output of the job is inherently the hardest kind for an organization to notice on its own.</strong></p>
+
+<h3>How promotion actually works: do it, evidence it, then ask</h3>
+<p>Orosz is unsentimental here, and this is the most immediately usable stretch of the book. <strong>A promotion is not a medal for past effort; it is the confirmation of a fact that has already happened.</strong> What the committee wants to see is whether this person is <em>already</em> operating at the next level, with checkable evidence. So the order is the reverse of the folk model — not "I've been here three years, I'm due," but:</p>
+<ul>
+<li><strong>Align on the bar with your manager first:</strong> what does the next level look like <em>at this company</em>? Give me two concrete examples. (Ladders differ wildly between companies, and titles barely transfer across them — one of his recurring warnings against measuring yourself by a title.)</li>
+<li><strong>Pick work that generates evidence:</strong> a technically delightful refactor nobody asked for and a less glamorous project that removes a whole team's pain carry completely different weight in a promotion packet.</li>
+<li><strong>Keep a running record</strong> — many people call it a brag document — noting what you did, what changed because of it, and who benefited. Reconstructing six months from memory when the packet is due loses most of it, and produces no numbers.</li>
+<li><strong>Find people who will speak for you.</strong> You are not in the room where the decision happens; somebody else is. This isn't politics, it's the physics of how organizations work.</li>
+</ul>
+<p><strong>How it changes your view: promotion stops being something the company does to you and becomes something you produce and present evidence for.</strong> Along with an uncomfortable acceptance: <em>doing good work and being known to do good work are two separate jobs, and both are yours.</em></p>
+
+<h3>Opinions vs. facts: a small habit that separates junior from senior</h3>
+<p>One deceptively minor piece of advice carries a lot of weight: <strong>separate facts from opinions when you speak, and label which is which.</strong> "This query's p99 in production is 800 ms" is a fact. "I think we should move to Redis" is an opinion. Junior engineers routinely fuse the two, and the discussion turns into a contest of positions; <em>pull them apart and the conversation drops to where it belongs — first, is the fact right, and then, given the fact, what should we do?</em></p>
+<p>It matters because it fixes three things at once. It makes your judgement checkable (people can correct your fact instead of concluding you're wrong as a person). It makes changing your mind cheap (admitting "my opinion has changed" is far easier than admitting "I was wrong"). And it makes you credible across teams — <strong>credible not because you're always right, but because people know you won't dress a guess as a conclusion.</strong></p>
+
+<h3>Looking outside the company: two things that compound</h3>
+<p>Orosz is himself the living case for this advice — his influence today comes from years of writing in public, not from any company's ladder. The claim has two layers.</p>
+<p><strong>The first is calibration.</strong> Stay inside one company long enough and you start taking its standards for the industry's: what's considered hard here is hard, what counts as senior here is senior. <em>Internal evaluation is a closed coordinate system, and it can be collectively skewed with nobody in a position to tell you.</em> The remedy is unglamorous: read job postings, interview occasionally for real, talk shop with peers elsewhere. Not to leave — to know where you're standing.</p>
+<p><strong>The second is network and public trace.</strong> People who have worked with you and rate you are the longest-paying investment in your career: most good opportunities arrive through someone who remembers you shipped something, not through an application form. Writing in public — blog posts, open source, talks — compounds differently: <strong>it converts "the version of you only your ex-colleagues know" into a version strangers can verify.</strong> Neither can be crammed. Both accumulate only while you don't need them.</p>
+
+<h2>The Argument in Skeleton</h2>
+<p>The whole book answers one question: <em>what actually drives a software engineer's career?</em> Orosz's answer has three parts, and dropping any one of them sends you off course.</p>
+<p><strong>Part one is the ladder of capability, where every rung redefines the terms.</strong> From "finished the task" to "solved the problem" to "the team delivered" to "the organization is pointed the right way." The higher the same person climbs, the smaller the share of hours spent writing code and the larger the share of "things got better because of me." People who miss the redefinition respond with more overtime to a problem that was never about volume.</p>
+<p><strong>Part two is the machinery of being seen.</strong> An organization is not an omniscient observer; it judges you through a handful of signals — the documents you wrote, the projects you led, your manager's retelling of you, how often your name comes up in rooms you're not in. So "doing good work" and "getting good work into the organization's field of view" are independent tasks, and countless engineers refuse the second as undignified while paying its cost themselves.</p>
+<p><strong>Part three is the market you're standing in.</strong> Tier, company type and company stage together determine what your effort converts into. This is the least intuitive part, because it implies that <em>doing the right thing in the wrong place can pay far less than doing an ordinary thing in the right one.</em></p>
+<p><strong>Put together: career growth = a real jump in capability × making it visible × standing in a market that pays for it.</strong> Three factors multiplied — drive any one toward zero and the product goes with it. Almost everyone works only on the first.</p>
+
+<h2>Misreadings and Serious Objections</h2>
+<p><strong>Misreading one: treating it as a promotion playbook.</strong> The book is full of operational detail about levels, reviews and switching jobs, but its actual claim is the opposite: <em>first be genuinely able to do the next level's work; the rest is only meaningful afterwards.</em> Learn the second half alone and you become someone excellent at writing packets who cannot hold the role.</p>
+<p><strong>Misreading two: reading "three tiers" as "you must reach Tier 3."</strong> The tiers describe pricing mechanisms, not a ranking of lives. Tier 3 also means steeper expectations, more ambiguity, higher layoff exposure and a larger share of pay in equity that can go to zero. The correct use of the framework is <em>knowing which game you're in and what its rules are</em>, not climbing unconditionally.</p>
+<p><strong>Objection one, and the fairest: this is a book of experience, not of evidence.</strong> Its conclusions come from the author's own years inside a handful of European and American tech companies plus a great many practitioner interviews — no controls, no dataset. That knowledge is genuinely valuable and also carries survivorship bias by construction: the people who followed the same advice and didn't make it are not in the sample. For engineering effectiveness with empirical backing, you want something like <em>Accelerate</em> instead.</p>
+<p><strong>Objection two: much of the advice quietly assumes a loose labour market.</strong> The book comes at the end of a decade-long expansion, when "if you're unhappy, move — move up a tier" was actually available. In a cycle of layoffs, hiring freezes and slashed promotion budgets, the same advice degrades badly; "do the next level's job and wait for the company to confirm it" in an organization that has just paused promotions may simply mean a year donated. <em>The book handles that cyclical risk lightly.</em></p>
+<p><strong>Objection three: structural barriers are understated.</strong> "Get into a company that hires globally" is a completely different proposition depending on your passport, time zone and first language. Visas, employment compliance, overlap hours and local hiring policy constrain tier mobility more than individual ability does, and that layer gets comparatively little space.</p>
+<p><strong>Objection four: it's a big book, and it repeats.</strong> Self-published and running to roughly seven hundred pages, its breadth is the point and the price is that several stretches are covered more sharply elsewhere — the tech lead and management material overlaps Camille Fournier's <em>The Manager's Path</em>, and the staff+ material is thinner than Reilly's. <em>Its distinctive value is concentrated in two places: the complete map of the ladder, and the layer of industry-and-pricing common sense nobody else writes down.</em></p>
+
+<h2>Ten Sentences</h2>
+<div class="tl">
+<p>1. Every rung redefines output: from "I finished the task" to "the problem got solved" to "the team delivered" to "the organization is pointed right." <strong>People who stall are usually not lazy — they're still scoring themselves on the previous rung.</strong></p>
+<p>2. Getting things done is the most underrated skill in the industry. <strong>It means owning every unclaimed gap between "my part is written" and "users are actually on it."</strong></p>
+<p>3. A brutal test of whether you're really senior: <strong>if I vanished today, would this rot halfway?</strong></p>
+<p>4. Tech lead is a role, not a rank. <strong>It rotates, and it does not outrank senior — treat it as a promotion and you start blocking your own team.</strong></p>
+<p>5. Staff+ leverage lives in selection and amplification: <strong>pick the thing that makes the next year easier for everyone, and get twenty people doing it right, instead of doing something harder yourself.</strong></p>
+<p>6. Influence has three levels, each cheaper and more invisible than the last: <strong>do it yourself → teach others → establish the direction and standards so future work defaults to right.</strong></p>
+<p>7. Promotion is a lagging confirmation, not a reward. <strong>The order is always: work at the next level → accumulate checkable evidence → have someone advocate for you in a room you're not in.</strong></p>
+<p>8. Doing good work and being known for it are two separate jobs. <strong>The organization is not an omniscient observer; it sees you through a few narrow signals.</strong></p>
+<p>9. Label your facts and your opinions separately. <strong>Credibility doesn't come from always being right; it comes from never dressing a guess as a conclusion.</strong></p>
+<p>10. The same you is priced in multiples depending on the tier you stand in — <strong>a pricing problem, not a competence problem.</strong> Knowing it turns "should I work harder?" into three distinct questions: work harder, change games, or accept the price and buy something else with your life.</p>
+</div>
+<footer>Deep Reading · Finish this page and you have the core of the book; for the details, the cases and the voice of the original, go to the text itself.</footer>
+</div>
+</body></html>
