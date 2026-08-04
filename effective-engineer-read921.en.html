@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>The Effective Engineer — Deep Reading 921</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Iowan Old Style",serif;background:#14171a;color:#cdd4d1;line-height:1.85}
+.container{max-width:720px;margin:0 auto;padding:30px 22px 80px}
+.top{font-size:0.8rem;color:#5fb0a3;letter-spacing:1px;margin-bottom:8px}
+h1{font-size:1.7rem;font-weight:800;color:#bfe3db;line-height:1.4;margin-bottom:8px}
+.sub{color:#8aa39d;font-size:0.92rem;font-style:italic;margin-bottom:6px}
+.langbar{margin:14px 0 0;font-size:0.85rem}
+.langbar a{color:#5fb0a3;text-decoration:none;border:1px solid #2f5d57;border-radius:14px;padding:3px 12px}
+h2{font-size:1.18rem;color:#6fc3b4;margin:40px 0 6px;padding-bottom:6px;border-bottom:1px solid #242a2e}
+h3{font-size:1.04rem;color:#bfe3db;margin:24px 0 4px}
+p{margin:11px 0}
+strong{color:#fff;font-weight:700}
+.lead{color:#dfe6e2;font-size:1.05rem}
+em{color:#9fcabf;font-style:normal}
+ul{margin:8px 0 8px 1.2em}
+li{margin:7px 0}
+.tl{background:#1b2f2b;border-left:3px solid #3f8b7f;border-radius:6px;padding:14px 18px;margin-top:10px}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:0.92rem}
+th,td{border:1px solid #242a2e;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#1b2f2b;color:#bfe3db;font-weight:700}
+.cap{font-size:0.82rem;color:#8aa39d;font-style:italic;margin-top:-4px}
+.scroll{overflow-x:auto}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+</style></head><body>
+<div class="container">
+<p class="top">DEEP READING · READ 921</p>
+<h1>The Effective Engineer</h1>
+<p class="sub">The Effective Engineer · Edmond Lau · 2015</p>
+<p class="langbar"><a href="effective-engineer-read921.html">中文 →</a></p>
+
+<h2>In One Sentence</h2>
+<p class="lead">What actually separates engineers is not who codes faster or who stays latest, but <strong>how much leverage the hour was spent on</strong> — and leverage is something you can deliberately choose, amplify, and compound day after day. <em>The book treats one disease: working hard on things that do not matter, and mistaking exhaustion for contribution.</em></p>
+
+<h2>Where It Sits</h2>
+<p>Edmond Lau is a Stanford CS graduate who worked on search quality at Google, then at Ooyala, then as an engineering lead at Quora, then at Quip. This self-published 2015 book combines his own mistakes with a large set of interviews with engineers and engineering leaders at Facebook, Google, Dropbox, Etsy, Instagram and Twitter. <strong>Intellectually it is Andy Grove's <em>High Output Management</em> rewritten for the individual contributor</strong> — Grove asked how a manager raises the output of an entire organisation; Lau asks how an engineer with no reports raises the output of a single hour, and he inherits Grove's central tool, leverage, more or less intact. <em>It is not a book about engineering. It is a book about where to point your engineering.</em></p>
+
+<h2>The Core Claims</h2>
+<ul>
+<li><strong>Effectiveness is not efficiency, and neither one is volume of work.</strong> Efficiency is doing things fast; effectiveness is doing the things that matter. Someone who writes a beautifully engineered feature nobody uses scores full marks on the first and zero on the second. Every piece of advice in the book converges on one move: <em>before you start, switch to something more worth doing.</em></li>
+<li><strong>Leverage = impact produced ÷ time invested.</strong> That is the book's only equation and the only thing it asks you to carry around. It converts "which of these should I do" from an intuition into a ratio you can estimate on the spot.</li>
+<li><strong>High-leverage activities usually do not look like work.</strong> Automating a script, cutting the build time, writing an onboarding doc, turning an incident into a postmortem, interviewing and hiring the right person — none of these produce anything today, and all of them save time for everyone every day afterwards. <strong>Low-leverage activities, by contrast, usually look extremely busy.</strong></li>
+</ul>
+
+<h2>The Core Concepts, One at a Time</h2>
+
+<h3>Leverage: the one equation, and the one thing to memorise</h3>
+<p>Start with the word. A lever is a crowbar: pick the fulcrum well and the same effort moves a rock fifty times heavier; pick it badly and you can break your fingers without shifting anything. <strong>Lau writes it as a ratio: leverage equals the impact something produces divided by the time you put into it.</strong> Note that the denominator is <em>time</em> — not difficulty, not lines of code, not how tired you are. That single choice sets the book's entire posture: <strong>effort is not the numerator. Effort is the denominator.</strong></p>
+<p>Once you have the ratio there are exactly three ways to raise it, and no fourth:</p>
+<ul>
+<li><strong>Shrink the denominator</strong> — finish the same thing in less time (automate, reuse, delete a step).</li>
+<li><strong>Grow the numerator</strong> — make the same hours produce something worth more (the same feature, built where it will actually be used).</li>
+<li><strong>Switch activities</strong> — move to something with a higher ratio outright. <em>This is the most powerful lever and the least used, because it requires admitting that what you are holding is not worth finishing.</em></li>
+</ul>
+<p>Why it matters: it dismantles the engineer's favourite consolation. <strong>"I had an incredibly busy week" is, in this equation, a pure statement about the denominator and carries no information at all.</strong> Lau's observation is that most people are not insufficiently diligent; they are diligent on a curve that stopped paying years ago — running the same deploy by hand every day, fixing an edge-case bug nobody reported, polishing details on a project that may well be cancelled.</p>
+<div class="scroll">
+<table>
+<tr><th></th><th>Low leverage (looks busy)</th><th>High leverage (looks idle today)</th></tr>
+<tr><th>Typical act</th><td>running the release by hand; fixing bugs nobody filed; fully implementing a feature nobody has committed to</td><td>scripting the release; cutting the build from 10 minutes to 1; shipping the smallest thing that tests the premise</td></tr>
+<tr><th>Shape of the payoff</th><td>one-off; ends when you stop</td><td>collected daily, and scales with team size</td></tr>
+<tr><th>Visibility to others</th><td>high (there are PRs and hours)</td><td>low (saved time appears in no report)</td></tr>
+<tr><th>Cost of failing</th><td>a few days wasted</td><td>a few days wasted, plus a definite answer that this was the wrong direction</td></tr>
+</table>
+</div>
+<p class="cap">Whether the same hour lands in the left column or the right one is the only question this book cares about.</p>
+<p>How it changes your seeing: <strong>you stop being impressed by busyness and start being sensitive to whether finishing this thing makes tomorrow cheaper.</strong> Which carries an uncomfortable corollary: when something's leverage is durably zero, doing it beautifully only makes the loss more elegant.</p>
+
+<h3>Optimise for your rate of learning, because it is the only thing that compounds</h3>
+<p>Lau's second move pulls the lens back from this week to this decade: <strong>early in a career the highest-leverage output is not code, it is an increase in how fast you learn — the one quantity that compounds.</strong> Compounding here is concrete: what you learn today makes every task tomorrow slightly faster, and the time that frees up can go back into learning. What grows is the <em>slope</em>, not this period's number.</p>
+<p>From this he derives a counter-intuitive and very usable criterion: <strong>when choosing where to work, don't ask what you can produce there; ask what the learning rate is.</strong> His dimensions run roughly: is the company growing fast (growth creates new roles and new problems, and pushes people upward); are there people around who are better than you; are the codebase and documentation open enough to read; how fast does it ship (fast release cadence means more feedback means faster learning); how much autonomy will you have; is there any real onboarding or training. <em>Note that none of these is compensation, and none of them is title.</em></p>
+<p>He is equally concrete about mechanism: schedule learning formally (the Google-style twenty-percent time, where the point is not the percentage but that <strong>it must be fixed and immune to being eaten by the ticket queue</strong>), read the source of the core abstractions your team relies on, write more code, attend internal tech talks, get your designs reviewed by people who will push back. Underneath sits Carol Dweck's <strong>growth mindset</strong> — the belief that ability is trainable rather than fixed, which makes failure read as "haven't learned this yet" rather than "am not able." <em>(That construct has run into serious replication problems, dealt with honestly below.)</em></p>
+<p>How it changes your seeing: <strong>it swaps the question "is this job worth taking" from "what does it pay" to "what will I be capable of in a year."</strong> For an early-career engineer that is close to a change of valuation model — you start running yourself as <em>an appreciating asset</em> rather than as labour rented by the hour.</p>
+
+<h3>Prioritising: nobody else will ever schedule the important-but-not-urgent quadrant</h3>
+<p>Here Lau borrows Stephen Covey's grid, which sorts work along urgent/not-urgent and important/not-important. <strong>Everything of interest sits in the second quadrant: important but not urgent.</strong> Tests, refactors, docs, automation, hiring. Its defining property: <em>skip it today and nothing happens; skip it for a year and everything happens.</em> Urgent work arrives with an alarm attached; important work does not — so anyone without a defence loses the whole year to the alarms.</p>
+<p>His handles are almost suspiciously plain, but each maps to a real mechanism:</p>
+<ul>
+<li><strong>Keep one to-do list, always within reach.</strong> The mechanism is offloading working memory — holding five things in your head means five things quietly consuming attention (the everyday form of the Zeigarnik effect, in which unfinished tasks keep surfacing).</li>
+<li><strong>Cap work in progress.</strong> Three open tasks are not triple output: context switching charges you a reload fee each time, and while all three are unfinished your delivered value is zero. <em>The rule comes from lean manufacturing — finish one before starting the next.</em></li>
+<li><strong>Defend the maker's schedule.</strong> Real coding needs long unbroken stretches, so a meeting dropped at 2pm does not cost half an hour; it costs an intact four-hour block, converted into two pieces too short to use.</li>
+<li><strong>Beat procrastination with if-then plans.</strong> Not "I will do X" but "if it is Tuesday at 10am, I will open the X doc and write the first paragraph." This is Peter Gollwitzer's <strong>implementation intentions</strong>: bind the action to a specific cue in advance so that willpower is not required in the moment.</li>
+</ul>
+<p>How it changes your seeing: <strong>you realise prioritising is not a list you settle once, but an action you repeat.</strong> Lau's version is to make re-prioritising itself routine, because the environment moves every week and last week's top item is usually no longer it.</p>
+
+<h3>Iteration speed: the meta-lever that raises the leverage of everything else</h3>
+<p>This is the most operationally useful chapter in the book. <strong>Iteration speed is how long the loop takes from an idea to feedback on that idea.</strong> Lau's claim is that it is not one optimisation among many but a <em>meta</em>-lever, because everything you do afterwards has to pass through that loop.</p>
+<p>The arithmetic makes it obvious. If validating a change takes ten minutes — build, deploy, click through by hand — you get twenty or thirty attempts in a day. Compress it to thirty seconds and you get hundreds. <strong>Twenty times faster is not just time saved; it changes how you work, because once trying things is cheap you switch from "think it through, then act" to "act in order to think it through," and the second is almost always faster when the requirements are uncertain.</strong> The reverse also holds: when every validation is expensive, people instinctively try less, batch up changes, and ship one enormous commit — which raises the odds of breaking something and the cost of finding out, a feedback loop where slower makes you more cautious and more caution makes you slower.</p>
+<p>The corresponding investments: continuous deployment (Etsy became famous for deploying dozens of times a day, and Facebook built a culture on very high release frequency), building internal tools that save time, shortening the debug-and-verify loop (can you run only the relevant tests? can you reproduce production data locally?), and <strong>genuine fluency in your own environment</strong> — editor, keybindings, shell, debugger. That last one is easy to dismiss as trivia, but the sums are blunt: an operation you perform hundreds of times a day, made one second faster, is tens of hours a year. <em>Lau also flags a bottleneck engineers habitually ignore: the delay is often not technical at all but waiting on approvals, designs, or another team's endpoint — non-engineering bottlenecks that eat iteration speed with nobody assigned to fix them.</em></p>
+<p>How it changes your seeing: <strong>the next time you complain that a process is slow, first count how many times you will run it this year. If the answer has three digits, fixing the process is not a distraction — it is the job.</strong></p>
+
+<h3>Replace belief with measurement and validation: build the small one first</h3>
+<p>The book's third part handles how you know that what you are building is right, using two handles: <strong>measurement</strong> and <strong>early validation</strong>.</p>
+<p>The first lesson about measurement is not "instrument more," it is <strong>pick the right single metric</strong>. Lau's test is whether the metric <em>drives the behaviour you want</em>. Take the standard contrast: measure registered users and the team will optimise the signup funnel, even if those people leave the next morning; measure weekly active hours and the same team turns toward retention and actual product value. <strong>A metric is not a thermometer, it is a steering wheel: what you measure is where the team drives.</strong></p>
+<p>The necessary other half is <strong>Goodhart's law</strong>: <em>when a measure becomes a target, it ceases to be a good measure.</em> The mechanism is that people optimise the number rather than the thing it stood for — evaluate by lines of code and you get verbose code; evaluate by tickets closed and you get tickets sliced thinner. So Lau also insists on scepticism about the data itself: verify the instrumentation, the definition and the sampling before trusting any conclusion. And he recommends <strong>internalising a handful of magnitudes</strong> — what a memory reference, a disk seek, a cross-datacentre round trip each cost — so you can rule a design out at the whiteboard instead of discovering after implementation that it is three orders of magnitude too slow.</p>
+<p>The validation half is harsher: <strong>anything you can test with a day's work should not be built for a month first.</strong> Minimum versions, prototypes, A/B experiments, staged rollouts, doing it manually before automating it. What all of these fight is the engineer's signature failure mode — <em>treating "we have already put in three months" as a reason to continue (sunk cost), rather than treating "three months and nobody uses it" as a reason to stop.</em></p>
+<p>How it changes your seeing: <strong>you split "done" from "right," assume by default that your first version is wrong, and go shopping for the cheapest possible correction.</strong></p>
+
+<h3>Estimation, and the ninety-percent-done fallacy</h3>
+<p>Software projects overrun almost universally, and Lau refuses to leave it at "people are optimistic." His decomposition:</p>
+<ul>
+<li><strong>Break tasks down until they are small.</strong> Finer decomposition produces better estimates, because the unknowns hiding inside a big task only surface when it is opened. A task you cannot estimate usually means you have not yet decided what it is.</li>
+<li><strong>Estimate for the person who will actually do the work.</strong> A senior estimating and a junior executing produces error that is systematic, not random.</li>
+<li><strong>Calibrate against history, not against feeling.</strong> How long did your last "two-week" project really take? That ratio is your personal coefficient.</li>
+<li><strong>Budget buffer, and state it explicitly</strong> rather than hiding it inside every line item — hidden slack gets read as slack and squeezed a second time.</li>
+<li><strong>Run a pre-mortem.</strong> Gary Klein's technique: before the project starts, assume it failed catastrophically six months out and have everyone write down how. <em>It works because it swaps "predict the risks" for "explain an accomplished fact," which humans do far better and are far more willing to say out loud.</em></li>
+</ul>
+<p>The point worth nailing down is the <strong>ninety-percent-done fallacy</strong>: a project that reports ninety percent complete will typically consume roughly as much time again. The mechanism is no mystery — the first ninety percent is the known coding, and the remainder is integration, edge cases, migration, performance, rollout and rollback plans, plus everything discoverable only in production. Which is precisely the unestimatable part. <strong>So "we're ninety percent done" actually means: the known part is finished and the unknown part has not started.</strong></p>
+
+<h3>Long-term leverage: move the credit from "what I built" to the systems and the people</h3>
+<p>The last part deals with the longest timescale, and the one most often skipped.</p>
+<p><strong>Quality, held pragmatically.</strong> Lau argues neither for perfect code nor for shipping whatever runs. He treats technical debt as actual debt: borrowing is legitimate — cutting corners to hit a window is often correct — but you have to know the interest rate (the extra time every future change costs) and set a repayment schedule. <strong>Debt you don't repay does not disappear; it becomes a tax levied on every change you make from then on.</strong> The quality practices that scale go with it: code review (whose main value is circulating knowledge and standards, not only catching bugs), automated tests (moving "don't break things" off people and onto a system), and genuinely good abstractions — the value of something like MapReduce for distributed computation is that nobody after you has to solve that problem again.</p>
+<p><strong>Minimise operational burden.</strong> The principles are do the simple thing first, <em>fail fast</em>, and automate rather than relying on discipline. Failing fast deserves spelling out: make errors blow up loudly, early, and as close to their source as possible, instead of being swallowed so that bad data flows downstream — <em>a system that crashes ten minutes early is a hundred times cheaper than one that shows symptoms three days later.</em> Instagram famously supported enormous user growth with a tiny engineering team by deliberately keeping the stack boring: <strong>every component you add is a permanent on-call rota you are scheduling for your future self.</strong></p>
+<p><strong>Investing in your team is the highest-leverage thing an individual can do.</strong> Hiring the right person; compressing onboarding from a month to a week (Facebook's Bootcamp, and the practice of having new engineers ship to production in their first week, are both this idea); writing the doc that stops the question being asked again; turning an incident into a <em>blameless postmortem</em> — where blamelessness is the load-bearing design choice, because only when telling the truth is safe do you get the real causal chain and any chance of fixing the systemic cause. <strong>These carry the highest leverage in the book, because the numerator is no longer your output but everyone's output from now on.</strong></p>
+
+<h2>The Argument, Distilled</h2>
+<p>The book is one chain in three segments:</p>
+<ul>
+<li><strong>Change the ruler (mindset).</strong> Replace "how much did I do" with "impact ÷ time." Since the denominator is time, working longer only pushes the ratio down; the room is in switching activities, growing the numerator, shrinking the denominator. Three habits follow: think in leverage, optimise learning rate, re-prioritise on a schedule.</li>
+<li><strong>Shorten the loop (execution).</strong> To act on a leverage judgement you must be able to try things cheaply, which makes iteration speed the meta-lever; to know whether you were right you must measure and validate early; and to be trusted with anything that matters you must estimate credibly.</li>
+<li><strong>Leave the leverage in the system (long term).</strong> One person's reach has a ceiling, so the endgame is transferring leverage into things that survive your departure: maintainable code, systems nobody has to babysit, stronger colleagues, written-down knowledge.</li>
+</ul>
+<p><strong>What it establishes: the variance in engineers' output is driven less by technical skill than by choice.</strong> On what evidence? Honestly — a clear analytic frame plus a large body of industry cases and interviews, not controlled studies. <em>The book's value is not that it discovered anything, but that it compresses a judgement usually transmitted by osmosis from senior engineers, and usually bought with five years of mistakes, into a ratio you can carry in your pocket.</em></p>
+
+<h2>Misreadings, and the Real Objections</h2>
+<p><strong>Misreading one: high leverage means less work, or shortcuts.</strong> The opposite. Nearly everything the book calls high leverage — building tools, fixing process, mentoring, running postmortems — is <em>extra</em> work that produces nothing today and is hard for anyone to see. <strong>Leverage is about moving the fulcrum under the same effort, not about spending less effort.</strong></p>
+<p><strong>Misreading two: this is a productivity-tips collection.</strong> The tips are packaging. The core is an ordering of values: ask whether it is worth doing before asking how to do it fast. <em>Read it as a keyboard-shortcut manual and you skip the only chapter that matters.</em></p>
+<p><strong>Objection one: leverage cannot actually be computed.</strong> This is the real methodological weakness. Impact is not quantifiable in advance, only in hindsight, so the formula degrades easily into <em>post-hoc rationalisation</em>: what worked was high leverage, what failed was a misjudgement. In practice it functions as a question to ask, not a criterion to calculate. Used as a formula it disappoints; used as an interrogation it pays.</p>
+<p><strong>Objection two: heavy Silicon Valley specificity and survivorship bias.</strong> The sample is fast-growing Bay Area companies between roughly 2010 and 2015. Advice like "optimise for learning rate" and "move to a faster-growing company" presumes abundant funding, open headcount and a fluid job market. <strong>In an organisation that is not growing, or a market where jobs are scarce, your leverage ceiling is set by the org chart rather than by your judgement.</strong> The book barely engages with this.</p>
+<p><strong>Objection three: strongly individualist, and silent on power.</strong> "Re-prioritise regularly" assumes you decide what you work on. In reality a great deal of low-leverage work is assigned; and how to influence that assignment — managing upward, arguing for resources, moving cross-team work without authority — is exactly the territory of <em>The Staff Engineer's Path</em> and <em>Staff Engineer</em>, and exactly this book's blind spot. <em>It teaches you to choose well within a given set of options; it does not teach you to enlarge the set.</em></p>
+<p><strong>Objection four: the growth mindset it leans on has replication problems, and this should be said plainly.</strong> Dweck's construct has been through hard scrutiny over the past decade: large meta-analyses find only weak correlations between mindset and academic achievement, and intervention effects far smaller than the popular telling implies. A subsequent very large national trial did detect real effects, but small ones, concentrated among lower-achieving students. <strong>The defensible conclusion is that it is a mild and useful adjustment of attitude, not an engine that returns large gains.</strong> The book's use of it is casual borrowing from pop psychology, and worth discounting as you read.</p>
+<p><strong>Objection five: highly derivative, thin on original contribution.</strong> Leverage comes from Grove's <em>High Output Management</em>, the quadrants from Covey, minimum viable versions and validation from the lean-startup lineage, and the estimation problems were settled in <em>The Mythical Man-Month</em>. <strong>Its contribution is compression and translation — taking material scattered across management, psychology and startup methodology and rendering it in language an individual contributor can use on a Tuesday.</strong> That value is real, but the reader should know they are reading an excellent synthesis, not original research.</p>
+<p><strong>Objection six: parts of it have dated.</strong> Written in 2015, before a decade in which tooling, deployment and collaboration all shifted substantially, and before large language models entered daily development. <em>The equation and the mindsets still hold; you will need to supply newer examples yourself.</em></p>
+
+<h2>Ten Sentences</h2>
+<div class="tl">
+<p>1. <strong>Leverage = impact produced ÷ time invested.</strong> The denominator is time, so "I worked really hard" can only make the ratio smaller.</p>
+<p>2. There are exactly three ways to raise it: <strong>do the same thing faster, produce more value in the same hours, or switch to something more worth doing.</strong> The third is the strongest and the least used, because it requires admitting the current task isn't worth it.</p>
+<p>3. Efficiency is doing things fast; effectiveness is doing the right things. <strong>An exquisitely engineered feature nobody uses scores full marks on the first and zero on the second.</strong></p>
+<p>4. Early in a career the highest-leverage output is not code but <strong>an increase in your rate of learning</strong> — the only quantity that compounds, and it grows the slope, not this quarter's number.</p>
+<p>5. Nobody schedules the important-but-not-urgent quadrant for you: <strong>urgent work arrives with an alarm, important work doesn't.</strong> Ignore it for a year and it comes back with interest.</p>
+<p>6. Iteration speed is the meta-lever. <strong>Getting validation from ten minutes down to thirty seconds doesn't just save time; it moves you from "think it through, then act" to "act in order to think it through."</strong></p>
+<p>7. What you measure is where the team drives — a metric is a steering wheel, not a thermometer; and remember Goodhart's law: <strong>once a measure becomes a target it stops being a good measure.</strong></p>
+<p>8. "Ninety percent done" really means: <strong>the known part is finished, and the unknown part hasn't started.</strong> The remaining tenth is integration, edge cases, migration and rollout — precisely the unestimatable part.</p>
+<p>9. Technical debt is real debt. Borrow if you like, but know the interest rate and schedule repayment; <strong>debt you never repay becomes a tax on every future change.</strong></p>
+<p>10. Personal leverage has a ceiling, so the endgame is putting leverage where it survives you: <strong>automated systems, written-down knowledge, blameless postmortems, and a team stronger than the one you joined.</strong></p>
+</div>
+
+<footer>Deep Reading · Finish this page and you have the core of the book; for the details, the cases and the voice of the original, go to the text itself.</footer>
+</div>
+</body></html>
