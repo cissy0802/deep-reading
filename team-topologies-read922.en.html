@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Team Topologies — Deep Reading 922</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Iowan Old Style",serif;background:#14171a;color:#cdd4d1;line-height:1.8}
+.container{max-width:720px;margin:0 auto;padding:30px 22px 80px}
+.top{font-size:0.8rem;color:#5fb0a3;letter-spacing:1px;margin-bottom:8px}
+h1{font-size:1.7rem;font-weight:800;color:#bfe3db;line-height:1.4;margin-bottom:8px}
+.sub{color:#8aa39d;font-size:0.92rem;font-style:italic;margin-bottom:6px}
+.langbar{margin:14px 0 0;font-size:0.85rem}
+.langbar a{color:#5fb0a3;text-decoration:none;border:1px solid #2f5d57;border-radius:14px;padding:3px 12px}
+h2{font-size:1.18rem;color:#6fc3b4;margin:40px 0 6px;padding-bottom:6px;border-bottom:1px solid #242a2e}
+h3{font-size:1.04rem;color:#bfe3db;margin:24px 0 4px}
+p{margin:11px 0}
+strong{color:#fff;font-weight:700}
+.lead{color:#dfe6e2;font-size:1.05rem}
+em{color:#9fcabf;font-style:normal}
+ul{margin:8px 0 8px 1.2em}
+li{margin:7px 0}
+.tl{background:#1b2f2b;border-left:3px solid #3f8b7f;border-radius:6px;padding:14px 18px;margin-top:10px}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:0.92rem}
+th,td{border:1px solid #242a2e;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#1b2f2b;color:#bfe3db;font-weight:700}
+.cap{font-size:0.82rem;color:#8aa39d;font-style:italic;margin-top:-4px}
+.scroll{overflow-x:auto}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+</style></head><body>
+<div class="container">
+<p class="top">DEEP READING · READ 922</p>
+<h1>Team Topologies</h1>
+<p class="sub">Team Topologies · Matthew Skelton &amp; Manuel Pais · 2019</p>
+<p class="langbar"><a href="team-topologies-read922.html">中文 →</a></p>
+
+<h2>In One Sentence</h2>
+<p class="lead">The book makes one claim and makes it all the way down: <strong>org design is not an HR matter, it is an architectural decision — the team chart you draw today is the system diagram you will certainly have in three years.</strong> So stop waiting for the architecture to rot before reorganising. <strong>Design the teams first — bounded cognitive load, boundaries aligned with the business, and every inter-team relationship explicitly chosen</strong> — and modularity in the software will follow. The entire toolkit is two lists: <strong>four team types and three interaction modes.</strong></p>
+
+<h2>Where It Sits</h2>
+<p>Skelton and Pais came out of DevOps consulting; the book was published in 2019 by IT Revolution, the same house behind <em>The Phoenix Project</em> and <em>Accelerate</em>. <strong>Its position in the engineering-org shelf is unusual: it is not about how an individual gets things done (that is <em>The Effective Engineer</em>) or how to manage people (that is <em>The Manager's Path</em>). It is about what the relationship between two teams should be — a layer almost nobody has ever deliberately designed.</strong> <em>The book is short, dense, and almost entirely silent on process and tooling; every ounce of its effort goes into boundaries.</em></p>
+
+<h2>The Central Claims</h2>
+<ul>
+<li><strong>Organisation design and software architecture are two faces of the same thing, because Conway's Law cannot be defied.</strong> Rather than absorbing it passively, use it: decide the architecture you want, then build the teams that will produce it.</li>
+<li><strong>The unit of delivery is the team, not the individual.</strong> Teams should be long-lived and own something definite, and work should flow to teams. Treating people as reassignable resources destroys delivery capability continuously.</li>
+<li><strong>Bounding a team's responsibilities is really bounding its cognitive load.</strong> A system a team cannot hold in its head will not be built well no matter how the backlog is prioritised — "just look after this one more service" has a real ceiling.</li>
+<li><strong>Four team types are enough, and three interaction modes are enough.</strong> Every other exotic team in your org should be folded into one of the four, and every ill-defined collaboration should be named as one of the three — and the mode should be deliberately switched over time.</li>
+</ul>
+
+<h2>The Core Ideas, One by One</h2>
+
+<h3>Conway's Law and the Reverse Conway Maneuver</h3>
+<p><strong>Conway's Law comes from Melvin Conway's 1968 paper "How Do Committees Invent?": organisations which design systems are constrained to produce designs that are copies of their own communication structures</strong> (paraphrased). It gets quoted as a witticism, but the mechanism is plain: <em>interfaces appear wherever communication is required.</em> Two groups who rarely talk will agree on a coarse, formal, rarely-changed contract between their halves; two modules inside one team, where anyone can just shout across the desk, will grow into a tightly coupled blob with a blurred seam. <strong>Architecture is not drawn; it precipitates out of communication cost.</strong> The best-travelled illustration: four groups assigned to build a compiler tend to produce a four-pass compiler — not because four passes are optimal, but because there were four groups.</p>
+<p>The brutal corollary is the book's starting point: <strong>you cannot get a loosely coupled system out of a set of tightly entangled teams.</strong> However elegant the microservice diagram, if two teams must meet daily to move one feature forward, that boundary will erode. Most failed microservice migrations were not bad technology choices; <em>the team boundaries were never cut to match</em>, and the result is a distributed monolith — separately deployed, still requiring three teams to ship one change.</p>
+<p><strong>The remedy the book pushes is the Reverse Conway Maneuver (a term from ThoughtWorks): instead of letting the existing org chart dictate the architecture, decide the target architecture and then reshape teams and communication so that Conway's Law works for you.</strong> <em>Note that its power and its precondition are equally large: the move assumes you already know what the target architecture looks like — and on genuinely new problems, that is precisely the thing you are trying to discover.</em> More on this in the objections.</p>
+
+<h3>The team is the unit: team APIs and the real cost of reshuffling</h3>
+<p>"Team-first" is treated as a premise, not a conclusion, and the reasoning is concrete: <strong>a freshly assembled team does not start producing.</strong> The authors invoke Bruce Tuckman's familiar four stages — forming, storming, norming, performing — and note that reaching the performing stage typically takes weeks to months. <em>So every "let's pull those three people onto the other project" costs far more than three person-months: it knocks both teams back into storming.</em> <strong>Hence: keep teams stable, and let the work flow to the team rather than the people flow to the work.</strong></p>
+<p>The companion idea is the <strong>team API</strong> — everything a team exposes to the rest of the organisation. Not just code interfaces, but the services it runs, its documentation and versioning conventions, its ways of working (cadence, on-call), and how to reach it (which channel, what response time). <em>Writing that down is valuable in itself: most cross-team friction is not a technical problem but "I don't know who to ask and I don't know when I'll hear back."</em> <strong>A team that cannot state its own API is, from everyone else's point of view, a fog you can only get through by scheduling a meeting.</strong></p>
+
+<h3>Cognitive load: the genuinely new contribution</h3>
+<p>If the book contributed one concept, this is it. <strong>Cognitive load comes from the psychologist John Sweller (1988): working memory is limited, and the load during learning splits three ways.</strong> The book moves the idea from "one person learning" to "one team operating a system":</p>
+<ul>
+<li><strong>Intrinsic</strong> — inherent difficulty of the task: how this language works, how this framework behaves. <em>Reduce it with training, pairing, better tools.</em></li>
+<li><strong>Extraneous</strong> — pure environmental overhead unrelated to the problem: how do I get a machine, how many tickets does a release need, where do the logs go. <em>This should be driven to near zero — which is the entire justification for a platform team.</em></li>
+<li><strong>Germane</strong> — the part that actually creates value: how this business domain really works, what users do in which situations. <em>This is where you want the team's mind to be.</em></li>
+</ul>
+<p><strong>Which yields an alarmingly clear management test: a team's total capacity is fixed, so every unit of extraneous load you add displaces exactly that much of the germane load it had available for understanding the business.</strong> "Have them look after that legacy service too" is not a free scheduling question; it is a direct withdrawal from that team's ability to understand its domain.</p>
+<p>From this the book derives a rule of thumb for scope: <em>sort domains into simple, complicated (needs specialist knowledge but is solvable) and complex (only understood by experimenting). A team can carry two or three simple domains, but <strong>should not carry more than one complicated domain</strong>, and a genuinely complex domain usually deserves a dedicated team, sometimes more than one.</em> The authors admit there is no precise measurement; in practice they ask the team directly: <strong>"Is the amount you have to hold in your heads overloaded, about right, or is there room?"</strong> Crude — but it turns something that was previously only ever grumbled about into a thing you can review on a cadence.</p>
+<p>Team size follows: borrowing the anthropologist Robin Dunbar's layers of stable relationships (roughly 5 for a high-trust core, ~15 for a circle of deep mutual trust, ~150 as the outer limit), the book argues for <strong>teams of five to nine</strong>, and for cutting the groupings above teams at those same magnitudes. <em>Amazon's two-pizza team is the same intuition in a different wrapper.</em></p>
+
+<h3>Four team types — and everything else should be folded in</h3>
+<p>The famous part. The claim is not "these four are useful" but something stronger: <strong>four are sufficient; any team in your organisation that doesn't fit should be reshaped into one of them, because otherwise it is a boundary nobody can state, which is a liability.</strong></p>
+<div class="scroll">
+<table>
+<tr><th>Type</th><th>What it is</th><th>How it usually goes wrong</th></tr>
+<tr><th>Stream-aligned</th><td><strong>The default; most teams should be this one.</strong> Aligned to a single valuable stream of work (a product, a user journey, a customer segment), owning its build, release and run end to end with as few hand-offs as possible.</td><td>End-to-end on paper, but every release waits on three other teams' backlogs — that is not a stream-aligned team.</td></tr>
+<tr><th>Enabling</th><td>Specialists in something (testing, continuous delivery, observability, architecture) who <strong>help stream-aligned teams grow a capability they lack</strong>; they act as coaches, for weeks to months, and success means <em>becoming unnecessary</em>.</td><td>Hardening into a permanent approval gate, or doing the work for others — who then learn nothing and gain a dependency.</td></tr>
+<tr><th>Complicated-<br/>subsystem</th><td>Created only where deep specialist knowledge is genuinely required: a video codec, a risk model, a real-time matching engine. Its reason to exist is removing that load from every stream-aligned team.</td><td>Over-applied: every slightly hard thing gets its own team, and now each business flow crosses five of them.</td></tr>
+<tr><th>Platform</th><td>Turns underlying capability into a <strong>self-service internal product</strong> so that stream-aligned teams can use it without understanding what's beneath, driving their extraneous load toward zero. The slogan is <strong>"the platform is a product"</strong>, and it should be a <em>thinnest viable platform</em> — no heavier than it needs to be.</td><td>Renaming the old ops/infrastructure group "platform team" while the working model stays tickets and manual approvals — the exact thing it exists to abolish.</td></tr>
+</table>
+</div>
+<p class="cap">The four types and their characteristic failure modes. What a team is is determined by how its output is consumed, not by what it is called.</p>
+<p><strong>The clause most often skipped is also the sharpest: a platform must be compelling, not compulsory.</strong> The logic is hard-edged — if stream-aligned teams would rather route around your platform and roll their own, your platform is not actually reducing their load, and mandating it merely converts "I can't use this" into "using this hurts and I'm not allowed to say so." <em>Making an internal platform compete for its users the way an external product does is a better test of whether a platform team is real than any org chart.</em></p>
+
+<h3>Three interaction modes — and why the mode must change over time</h3>
+<p>The second and underrated contribution. Most organisations have drawn the boxes and never specified <strong>what kind of line connects them</strong> — so every relationship degrades by default into "start a group chat when something comes up." There should be exactly three, and each one should be chosen out loud:</p>
+<div class="scroll">
+<table>
+<tr><th>Mode</th><th>How it works</th><th>When to use it</th><th>What it costs</th></tr>
+<tr><th>Collaboration</th><td>Two teams working closely together for a period, with a temporarily blurred boundary</td><td>New territory or new technology, when <strong>you don't yet know where the boundary belongs</strong></td><td>Doubled cognitive load, diffused ownership; <strong>must be time-boxed</strong>, never left open</td></tr>
+<tr><th>X-as-a-Service</th><td>One team provides, one consumes, across a clear interface with little communication</td><td>Once the boundary is understood and predictable delivery matters</td><td>A wrong interface locks both sides in; unsuited to exploration</td></tr>
+<tr><th>Facilitating</th><td>One team helps another learn something or clears an obstacle</td><td>The enabling team's default; someone is stuck for reasons that aren't in the code</td><td>Requires the other side to actually want to learn, or it decays into doing their work</td></tr>
+</table>
+</div>
+<p class="cap">The three modes. The real use of this table is that the same pair of teams should be in different modes at different stages.</p>
+<p><strong>Put the two tables together and you get the book's actual method: use collaboration to discover the boundary, and the moment the boundary is understood, switch to X-as-a-Service.</strong> That resolves a standing dilemma. Pure collaboration is fast but never grows a clean interface, so teams get progressively more entangled; specifying the interface up front produces an interface that is wrong, which everyone then works around for three years. <em>The right move is to treat collaboration as a survey expedition with an end date, whose deliverable is the interface itself.</em></p>
+<p>Read backwards, this also gives an unusually useful diagnostic: <strong>if the collaboration between two teams never manages to end — if every feature still requires both of them in a room — the boundary is wrong, and no amount of collaborating harder will fix it.</strong> The authors call the capacity to read such signals organisational sensing: a topology is not a diagram you draw once, it is something that has to keep evolving.</p>
+
+<h3>Fracture planes: where should a system be split?</h3>
+<p>Knowing you must split is not knowing where. The authors borrow the term <strong>fracture plane</strong> — <em>the plane along which a rock naturally cleaves; strike along it and it opens in one blow, strike across it and you get gravel.</em> The candidate planes in software:</p>
+<ul>
+<li><strong>Business domain boundaries</strong> — the most important. This uses the bounded context from domain-driven design: <em>the same word means genuinely different things in different contexts — an "order" is a receivable in billing and a picking slip in the warehouse.</em> A model is consistent only inside its own context; crossing out of it requires translation. <strong>Team boundaries should coincide with bounded contexts and must never run through the middle of one.</strong></li>
+<li><strong>Rate of change</strong> — something released ten times a day and something touched once a year, owned by one team, will slow the fast half down.</li>
+<li><strong>Compliance and risk</strong> — the heavily regulated parts (payments, health data) carry entirely different approval regimes; splitting them spares everything else the heavy process.</li>
+<li><strong>User persona</strong> — serving expert users and serving novices are two streams with different rhythms and different standards of judgement.</li>
+<li><strong>Technology and performance isolation</strong> — parts needing special hardware, or that must scale independently.</li>
+<li><strong>Location and time zone</strong> — a real constraint: two halves ten hours apart cannot sustain collaboration mode and had better be X-as-a-Service.</li>
+</ul>
+<p><strong>One criterion runs through all of them: after the split, each team must be able to own one whole thing end to end within a cognitive load it can actually carry.</strong> Splitting by technical layer — a front-end group, a back-end group, a DBA group — is the commonest mistake precisely because it inserts three hand-offs into every business flow and leaves no single team able to deliver user value on its own. <em>Every hand-off is a queue, which is why "change the button label" and "rewrite the settlement logic" end up taking suspiciously similar amounts of calendar time.</em> The critique of resource-utilisation thinking lands here too: <strong>booking everyone to 100% guarantees that every hand-off waits; flow and utilisation are competing objectives, and most organisations have chosen the second one without noticing.</strong></p>
+
+<h2>The Argument in Skeleton</h2>
+<p><strong>One: accept that Conway's Law cannot be defied.</strong> System shape converges on communication structure. You do not get to resist it; you only get to choose whether it shapes you or you use it.</p>
+<p><strong>Two: change the optimisation target to fast flow of change.</strong> Not headcount utilisation, not cost — how smoothly an idea travels from proposal to production. <em>An organisation at full utilisation is necessarily slow: everyone is booked, so every hand-off queues.</em></p>
+<p><strong>Three: treat the team as indivisible and give it a real capacity ceiling.</strong> Long-lived, owning something definite — and how much it can own is set by cognitive load, not by willingness to take on more.</p>
+<p><strong>Four: redraw the organisation with the four types.</strong> Mostly stream-aligned; a platform that drives extraneous load to zero and has to be a product people would choose; complicated-subsystem teams only where genuine depth demands it; enabling teams aiming at their own obsolescence.</p>
+<p><strong>Five: name every line between teams as one of the three modes, and switch as the work matures.</strong> Collaborate to find the boundary, X-as-a-Service to lock it in, facilitate to close capability gaps. <strong>A collaboration that never ends is a boundary error.</strong></p>
+<p><strong>Six: treat all of this as continuous evolution, not a reorg.</strong> Cut along fracture planes, watch which seams keep hurting, adjust — the organisation is itself a system requiring continuous refactoring.</p>
+
+<h2>Misreadings and Serious Objections</h2>
+<p><strong>Misreading one: taking it as an org chart to copy.</strong> The four boxes are the most screenshot-friendly page in the book, so the usual result is renaming ops "platform team" and architecture "enabling team" while every interaction stays exactly as it was. <em>The authors keep insisting that a team's type is determined by how its output is consumed, not by its label; renaming without changing interaction modes is pure topology theatre.</em></p>
+<p><strong>Misreading two: platform team = infrastructure team.</strong> The book's platform is a <em>product</em>: self-service, documented, versioned, with internal customers, and routable-around. A ticket-driven infrastructure group requiring manual approval is not a platform team under this definition; it is an institutionalised source of extraneous load.</p>
+<p><strong>Misreading three: stream-aligned means "you build it, you run it," so carry everything yourself.</strong> The opposite — the whole platform argument exists so stream-aligned teams <em>need not</em> understand everything. Ownership boundaries should be set by cognitive load, not by a slogan.</p>
+<p><strong>The most substantial objection: the evidence base is thin.</strong> The framework comes from consulting practice and case studies, not controlled research. The DORA-metric evidence in <em>Accelerate</em> supports the more general claim that small batches, loose coupling and autonomous teams go faster; it does not validate these four types specifically. <em>Which means the book is best used as a vocabulary and a checklist rather than a tested causal model — treat it as a law and it will disappoint.</em></p>
+<p><strong>"Cognitive load" does not survive close inspection as a construct.</strong> Sweller's theory concerns an individual's working memory during learning; the book transplants it wholesale onto "a team operating a system," a quite different object, with no measurement method and no rule for aggregation — landing, in the end, on a subjective survey. <strong>In fairness: as a thinking tool it is excellent (it converts "we're carrying too much" into a sentence that can be taken seriously) — just don't present it as a quantifiable metric.</strong></p>
+<p><strong>The Reverse Conway Maneuver has a chicken-and-egg problem.</strong> It requires knowing the target architecture, but in a new domain the architecture is exactly what has to be discovered by building. Academically, the mirroring hypothesis — that organisational structure and system structure reflect each other — has substantial support but is not universal; open-source projects are the standing counterexample, with globally scattered contributors who never meet nonetheless maintaining highly modular systems. <em>Which suggests Conway's Law is really about communication structure rather than reporting structure, and in open source those two have come apart.</em></p>
+<p><strong>Dunbar's number is itself contested</strong> — recent replication work has questioned the specific figure. As support for "teams have an upper size limit" it is fine; as a precise threshold it should not be taken literally.</p>
+<p><strong>One practitioner complaint is worth recording: the book is short, and the hard part is not in it.</strong> Drawing the target topology is the easy step. What is actually hard is reallocating budget, deciding whose team gets dissolved, and justifying a platform team's value to executives who don't read code. <em>You get a map and a vocabulary; you do not get the politics of walking there.</em></p>
+
+<h2>Ten Sentences</h2>
+<div class="tl">
+<p>1. <strong>The org chart is the architecture diagram.</strong> System shape converges on communication structure — you cannot get a loosely coupled system out of tightly entangled teams.</p>
+<p>2. Since Conway's Law is inescapable, run it backwards: <strong>decide the architecture you want, then build the teams that will produce it.</strong></p>
+<p>3. <strong>The unit of delivery is the team, not the individual.</strong> Keep teams long-lived, give them definite ownership, let work flow to them — shuffling people between projects destroys capability continuously.</p>
+<p>4. <strong>How much a team can own is set by cognitive load, not by willingness to take on more.</strong> "Just look after one more service" is a withdrawal from that team's ability to understand its domain.</p>
+<p>5. Load comes in three kinds: intrinsic (reduce with training and tools), extraneous (drive to near zero — the entire reason platforms exist), and germane (the business itself, where you want their minds).</p>
+<p>6. Four team types suffice: <strong>stream-aligned (the default, and most of them), enabling (coaches aiming at their own obsolescence), complicated-subsystem (only where depth truly demands it), platform (extraneous load to zero).</strong></p>
+<p>7. <strong>"The platform is a product" — it must be compelling, not compulsory.</strong> If teams would rather route around it, it is not actually reducing their load.</p>
+<p>8. There are exactly three relationships between teams, and each must be chosen explicitly: <strong>collaboration, X-as-a-Service, facilitating.</strong> An undefined relationship defaults to "start a group chat."</p>
+<p>9. <strong>Collaborate to discover the boundary; the moment you know it, switch to X-as-a-Service.</strong> A collaboration that never ends is a boundary error, not a failure of effort.</p>
+<p>10. Cut along fracture planes — bounded context, rate of change, compliance, user persona, technical isolation, time zone. <strong>The single test: afterwards, can each team own one whole thing end to end within a load it can carry?</strong></p>
+</div>
+
+<footer>Deep Reading · Finish this page and you have the core of the book; for the details, the cases and the voice of the original, go to the text itself.</footer>
+</div>
+</body></html>
