@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Accelerate — Deep Reading 923</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#14171a;color:#cdd4d1;line-height:1.85}
+.container{max-width:720px;margin:0 auto;padding:30px 22px 80px}
+.top{font-size:0.8rem;color:#5fb0a3;letter-spacing:1px;margin-bottom:8px}
+h1{font-size:1.7rem;font-weight:800;color:#bfe3db;line-height:1.4;margin-bottom:8px}
+.sub{color:#8aa39d;font-size:0.92rem;font-style:italic;margin-bottom:6px}
+.langbar{margin:14px 0 0;font-size:0.85rem}
+.langbar a{color:#5fb0a3;text-decoration:none;border:1px solid #2f5d57;border-radius:14px;padding:3px 12px}
+h2{font-size:1.18rem;color:#6fc3b4;margin:40px 0 6px;padding-bottom:6px;border-bottom:1px solid #242a2e}
+h3{font-size:1.04rem;color:#bfe3db;margin:24px 0 4px}
+p{margin:11px 0}
+strong{color:#fff;font-weight:700}
+.lead{color:#dfe6e2;font-size:1.05rem}
+em{color:#9fcabf;font-style:normal}
+ul{margin:8px 0 8px 1.2em}
+li{margin:7px 0}
+.tl{background:#1b2f2b;border-left:3px solid #3f8b7f;border-radius:6px;padding:14px 18px;margin-top:10px}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:0.92rem}
+th,td{border:1px solid #242a2e;padding:6px 10px;text-align:left;vertical-align:top}
+th{background:#1b2f2b;color:#bfe3db;font-weight:700}
+.cap{font-size:0.82rem;color:#8aa39d;font-style:italic;margin-top:-4px}
+.scroll{overflow-x:auto}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+</style></head><body>
+<div class="container">
+<p class="top">DEEP READING · READ 923</p>
+<h1>Accelerate</h1>
+<p class="sub">Accelerate: The Science of Lean Software and DevOps · Nicole Forsgren, Jez Humble &amp; Gene Kim · 2018</p>
+<p class="langbar"><a href="accelerate-read923.html">中文 →</a></p>
+
+<h2>In One Sentence</h2>
+<p class="lead">Four years of surveys and more than twenty-three thousand responses were used to overturn a belief the software industry had argued about for two decades: <strong>going fast and staying safe are not opposing forces to be balanced—in the data they are the same thing, and the teams that ship fastest are also the ones that break least and recover quickest</strong>—and getting there is not a matter of buying tools but of a set of engineering and management capabilities that can be measured and practiced.</p>
+
+<h2>Where It Sits</h2>
+<p>Nicole Forsgren is a researcher with a background in statistics and information systems; Jez Humble co-wrote <em>Continuous Delivery</em>; Gene Kim wrote <em>The Phoenix Project</em>. Between 2014 and 2017 the three ran the annual <em>State of DevOps</em> surveys, gathering more than 23,000 responses from over 2,000 organizations of every size and industry. This book is the consolidated findings plus a full account of the method. <strong>Its position on the software-engineering shelf is unusual: nearly every comparable book is one impressive practitioner recounting what worked for them, while this one attempts statistical evidence—and that ambition is exactly why it has become the most cited and the most misused engineering-management book of the past decade.</strong> The "DORA metrics" everyone now quotes originate here.</p>
+
+<h2>The Central Claims</h2>
+<p><strong>One: speed and stability are positively correlated, not traded off.</strong> The old assumption was that fewer incidents required fewer, slower, more heavily reviewed changes. The data says the reverse—the teams deploying most often and shipping fastest also had the lowest change failure rates and the fastest recovery. <strong>"Fast and safe" is not an oxymoron; it is two faces of the same underlying capability.</strong></p>
+<p><strong>Two: software delivery performance predicts organizational performance.</strong> Not merely "IT runs better," but measurable association with profitability, productivity, and market share—and, for non-profits and government, with mission effectiveness and customer satisfaction. That promotes delivery capability from a departmental metric to a business one.</p>
+<p><strong>Three: what determines all of this is capabilities—not maturity, and certainly not tooling.</strong> The book lays out roughly twenty-four capabilities that can be practiced and measured one at a time (continuous delivery, architecture, lean management, culture), and insists throughout that <strong>no organization ever "becomes mature at DevOps" and stops—you either keep improving or you start sliding back.</strong></p>
+
+<h2>The Core Concepts, One at a Time</h2>
+
+<h3>1. Four metrics: compressing "is this team any good" into four measurable numbers</h3>
+<p>This is the most widely travelled part of the book, usually called the DORA four (DORA being the authors' research program, DevOps Research and Assessment). They come in two pairs: two for <em>throughput</em>, two for <em>stability</em>.</p>
+<div class="scroll">
+<table>
+<tr><th>Metric</th><th>What it actually asks</th><th>Pair</th></tr>
+<tr><td>Deployment frequency</td><td>How often do you get code into production</td><td>Throughput</td></tr>
+<tr><td>Lead time for changes</td><td>How long from a commit to that code running in production</td><td>Throughput</td></tr>
+<tr><td>Time to restore service</td><td>When production breaks, how long until it is healthy again</td><td>Stability</td></tr>
+<tr><td>Change failure rate</td><td>What share of releases require rollback, patch, or hotfix</td><td>Stability</td></tr>
+</table>
+</div>
+<p class="cap">A hidden design rule runs through all four: each is an outcome, and none can be gamed by one person working harder.</p>
+<p>Why these four? The selection criteria are careful: <strong>measure outcomes rather than output, and measure at the level of the team or system rather than the individual.</strong> That is pointed criticism of a field with a long record of measuring the wrong things—lines of code (so people write more verbose code), story-point velocity (so each team inflates its own points, and nothing is comparable across teams), utilization (so queues lengthen and delivery slows). All of these share one disease: they measure busyness instead of effectiveness.</p>
+<p>Then the headline result: in the 2017 data, high performers beat low performers by roughly <strong>46x on deployment frequency, 440x on lead time, about a fifth of the change failure rate, and recovery times faster by close to two orders of magnitude</strong>. Read those carefully: they are ratios between clusters of self-reported survey answers, so the order of magnitude matters far more than the digits. <em>The finding worth keeping is not any multiple but the fact that all four move together—which means there is no curve along which you trade speed for stability.</em></p>
+<p>How it changes your seeing: the next time someone tells you their releases are slow because their quality bar is high, you will know the data mostly does not support it. <strong>Slow is rarely the product of caution; it is the product of large batches, thin automation, and long approval chains—and those three are also where incidents come from.</strong></p>
+
+<h3>2. Batch size: the real variable under all four metrics</h3>
+<p>If you take one mechanism from this book, take this one. Deployment frequency matters not because shipping often is intrinsically virtuous but because <strong>it is a proxy for batch size</strong>—a team that releases monthly is necessarily carrying a month of change each time; a team that releases ten times a day carries almost nothing.</p>
+<p>Shrink the batch and four things happen at once: <em>(1) feedback arrives faster</em>—you learn today whether today's work was right, instead of guessing a month later inside a pile of changes; <em>(2) diagnosis gets easy</em>—the suspect list drops from three hundred changes to three, and a rollback undoes half an hour rather than a month; <em>(3) risk shrinks proportionally</em>—each release has a smaller blast radius; <em>(4) the fear goes away</em>—shipping stops being an event that requires a meeting, a war room, and a prayer.</p>
+<p>An analogy: <strong>large-batch delivery is saving a whole term's homework for the last day; small batches are handing in a page each day.</strong> The first feels more efficient because the work is done in one concentrated pass, but you spend the entire term not knowing where you went wrong—and a single directional error at the end voids the whole pile. This is the lesson lean manufacturing learned on factory floors decades ago; the book's contribution is testing it empirically on software.</p>
+<p>Why it matters: it converts "how often should we release" from a matter of taste into a matter of risk management. <strong>You are not choosing between frequent and careful; you are choosing between betting a little each time and saving up to bet it all at once.</strong> The second feels safer only because it hides the risk—until it does not.</p>
+
+<h3>3. Capability models vs. maturity models: why "we've done DevOps" is a dangerous sentence</h3>
+<p>Enterprises love maturity models: sort the organization into levels 1 through 5, give each level a checklist, tick the boxes, get promoted. The authors reject them for three reasons, each of which stings.</p>
+<p><strong>First, a maturity model rewards arrival, and technology competition has no finish line.</strong> The day you declare yourselves Level 4, the improvement budget and attention move elsewhere—while tools, architectures, and competitors keep moving. <strong>Second, it is one-size-fits-all:</strong> the same checklist goes to every team regardless of where that team's actual constraint sits. <strong>Third, it measures whether an activity is present (do you own a CI server, is the document written) rather than what the activity produces.</strong> The predictable result is an organization with a complete tool estate that still ships once a month.</p>
+<p>A capability model inverts this: it hands you a set of capabilities empirically associated with outcomes (version control for everything, test automation, trunk-based development, loosely coupled architecture, lightweight change approval, security shifted left, monitoring and observability, team autonomy to experiment—about two dozen in all), and then <strong>tells you to measure your four outcome metrics, find your current binding constraint, change only that, and measure again.</strong></p>
+<p>How it changes your seeing: "continuous improvement" finally acquires an operational shape—<strong>outcome metrics to tell you where you are, a capability list to tell you which levers exist, and an experimental loop that pulls one lever at a time.</strong> Drop any of the three and improvement degenerates into buying tools on a hunch.</p>
+
+<h3>4. Architecture: the only test that matters is whether you can ship without asking anyone</h3>
+<p>On architecture the book's empirical conclusion is almost disappointingly plain, and extremely useful: <strong>what predicts delivery performance is not microservices versus monolith but the answer to two questions—(1) can your team make large-scale changes to its own system without depending on other teams? and (2) can you test and deploy on demand, without needing an integrated environment in which every other service is present?</strong> The property is called loosely coupled architecture, and its substance is <em>independent deployability and independent testability</em>.</p>
+<p>This cuts through a great deal of technical religion. The data contains organizations that split into microservices and still need three teams to coordinate a single release—coupling was never removed, merely relocated from the codebase into the meeting room—and organizations running a monolith whose modules deploy independently. <strong>Microservices are one means of achieving independent deployability, not the goal; confuse means with end and you get the full complexity of a distributed system plus the full coordination cost of a monolith.</strong></p>
+<p>Why it matters: it gives architecture decisions a falsifiable acceptance test. <strong>The next time you evaluate a design, don't ask whether it is modern; ask how many teams must agree and how many of other people's services must be running for one change to reach production.</strong> Those two numbers are the true coupling of the system. It also explains why architecture problems keep turning into organizational problems: whether you can ship independently is half a question of how the code is cut and half a question of how teams and permissions are cut.</p>
+
+<h3>5. Westrum's typology: turning "culture" into information flow you can measure</h3>
+<p>"Culture matters" is a true and useless sentence, because culture resists measurement. The authors borrow an elegant workaround from the organizational sociologist Ron Westrum: <strong>don't ask people whether the culture is good; ask how information travels—because information flow is the one reliable outward sign of culture.</strong> Westrum sorts organizations into three types:</p>
+<div class="scroll">
+<table>
+<tr><th></th><th>Pathological</th><th>Bureaucratic</th><th>Generative</th></tr>
+<tr><td>Orientation</td><td>Power</td><td>Rules</td><td>Performance</td></tr>
+<tr><td>Information</td><td>Hoarded, hidden</td><td>Ignored, routed by process</td><td>Actively sought</td></tr>
+<tr><td>Messengers</td><td>Shot</td><td>Tolerated</td><td>Trained and encouraged</td></tr>
+<tr><td>After a failure</td><td>Find a scapegoat</td><td>Find who broke the rule</td><td>Ask why the system allowed it</td></tr>
+<tr><td>Novelty</td><td>Crushed</td><td>Treated as a nuisance</td><td>Welcomed</td></tr>
+<tr><td>Cross-team work</td><td>Discouraged</td><td>Tolerated</td><td>Encouraged</td></tr>
+</table>
+</div>
+<p class="cap">Westrum's three types rest entirely on how information and bad news are treated—which is what makes them surveyable.</p>
+<p>The finding: <strong>a generative culture predicts both better software delivery and better organizational performance, and it predicts lower burnout.</strong> The mechanism is not mysterious. Whether bad news can travel upward safely determines whether decisions get made on real information or on information that has been polished at every level—and it determines whether an outage produces learning or fear.</p>
+<p>There is a reverse causal arrow the authors are careful to note: <strong>culture is an effect as well as a cause.</strong> Automate deployments, shrink batches, and turn postmortems from blame-finding into system-questioning, and behavior changes—after which the culture changes too. <em>You do not have to wait for a better culture before improving engineering practice; improving engineering practice is the most effective available entrance to culture.</em></p>
+
+<h3>6. The change advisory board: the most uncomfortable finding in the book</h3>
+<p>A change advisory board (CAB) is standard equipment in large companies: every release is submitted to a panel of external experts for review and approval. Its logic is unimpeachable—another set of eyes, one fewer incident.</p>
+<p><strong>The data says otherwise.</strong> Approval of changes by an external body showed no observable improvement in change failure rate, while clearly lengthening lead times and reducing deployment frequency—<strong>meaning it reliably charges you the cost in speed without delivering the corresponding stability.</strong> The authors' explanation is blunt: a panel that does not know this code and does not hold the context of this system cannot genuinely assess the risk of a change. What it performs is procedural confirmation, not technical scrutiny.</p>
+<p>What does work? <strong>Peer review by people who know the code, combined with automated tests, continuous integration, and progressive delivery.</strong> The distinction that matters: effective control comes from the people and machines nearest the risk, not from the layer nearest the authority.</p>
+<p>Why it matters: this is the book's rudest and most valuable strike at managers. <strong>It reclassifies the reflex of "let's add an approval step" from prudent to costly-and-unvalidated ritual.</strong> Afterwards you will interrogate every control gate with two questions: <em>does it actually reduce the failure rate—is there data?—and how much lead time does it add?</em> Any gate whose owner cannot answer the first is mostly manufacturing a feeling of control.</p>
+
+<h3>7. Deployment pain and burnout: technical debt eventually gets charged to people</h3>
+<p>The book measures a very human construct it calls deployment pain: how much fear and anxiety a release generates on a team—late nights, all-hands standby, the person in the channel saying "nobody touch production today."</p>
+<p>The finding is that <strong>deployment pain is negatively associated with delivery performance and positively associated with burnout.</strong> That closes the loop between the technical and the human: manual steps, big batches, and hard rollbacks make releases high-risk events; fear and overtime follow; fear makes teams release less often; batches grow; the pain increases. It is a self-reinforcing loop, and the exit is not team-building or wellness programs—it is automation and batch size.</p>
+<p>Their analysis of burnout is worth keeping too: <strong>the primary driver is not workload but powerlessness—working indefinitely inside a system you cannot change and are nonetheless held accountable for.</strong> The effective remedies follow: let teams change their own tools and processes, have leaders actually remove obstacles, and avoid forcing a conflict between the work and the person's sense of self (the study found employees' identification with their organization is meaningfully associated with delivery performance and with whether they would recommend the place to a friend).</p>
+<p>How it changes your seeing: <strong>you begin reading "everyone's exhausted lately" as a system metric rather than an HR issue.</strong> If shipping frightens people, that is not a bad attitude; that is the delivery pipeline raising an alarm.</p>
+
+<h3>8. Transformational leadership: necessary, and nowhere near sufficient</h3>
+<p>Transformational leadership is a well-established construct in organizational behavior, describing leaders who work through five dimensions: vision (saying clearly where we are going), inspirational communication (making people believe it is worth doing), intellectual stimulation (forcing the team to re-examine old assumptions), supportive leadership (caring about people's circumstances and growth), and personal recognition (acknowledging contribution specifically).</p>
+<p>Teams scoring high on all five were indeed more likely to have strong technical capabilities and high delivery performance. <strong>But the authors state the conclusion with real restraint: leadership is an enabling condition, not a sufficient one.</strong> The data contains groups with excellent leadership scores and mediocre delivery—leaders who did all the inspiring correctly but never converted it into capabilities: no investment in automation, no architectural work, no approval gates dismantled.</p>
+<p>Why it matters: it refutes two popular stories at once. <strong>It refutes "culture and leadership are what really count, the technical details are downstream"—vision without pipeline work moves no metric; and it refutes "just buy good tools, leaders needn't get involved"—because cross-team decoupling, abolishing an approval board, and changing what gets measured are all things only a leader can sign.</strong> The book's position is that a leader's concrete job is to point resources and authority at those two dozen capabilities, then use the four outcome metrics to check whether the aim was right.</p>
+
+<h2>The Argument, Distilled</h2>
+<p>The book is one causal chain plus a demonstration of its own method.</p>
+<p><strong>It starts with measurement.</strong> Concede that the industry has been measuring the wrong things—lines of code, story points, utilization are all output, not outcome—and switch to four outcome metrics: deployment frequency, lead time for changes, time to restore service, change failure rate. Cluster the population on those four and it separates cleanly into high, medium, and low performers.</p>
+<p><strong>The first finding overturns the old consensus:</strong> all four metrics are better together in the high group, so speed and stability are not a trade-off but a common product. <strong>The second raises the stakes:</strong> delivery performance is associated with profitability, productivity, and market share, so this is no longer the engineering department's private housekeeping.</p>
+<p><strong>Then the "how":</strong> not maturity checkboxes but roughly twenty-four capabilities—technical (version control for everything, test automation, trunk-based development, deployment automation, security shifted left), architectural (independent deployability and testability), managerial (limit work in progress, visualize flow, replace external approval boards with lightweight peer review), and cultural (generative information flow). <strong>They all converge on a single point of action: make batches smaller and feedback faster.</strong></p>
+<p><strong>Finally it closes on people:</strong> these capabilities reduce deployment pain, which reduces burnout and raises identification with the organization; and the function of transformational leadership is to direct resources and authority into those capabilities and keep verifying the result.</p>
+<p>How is any of it established? By a research method rarely seen in software engineering books: abstract notions like culture and leadership are decomposed into multiple Likert-scale items forming latent constructs, tested for reliability and validity, then modeled with partial least squares structural equation modeling for predictive analysis, with cluster analysis used to define the performance groups. <strong>The real weight of this book lies not in any single conclusion but in dragging "how organizations work"—a domain historically held up by authority and anecdote—into territory that is measurable, arguable, and refutable by later data.</strong></p>
+
+<h2>Misreadings, Criticisms, Honest Objections</h2>
+<p><strong>Misreading one: treating the four metrics as individual productivity scores.</strong> This is the most common and most damaging misuse. They are team- and system-level outcome measures; ranking engineers with them turns a measure into a target, at which point <em>Goodhart's law</em>—once a measure becomes a target it ceases to be a good measure—takes effect immediately: deployment frequency can be inflated with meaningless commits, and restore time deflated by redefining what counts as an incident. Forsgren later helped introduce the SPACE framework largely to counter this flattening of developer productivity into one dimension.</p>
+<p><strong>Misreading two: making frequent deployment the goal itself.</strong> Frequency is a shadow of batch size. Shipping empty changes to raise the number buys nothing—the distance to be shortened is from an idea to a user's hands.</p>
+<p><strong>Misreading three: thinking this is a book about tooling.</strong> The strongest predictors in the data are practices and culture, not a purchase list. An organization with an immaculate CI/CD estate that still needs three teams to coordinate a release will see none of the four metrics move.</p>
+<p><strong>Misreading four: assuming high performers are all unencumbered internet companies.</strong> The data found high performers across sizes and industries, including heavily regulated ones and organizations carrying legacy systems. That matters, because "we're different" is the most common immunity claim.</p>
+<p>Now the criticisms that must be stated plainly:</p>
+<p><strong>One: this is a cross-sectional self-report survey, not an experiment.</strong> That is the fundamental limitation. The data is respondents describing their own teams—including the four "outcome" metrics (mostly answered as bracketed ranges) and organizational performance (respondents estimating their firm's profitability and market share relative to peers). <strong>No randomization, no control group, no longitudinal tracking—so strictly this is correlation plus a statistical model that indicates predictive direction, not proof of causation.</strong> "The Science of…" in the subtitle is a strong claim.</p>
+<p><strong>Two: common method bias.</strong> The same person, in one questionnaire, rates both their team's culture and their team's performance—someone who feels good about their employer marks both up, which systematically inflates the correlations. The authors address this statistically, but no post-hoc treatment removes this class of bias entirely.</p>
+<p><strong>Three: the sample is not random.</strong> Recruitment ran largely through DevOps communities, mailing lists, and practitioner networks (snowball sampling), and anyone willing to complete a long survey about DevOps is likely already invested in it. <strong>The genuinely lagging, genuinely chaotic organizations may be badly underrepresented—and they are exactly the audience the conclusions are aimed at.</strong></p>
+<p><strong>Four: the twenty-four capabilities overlap heavily.</strong> Critics note that in models of this kind nearly everything correlates with everything, making it hard to separate a real lever from something merely riding along. For practitioners the consequence is that the list looks comprehensive but offers no ranking for "which one first, given limited resources."</p>
+<p><strong>Five: several specific findings are contested.</strong> The clearest is trunk-based development beating long-lived branches: it is a correlational result, and plenty of successful teams deliver well on other branching models. Likewise, "speed does not cost stability" holds across the business software the sample covers, but applying it naively in aviation, medical devices, or nuclear systems—where regulators mandate batch and verification regimes—is dangerous. <strong>The book describes a very wide domain of validity, not an unlimited one.</strong></p>
+<p><strong>Six: the performance cluster boundaries drift.</strong> High/medium/low—later reports added an "elite" tier—come from clustering each year's sample, so the between-group multiples change annually. <em>Quoting one year's "46x" as though it were a physical constant misuses the data.</em></p>
+<p>How should the book be shelved? <strong>As a high-quality body of observational evidence, not a set of physical laws: it is more than enough to kill the old intuition that fast must mean fragile, and more than enough to give you a prioritized list of practices worth trying; it cannot promise that copying them works. You still have to measure, experiment, and verify inside your own organization</strong>—which is precisely what the book itself tells you to do.</p>
+
+<h2>Ten Sentences</h2>
+<div class="tl">
+<p>1. <strong>Speed and stability are not opposing forces to be balanced—in the data, the fastest teams also break least and recover quickest.</strong> People who believe they are trading speed for safety usually end up with neither.</p>
+<p>2. Measure four things: how often you ship, how long a change takes to reach production, how long recovery takes, and how often a release has to be undone. <strong>All four are outcomes, none is output, and none lands on an individual.</strong></p>
+<p>3. Deployment frequency is not valuable in itself; it is valuable as the shadow of batch size. <strong>The mechanism doing the work is always: small batch, fast feedback, easy diagnosis, small blast radius.</strong></p>
+<p>4. Shipping in large batches is not more careful; it accumulates risk and settles it in one payment. <strong>You are choosing between betting a little each time and saving up to bet it all at once.</strong></p>
+<p>5. Build a capability model, not a maturity model. <strong>No organization ever "arrives at DevOps" and stops—you keep improving or you start sliding back.</strong></p>
+<p>6. Architecture has exactly one test: <strong>can you test and deploy without depending on other teams and without an environment containing everyone else's services?</strong> Microservices are a means; independent deployability is the end.</p>
+<p>7. To measure culture, don't ask whether the culture is good—ask how bad news travels: <strong>is the messenger shot, tolerated, or trained? After an outage, do you hunt a person or ask why the system allowed it?</strong></p>
+<p>8. <strong>External change advisory boards visibly slow delivery with no visible reduction in failure rate—they buy the feeling of control, not control.</strong> Real scrutiny comes from the people and machines closest to the code.</p>
+<p>9. If shipping frightens people, that is not a morale problem, it is the pipeline raising an alarm: <strong>deployment pain predicts burnout, and burnout is driven by powerlessness—being accountable inside a system you cannot change.</strong></p>
+<p>10. Leadership is an enabling condition, not a sufficient one: <strong>vision without pipeline work moves no metric—yet decoupling teams, abolishing approval boards, and changing what gets measured are things only a leader can sign.</strong></p>
+</div>
+
+<footer>Deep Reading Daily · Finish this page and you have the core of the book; go to the original for the detail, the cases, and the author's own voice.</footer>
+</div>
+</body></html>
