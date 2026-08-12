@@ -22,20 +22,24 @@ set -e
 
 # Collect all new (untracked + modified) HTML files matching the topic pattern.
 # Excludes index.html — that's expected to be modified, not "the new content".
-NEW_FILES=$(git status --porcelain | grep -oE '\S+-(day|week|book|issue|read)[0-9]+(\.en)?\.html$' | sort -u)
+NEW_FILES=$(git status --porcelain | grep -oE '\S+-(day|week|book|issue|read)[0-9]+[a-z]?(\.en)?\.html$' | sort -u)
 [ -z "$NEW_FILES" ] && { echo "ERROR: no new *-{day,week,book,issue}{N}[.en].html in working tree"; exit 1; }
 
 # Primary (Chinese) file = the non-.en one if any, else the .en one
 PRIMARY=$(echo "$NEW_FILES" | grep -v '\.en\.html$' | head -1)
 [ -z "$PRIMARY" ] && PRIMARY=$(echo "$NEW_FILES" | head -1)
 
-PADDED_N=$(echo "$PRIMARY" | grep -oE '[0-9]+' | tail -1)
+# Issue token = kind + number + optional same-author sibling letter (e.g. read52b).
+TOKEN=$(echo "$PRIMARY" | grep -oE '(day|week|book|issue|read)[0-9]+[a-z]?' | tail -1)
+PADDED_N=$(echo "$TOKEN" | grep -oE '[0-9]+')
+SUFFIX=$(echo "$TOKEN" | grep -oE '[a-z]$' || true)
 N=$((10#$PADDED_N))
+LABEL="${N}${SUFFIX}"
 KIND=$(echo "$PRIMARY" | grep -oE '(day|week|book|issue|read)')
 
 TITLE=$(grep -oE '<title>[^<]+' "$PRIMARY" | head -1 | sed 's|<title>||')
 [ -z "$TITLE" ] && TITLE="$PRIMARY"
-MSG="${MSG:-Add #$N: $TITLE}"
+MSG="${MSG:-Add #$LABEL: $TITLE}"
 
 # ---------- TOPICS guard (anti echo-chamber) ----------
 # Topics are pre-curated by BigCat. Routines must NOT invent/append their own
@@ -121,17 +125,19 @@ for existing in *-${KIND}*.html; do
   [ ! -f "$existing" ] && continue
   # Skip if this file is itself one of the new files
   echo "$NEW_FILES" | grep -q "^${existing}$" && continue
-  EXISTING_PADDED=$(echo "$existing" | grep -oE '[0-9]+' | tail -1)
+  EXISTING_TOKEN=$(echo "$existing" | grep -oE '(day|week|book|issue|read)[0-9]+[a-z]?' | tail -1)
+  EXISTING_PADDED=$(echo "$EXISTING_TOKEN" | grep -oE '[0-9]+')
+  EXISTING_SUFFIX=$(echo "$EXISTING_TOKEN" | grep -oE '[a-z]$' || true)
   EXISTING_N=$((10#$EXISTING_PADDED))
   # Only compare same lang variant: split-mode produces both x.html and x.en.html
   IS_EN_EXISTING=$(echo "$existing" | grep -c '\.en\.html$' || true)
   IS_EN_PRIMARY=$(echo "$PRIMARY" | grep -c '\.en\.html$' || true)
-  if [ "$EXISTING_N" = "$N" ] && [ "$IS_EN_EXISTING" = "$IS_EN_PRIMARY" ]; then
+  if [ "${EXISTING_N}${EXISTING_SUFFIX}" = "$LABEL" ] && [ "$IS_EN_EXISTING" = "$IS_EN_PRIMARY" ]; then
     DUP="$DUP $existing"
   fi
 done
 if [ -n "$DUP" ]; then
-  echo "ERROR: ${KIND} #$N already exists:$DUP"
+  echo "ERROR: ${KIND} #$LABEL already exists:$DUP"
   echo "       Check filesystem before regenerating."
   exit 1
 fi
