@@ -180,3 +180,10 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《The Willpower Instinct（自控力）》— Kelly McGonigal — 「我要/我不要/我想要」三种力、道德许可、自我关怀：斯坦福自控课
 - 《Good Habits, Bad Habits》— Wendy Wood — 43% 的行为是习惯：靠情境与摩擦力，而非意志力（最严谨的一本）
 - ✓ 《Metaphors We Live By 我们赖以生存的隐喻》— George Lakoff & Mark Johnson — 隐喻是思维的骨架、不是修辞〔metaphors-we-live-by-read911〕
+
+<!-- 柯维「高效能」系列（清单外） -->
+- 《The 7 Habits of Highly Effective People 高效能人士的七个习惯》— Stephen R. Covey — 从依赖到独立再到互赖：品格伦理压过技巧，先赢自己才谈得上赢别人
+- 《First Things First 要事第一》— Stephen R. Covey 等 — 第四代时间管理：不是把日程排满，是先把「重要但不紧急」放进去
+- 《The 8th Habit 第8个习惯》— Stephen R. Covey — 从优秀到卓越：找到自己的心声，并帮别人找到他们的
+- 《The Speed of Trust 信任的速度》— Stephen M. R. Covey — 信任是可测量的经济变量：信任低则速度慢、成本高
+- 《The 4 Disciplines of Execution 高效能人士的执行4原则》— McChesney / Covey / Huling — 战略如何死在日常事务的漩涡里，以及四条纪律怎么把它捞回来
