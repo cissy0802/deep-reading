@@ -182,14 +182,10 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - ✓ 《Metaphors We Live By 我们赖以生存的隐喻》— George Lakoff & Mark Johnson — 隐喻是思维的骨架、不是修辞〔metaphors-we-live-by-read911〕
 
 <!-- 柯维「高效能」系列（清单外） -->
-- 《The 7 Habits of Highly Effective People 高效能人士的七个习惯》— Stephen R. Covey — 从依赖到独立再到互赖：品格伦理压过技巧，先赢自己才谈得上赢别人
-- 《First Things First 要事第一》— Stephen R. Covey 等 — 第四代时间管理：不是把日程排满，是先把「重要但不紧急」放进去
-- 《The 8th Habit 第8个习惯》— Stephen R. Covey — 从优秀到卓越：找到自己的心声，并帮别人找到他们的
-- 《The Speed of Trust 信任的速度》— Stephen M. R. Covey — 信任是可测量的经济变量：信任低则速度慢、成本高
-- 《The 4 Disciplines of Execution 高效能人士的执行4原则》— McChesney / Covey / Huling — 战略如何死在日常事务的漩涡里，以及四条纪律怎么把它捞回来
+- 《The 7 Habits of Highly Effective People 高效能人士的七个习惯》— Stephen R. Covey — 从依赖到独立再到互赖：品格伦理压过技巧，先赢自己才谈得上赢别人（**并入**《First Things First 要事第一》的第四代时间管理与四象限、《The 8th Habit 第8个习惯》的「找到自己的心声」——都是七习惯的展开，用一节即可讲清）
+- 《The Speed of Trust 信任的速度》— Stephen M. R. Covey — 信任是可测量的经济变量：信任低则速度慢、成本高（另一位作者、另一个命题，压不进七习惯，单开）
+- 《The 4 Disciplines of Execution 高效能人士的执行4原则》— McChesney / Covey / Huling — 战略如何死在日常事务的漩涡里，以及四条纪律怎么把它捞回来（纯操作手册，与七习惯不重叠，单开）
 
 <!-- 稻盛和夫（清单外） -->
-- 《活法》(生き方 / A Compass to Fulfillment) — 稻盛和夫 — 人生·工作的结果＝思维方式 × 热情 × 能力，而思维方式可以是负数：「提高心性」为什么是经营的前提
-- 《干法》(働き方) — 稻盛和夫 — 把工作做到极致本身就是修行：自燃型的人、「付出不亚于任何人的努力」
-- 《阿米巴经营》(アメーバ経営 / Amoeba Management) — 稻盛和夫 — 把公司切成几百个独立核算的小单元，用「单位时间核算」让每个人都算自己的账
-- 《稻盛和夫的实学：经营与会计》(稲盛和夫の実学) — 稻盛和夫 — 看不懂账就管不了公司：一一对应、双重确认等会计原则如何直接长成经营纪律
+- 《活法》(生き方 / A Compass to Fulfillment) — 稻盛和夫 — 人生·工作的结果＝思维方式 × 热情 × 能力，而思维方式可以是负数：「提高心性」为什么是经营的前提（**并入**《干法》(働き方) 的劳动观：把工作做到极致本身就是修行、自燃型的人——同一套哲学换个场景，不另开）
+- 《阿米巴经营》(アメーバ経営 / Amoeba Management) — 稻盛和夫 — 把公司切成几百个独立核算的小单元，用「单位时间核算」让每个人都算自己的账（**并入**《稻盛和夫的实学：经营与会计》：一一对应、双重确认等会计原则——它正是阿米巴得以运转的那半台机器。与《活法》的心性论是两回事，故与之分列）
