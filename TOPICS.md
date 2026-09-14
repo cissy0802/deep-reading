@@ -200,3 +200,14 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《Invisible Women 看不见的女性》— Caroline Criado Perez — 默认的人是男人：数据缺口如何把一半人口设计成异常值（FT 2019）
 - 《East West Street》— Philippe Sands — 灭绝种族罪与危害人类罪同时诞生：该保护群体，还是保护个人（Baillie Gifford 2016）
 - 《NeuroTribes》— Steve Silberman — 自闭症史与神经多样性：把「缺陷清单」重看成人类大脑的变异谱（Baillie Gifford 2015）
+
+<!-- 长销筛出（NYT how-to 分榜累计周数 + 口碑网络；只取有硬核心机制、兑水少的实用非虚构） -->
+- 《Getting to Yes 谈判力》— Roger Fisher & William Ury — 别在立场上讨价还价，去谈立场背后的利益；BATNA 决定你真正的底气（1981 年至今不倒）
+- 《Never Split the Difference 掌控谈话》— Chris Voss — 折中是双输：用标注、镜像与校准问题，逼出那句「对，就是这样」（FBI 人质谈判版，与《谈判力》正好对打）
+- 《Nonviolent Communication 非暴力沟通》— Marshall Rosenberg — 观察、感受、需要、请求：把每一句评判翻译回它背后没被满足的需要
+- 《Influence 影响力》— Robert Cialdini — 互惠、承诺一致、社会认同、喜好、权威、稀缺：六种自动生效的武器，知道了也照样中招
+- 《Deep Work 深度工作》— Cal Newport — 注意力残留：切换一次任务，后半天的脑子就不再完整属于你
+- 《Getting Things Done 搞定》— David Allen — 大脑是用来想的不是用来记的：把所有承诺清出脑子、变成「下一步行动」
+- 《Four Thousand Weeks 四千周》— Oliver Burkeman — 时间管理的真相是承认做不完：有限性不是失败，是起点
+- 《Mindset 终身成长》— Carol Dweck — 固定型与成长型思维，以及它在教育界被高估了多少（干预效果的复现争议要一并讲）
+- 《The Body Keeps the Score 身体从未忘记》— Bessel van der Kolk — 创伤不存在记忆里、存在身体里（长销近 300 周，但对「创伤」定义的扩张与部分疗法的证据强度争议很大）
