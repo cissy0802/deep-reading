@@ -192,3 +192,11 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 
 <!-- 健康 · 长寿（清单外） -->
 - 《Ageless Aging》— Maddy Dychtwald — 女性活得更久却病得更久：健康寿命、脑寿命与骨骼肌肉怎么一项项补回来
+
+<!-- 奖项筛出（FT 商业书奖 / Baillie Gifford 非虚构奖；只取「概念书」、且已过时间关的，叙事纪实类一律不取） -->
+- 《Poor Economics 贫穷的本质》— Abhijit Banerjee & Esther Duflo — 穷人的每个「不理性」决定背后，都有一笔外人没看见的账（FT 2011）
+- 《Capital in the Twenty-First Century 21世纪资本论》— Thomas Piketty — r > g：只要资本回报跑赢经济增长，不平等就会自动回来（FT 2014）
+- 《Fault Lines》— Raghuram Rajan — 金融危机不是意外：信贷被用来填平社会断层，直到系统裂开（FT 2010）
+- 《Invisible Women 看不见的女性》— Caroline Criado Perez — 默认的人是男人：数据缺口如何把一半人口设计成异常值（FT 2019）
+- 《East West Street》— Philippe Sands — 灭绝种族罪与危害人类罪同时诞生：该保护群体，还是保护个人（Baillie Gifford 2016）
+- 《NeuroTribes》— Steve Silberman — 自闭症史与神经多样性：把「缺陷清单」重看成人类大脑的变异谱（Baillie Gifford 2015）
