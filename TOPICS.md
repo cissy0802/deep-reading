@@ -211,3 +211,4 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《Four Thousand Weeks 四千周》— Oliver Burkeman — 时间管理的真相是承认做不完：有限性不是失败，是起点
 - 《Mindset 终身成长》— Carol Dweck — 固定型与成长型思维，以及它在教育界被高估了多少（干预效果的复现争议要一并讲）
 - 《The Body Keeps the Score 身体从未忘记》— Bessel van der Kolk — 创伤不存在记忆里、存在身体里（长销近 300 周，但对「创伤」定义的扩张与部分疗法的证据强度争议很大）
+- 《Protocols: An Operating Manual for the Human Body》— Andrew Huberman — 睡眠、光照、运动、专注：把神经科学拆成一套可执行的日常协议（2026 新书、尚未过时间关；写时务必把「把初步研究讲成确定结论」这一类批评一并讲透）
