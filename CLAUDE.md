@@ -57,7 +57,7 @@
 - 发布前更新 `index.html` + `index.en.html`：按下方「index 维护」，在新书所属主题里把它的灰色占位行**原地转成链接**（旧的 `<!-- entries -->` 标记已废弃）。
 - **index 条目副标题要短且齐（硬规则）**：书名后 `—` 那句只留**一个最尖的钩子**，中文 ≤ 约 18 字、英文 ≤ 约 12 词，**一句话、不加分号、不塞两层意思**（曾出现「…；…」两段式、越写越长——严禁）。要点留到正文里讲，index 只负责勾人点进来。
 - **同一作者的书在 index 里放一起，用 `read{N}a / read{N}b` 分组**：当要做的书是某本**已发布 read** 的同作者姊妹篇（续作/镜像，如《人类简史》→《未来简史》、《枪炮》→《崩溃》），别再顺号往后排，而是**紧挨着姊妹篇插入**、把两条的编号标成 `Read {N}a` / `Read {N}b`（原书变 Na、新书变 Nb）。文件名/slug 同理走 `{slug}-read{N}b.html`。TOPICS 里也尽量把同作者书排相邻（如已把《未来简史》挪到 `3b:` 紧跟 `3:`《人类简史》）。**已发布的姊妹篇回改 a/b 的样板**：《人类简史》= `sapiens-read3`（显示 Read 3a，文件名不动、只改显示标号）、《未来简史》= 由 `homo-deus-read8` 改名为 `homo-deus-read3b`（连带改页面 `READ 3b`、langbar、index 位置、TOPICS 标号）；腾出的 `read8` 号位另放新书（现为《禅与摩托车维修艺术》）。回改会换 URL、旧评论可能丢，值不值得由 BigCat 定。
-- **不要**手动加 `comments.js` / `search.js` / `index-button.js` / `i18n-tts.js`（GitHub Action 自动注入）；也别在页里硬写 `← Hub`。
+- **不要**手动加 `comments.js` / `search.js` / `index-button.js` / `i18n-tts.js`（GitHub Action 自动注入；`publish.sh` 发现新页面里有这 4 个脚本会直接拒绝发布）；也别在页里硬写 `← Hub`。
 - 用 `./publish.sh` 发布：它自动 add/commit/push 到 `main`，并校验体量、index 引用、div 平衡、重复编号，以及 **TOPICS 只放行「追加 `- {N}b:` 姊妹行」**（同轮分裂用）——新增编号主题 / 删除 / 改写 / 重排一律中止发布。
 - git：`user.name=BigCat` / `user.email=chengchen0802@gmail.com`。
 
@@ -79,16 +79,3 @@ index.html / index.en.html 已改成**主题分区**结构：每个分区是一�
 
 ### 每次运行先「对齐」灰行（TOPICS 增长时补占位）
 每次运行开头扫 `TOPICS.md`：凡**还没写**（无对应页）**且** index 里**还没有对应灰行**的书，就按题材在**对应主题** `<details>` 里、按 `Read N` 顺序补一条灰色 `<div class="entry todo">`（无 href、`todo` 类；主清单显示 `Read N`，清单外显示 `—` 并归到某个清单外子分区）。两个 index 都补：`index.en.html` 把标题/要点翻成 house-style 英文（**勿泄漏中文**），`index.html` 用 TOPICS 中文裁成本仓 zh 风格。这样 BigCat / deep-research 往 TOPICS 加的新书，下次运行就先作为灰行落进它该在的主题，等真正写它时再**原地**转成链接。
-
-## 新页面必带共享脚本（免触发 inject-comments 机器人提交）
-
-生成任何 `*.html`（含 `.en.html`）时，在 `</body>` 前直接写入这 4 行，勿遗漏：
-
-```html
-<script src="https://hub.cissychen.com/comments.js" defer></script>
-<script src="https://hub.cissychen.com/search.js" defer></script>
-<script src="https://hub.cissychen.com/index-button.js" defer></script>
-<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
-```
-
-这样 CI 的 inject-comments 不会再对新页面追加自动提交。
