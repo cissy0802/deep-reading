@@ -213,3 +213,4 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《The Body Keeps the Score 身体从未忘记》— Bessel van der Kolk — 创伤不存在记忆里、存在身体里（长销近 300 周，但对「创伤」定义的扩张与部分疗法的证据强度争议很大）
 - 《Protocols: An Operating Manual for the Human Body》— Andrew Huberman — 睡眠、光照、运动、专注：把神经科学拆成一套可执行的日常协议（2026 新书、尚未过时间关；写时务必把「把初步研究讲成确定结论」这一类批评一并讲透）
 - 《The Psychology of Money 金钱心理学》— Morgan Housel — 财富是你没花掉的那部分钱：理财拼的不是聪明而是行为——合理胜过理性、复利要的是时间而非收益率、运气与风险是同一枚硬币（注意与丹·艾瑞里同中文名的《Dollars and Sense》区分，此处指 Housel 这本）
+- 《Crucial Conversations 关键对话》— Kerry Patterson / Joseph Grenny / Ron McMillan / Al Switzler — 风险高、情绪强、观点对立的那几分钟怎么不崩：安全感一丢，人就只剩沉默或攻击；你生气是因为你给事实编了个故事
