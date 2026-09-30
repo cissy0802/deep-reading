@@ -214,3 +214,4 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《Protocols: An Operating Manual for the Human Body》— Andrew Huberman — 睡眠、光照、运动、专注：把神经科学拆成一套可执行的日常协议（2026 新书、尚未过时间关；写时务必把「把初步研究讲成确定结论」这一类批评一并讲透）
 - 《The Psychology of Money 金钱心理学》— Morgan Housel — 财富是你没花掉的那部分钱：理财拼的不是聪明而是行为——合理胜过理性、复利要的是时间而非收益率、运气与风险是同一枚硬币（注意与丹·艾瑞里同中文名的《Dollars and Sense》区分，此处指 Housel 这本）
 - 《Crucial Conversations 关键对话》— Kerry Patterson / Joseph Grenny / Ron McMillan / Al Switzler — 风险高、情绪强、观点对立的那几分钟怎么不崩：安全感一丢，人就只剩沉默或攻击；你生气是因为你给事实编了个故事
+- 《Profits, Prophets, Coaches and Kings: (When) Do Leaders Matter?》— Jared Diamond — 写了一辈子「地理与环境决定文明」的人回头问：个人领导者到底在什么条件下才真正起作用？横跨政治、商业、体育、宗教（2026 新书；写时须与《枪炮、病菌与钢铁》read4、《崩溃》read4b 对照——这是戴蒙德对自己结构论的一次修正还是补充）
