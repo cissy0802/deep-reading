@@ -181,6 +181,7 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《The Willpower Instinct（自控力）》— Kelly McGonigal — 「我要/我不要/我想要」三种力、道德许可、自我关怀：斯坦福自控课
 - 《Good Habits, Bad Habits》— Wendy Wood — 43% 的行为是习惯：靠情境与摩擦力，而非意志力（最严谨的一本）
 - ✓ 《Metaphors We Live By 我们赖以生存的隐喻》— George Lakoff & Mark Johnson — 隐喻是思维的骨架、不是修辞〔metaphors-we-live-by-read911〕
+- 《Why Buddhism Is True 为什么佛学是真的》— Robert Wright — 自然选择造出的大脑天生会骗你：用进化心理学证成「无我」与「空」，冥想是看穿这套出厂设定的工具（与 #73《具身心智》同一交汇点，但走的是进化论而非现象学的路）
 
 <!-- 柯维「高效能」系列（清单外） -->
 - 《The 7 Habits of Highly Effective People 高效能人士的七个习惯》— Stephen R. Covey — 从依赖到独立再到互赖：品格伦理压过技巧，先赢自己才谈得上赢别人（**并入**《First Things First 要事第一》的第四代时间管理与四象限、《The 8th Habit 第8个习惯》的「找到自己的心声」——都是七习惯的展开，用一节即可讲清）
