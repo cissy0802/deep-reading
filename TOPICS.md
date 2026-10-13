@@ -218,3 +218,4 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《Crucial Conversations 关键对话》— Kerry Patterson / Joseph Grenny / Ron McMillan / Al Switzler — 风险高、情绪强、观点对立的那几分钟怎么不崩：安全感一丢，人就只剩沉默或攻击；你生气是因为你给事实编了个故事
 - 《Profits, Prophets, Coaches and Kings: (When) Do Leaders Matter?》— Jared Diamond — 写了一辈子「地理与环境决定文明」的人回头问：个人领导者到底在什么条件下才真正起作用？横跨政治、商业、体育、宗教（2026 新书；写时须与《枪炮、病菌与钢铁》read4、《崩溃》read4b 对照——这是戴蒙德对自己结构论的一次修正还是补充）
 - 《Secrets to Winning at Office Politics》— Marie G. McIntyre — 职场政治不是脏活而是影响力的经营：分清组织里的权力从哪来、按「赢-赢」而非零和去争取目标，并识破那些毁掉自己声誉的政治自杀行为（组织心理学家写的「正派政治」手册）
+- 《The Office Politics Handbook: Winning the Game of Power and Politics at Work》— Jack Godwin — 政治学家把权力、联盟与正当性这套政治学工具搬进办公室：职场本来就是一个小政体（与上一条 McIntyre 同题，但走政治学而非组织心理学的路，故分列）
