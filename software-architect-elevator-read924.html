@@ -107,7 +107,7 @@ footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0
 <p>只看这一本，会以为霍普是个讲组织与沟通的「软」作者，其实他的底子是极硬的分布式系统。<strong>《企业集成模式》（Enterprise Integration Patterns, 2003，与 Bobby Woolf 合著）</strong>把系统之间怎么用消息通信整理成了一套模式语言——消息通道、发布/订阅、消息路由器、消息翻译器、死信队列（dead letter queue，投递失败的消息被扔进的那个专用队列，供人排查）等等，直到今天，Kafka、RabbitMQ 与各家云消息服务的文档还在用这套词汇。</p>
 <p>但真正跟本书接得上的，是那本书里那条常被引用的判断（大意）：<strong>松耦合减少了双方彼此的假设，但代价是整体复杂度上升。</strong>异步消息让两个系统不必同时在线、互不阻塞，可你也就此失去了同步调用里免费送的东西——顺序、即时的错误反馈、一眼可见的调用栈；于是你得自己处理重复投递、乱序、最终一致。<strong>这正是「架构即卖期权」的技术版本：解耦是你买的期权，复杂度是你付的权利金。</strong>两本书隔了十七年，讲的是同一件事：<strong>架构里没有免费的好东西，只有标好价的取舍。</strong></p>
 <p>他后来的《Cloud Strategy》（2020）与《Platform Strategy》（2023）继续这条线：上云的主要收益不是省机房钱，而是买到了速度与可选性——你能一天开一百台机器再关掉，等于把「先试试看」的成本压到接近零；而平台的成败判据只有一条，<strong>用它必须比不用它更省事</strong>，否则再华丽的内部平台也只会被绕过去。</p>
-<h2>越界 · 跨学科的联想</h2>
+<h2 data-tts="499a40185136b581">越界 · 跨学科的联想</h2>
 <div class="crossx"><ul>
 <li><b>生物进化 · 可演化性（Kirschner 与 Gerhart，1998）</b>：两位生物学家指出，模块化和组件间的「弱连接」让突变更容易产出能用的新变体——演化偏爱的不只是当下合身，还有「变得动」的身体，这正是一阶导数。不像在于：演化没有预见，不会为未来预付权利金，可演化性是事后被筛出来的。</li>
 <li><b>控制论 · 阿什比的必要多样性定律（1956）</b>：只有多样性才能吸收多样性——控制者的应对种类少于系统可能的状态，就控不住，一个顶楼指挥不了几百个团队。不像在于：阿什比给的是一道硬约束，霍普给的是出路——不扩中枢，改回路、把决策下放。</li>
@@ -129,8 +129,8 @@ footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0
 </div>
 <footer>好书精读 · 读完这页，约等于拿到这本书的核心；想要更多细节、实验与案例，再去翻原书。</footer>
 </div>
-<script src="https://hub.cissychen.com/comments.js" defer></script>
-<script src="https://hub.cissychen.com/search.js" defer></script>
-<script src="https://hub.cissychen.com/index-button.js" defer></script>
-<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+<script defer="" src="https://hub.cissychen.com/comments.js"></script>
+<script defer="" src="https://hub.cissychen.com/search.js"></script>
+<script defer="" src="https://hub.cissychen.com/index-button.js"></script>
+<script defer="" src="https://hub.cissychen.com/i18n-tts.js"></script>
 </body></html>
