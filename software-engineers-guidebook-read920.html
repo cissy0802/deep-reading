@@ -25,6 +25,10 @@ th{background:#1b2f2b;color:#bfe3db;font-weight:700}
 .cap{font-size:0.82rem;color:#8aa39d;font-style:italic;margin-top:-4px}
 .scroll{overflow-x:auto}
 footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+.crossx{border:1px solid #2f5d57;border-radius:10px;padding:6px 22px;margin:18px 0;background:rgba(111,195,180,0.04)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.95rem}
+.crossx b{color:#6fc3b4}
 </style></head><body>
 <div class="container">
 <p class="top">好书精读 · READ 920</p>
@@ -108,6 +112,14 @@ footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0
 <p><strong>最实在的批评二：它的许多建议隐含了一个宽松的就业市场。</strong>书成于科技业长达十年的扩张尾声，「不满意就换一家、换到第三档去」在那个语境里是可行的。到了普遍裁员、招聘冻结、晋升名额被砍的周期里，同样的建议可执行性会大幅下降；而「先做下一级的工作，再等公司确认」在一个已经宣布暂停晋升的组织里，可能只意味着你白干了一年。<em>书里对这种周期性风险的处理是偏轻的。</em></p>
 <p><strong>批评三：结构性的门槛被低估了。</strong>「进入面向全球招聘的第三档公司」对不同护照、不同时区、不同母语的人，难度完全不同。签证、合规、时差、本地招聘政策这些硬约束，比个人能力更能决定一个人能不能跨档，而这一层书里着墨不多。</p>
 <p><strong>批评四：体量偏大，重复度不低。</strong>这是一本厚书（自出版、篇幅约七百页），覆盖面广是优点，代价是不少章节在别的书里已经被讲得更集中——tech lead 与管理那部分与富尼耶（Camille Fournier）《The Manager's Path》重叠，staff+ 那部分不如赖利《The Staff Engineer's Path》深。<em>它的独特价值集中在两处：完整的阶梯地图，和那层别人不写的行业与定价常识。</em></p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>分布式系统 · 端到端原则（Saltzer、Reed、Clark，1984）</b>：可靠传输只能在两端核对，每一跳都说「我这段没丢包」也保证不了全程；「我那部分写完了」就是中间一跳的自证。不像在于：端到端原则主张把功能从中间层拿走，奥罗斯却要人走出自己那段、去认领整条路径。</li>
+<li><b>社会心理学 · 旁观者效应（Darley 与 Latané，1968）</b>：在场的人越多，每人越等别人先动手，即「责任分散」。项目里那些没人认领的缝隙是同一个机制。不同在于，实验里的旁观者是陌生人，组织里却有职责划分可指，人人都有「不归我管」的正当理由。</li>
+<li><b>生物进化 · 适应度景观（Sewall Wright，1932）</b>：同一套性状在不同环境里适应度不同，种群容易困在局部高峰，去更高的峰得先穿过一段低谷；三档市场和「换公司本事不再算本事」都是这张图。不像的是，种群只能盲目漂移，人可以看清地形后主动跳峰。</li>
+<li><b>进化生物学 · 不利条件原理（Amotz Zahavi，1975）</b>：信号要可信，就得难以造假，孔雀尾巴因此诚实。晋升委员会同样只信难以伪造的证据：上线的系统、他人的背书。不像在于，brag document 本身很廉价，它只有指向可核查的事实时才算信号。</li>
+<li><b>神经科学 · 左脑「解释器」（Michael Gazzaniga）</b>：裂脑病人的左半球会为右半球做的事当场编出笃定的理由，猜测与结论在它那里不分。「把事实和意见分开标」正是给这台解释器加一道人工校验。不同在于，解释器不知道自己在编，这条建议要求的恰恰是知道。</li>
+</ul></div>
 <h2 data-tts="483c20296804598b">十句话精华</h2>
 <div class="tl">
 <p>1. 每升一级，产出的定义就换一次：从「我完成了任务」到「问题被解决了」，到「团队交付了」，再到「组织走对了方向」。<strong>卡住的人多数不是不够努力，是还在用上一级的标准打分。</strong></p>

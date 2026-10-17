@@ -25,6 +25,10 @@ th{background:#1b2f2b;color:#bfe3db;font-weight:700}
 .cap{font-size:0.82rem;color:#8aa39d;font-style:italic;margin-top:-4px}
 .scroll{overflow-x:auto}
 footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+.crossx{border:1px solid #2f5d57;border-radius:10px;padding:6px 22px;margin:18px 0;background:rgba(111,195,180,0.04)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.95rem}
+.crossx b{color:#6fc3b4}
 </style></head><body>
 <div class="container">
 <p class="top">DEEP READING · READ 923</p>
@@ -133,6 +137,15 @@ footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0
 <p><strong>Five: several specific findings are contested.</strong> The clearest is trunk-based development beating long-lived branches: it is a correlational result, and plenty of successful teams deliver well on other branching models. Likewise, "speed does not cost stability" holds across the business software the sample covers, but applying it naively in aviation, medical devices, or nuclear systems—where regulators mandate batch and verification regimes—is dangerous. <strong>The book describes a very wide domain of validity, not an unlimited one.</strong></p>
 <p><strong>Six: the performance cluster boundaries drift.</strong> High/medium/low—later reports added an "elite" tier—come from clustering each year's sample, so the between-group multiples change annually. <em>Quoting one year's "46x" as though it were a physical constant misuses the data.</em></p>
 <p>How should the book be shelved? <strong>As a high-quality body of observational evidence, not a set of physical laws: it is more than enough to kill the old intuition that fast must mean fragile, and more than enough to give you a prioritized list of practices worth trying; it cannot promise that copying them works. You still have to measure, experiment, and verify inside your own organization</strong>—which is precisely what the book itself tells you to do.</p>
+
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Evolutionary biology · Fisher's geometric model (R. A. Fisher, 1930)</b>: Fisher showed that the smaller a mutation's effect, the closer its odds of being an improvement get to a coin flip, while large mutations are almost always harmful. That is the small-batch argument in genetic form. The difference: Motoo Kimura (1983) added that tiny beneficial mutations are easily lost to random drift, so the ones most likely to fix are of intermediate size. Software has no drift; a small change that ships simply stays.</li>
+<li><b>Complexity science · Herbert Simon's near-decomposability (1962)</b>: in "The Architecture of Complexity," the watchmaker Hora builds in stable subassemblies of ten, so an interruption costs him one small piece, while Tempus has to start the whole watch over. A loosely coupled architecture is Hora's method. The difference: Simon's hierarchies are filtered by evolution itself, while decoupling in code has to be defended against entropy by people.</li>
+<li><b>Psychology · Learned helplessness, reversed (Maier &amp; Seligman, 2016)</b>: Seligman's 1967 dog experiments were read as showing that helplessness is learned. Fifty years on, the two concluded that passivity is the default and what gets learned is control. That matches the book's claim that burnout comes from powerlessness. The difference: a lab can simply switch off the shocks, while an organization's helplessness lives in its approvals and permissions.</li>
+<li><b>Neuroscience · Dopamine reward prediction error (Schultz, Dayan &amp; Montague, 1997)</b>: dopamine neurons fire when an outcome departs from expectation, and learning depends on that error arriving soon after the action. Shortening lead time keeps an organization's error signal from showing up late. The difference: the brain uses temporal-difference learning to pass credit back across a delay, while most organizations can only shrink the delay itself.</li>
+<li><b>Philosophy · Karl Popper's piecemeal social engineering (1945)</b>: in <i>The Open Society and Its Enemies</i>, Popper argued for small, reversible reforms, because only then can you see what went wrong; utopian, wholesale redesign stores its errors up for one large disaster. The difference: a social reform can rarely be rolled back, while a software change can be undone in half an hour.</li>
+</ul></div>
 
 <h2>Ten Sentences</h2>
 <div class="tl">

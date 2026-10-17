@@ -20,6 +20,10 @@ ul{margin:8px 0 8px 1.2em}
 li{margin:7px 0}
 .tl{background:#1b2f2b;border-left:3px solid #3f8b7f;border-radius:6px;padding:14px 18px;margin-top:10px}
 footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+.crossx{border:1px solid #2f5d57;border-radius:10px;padding:6px 22px;margin:18px 0;background:rgba(111,195,180,0.04)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.95rem}
+.crossx b{color:#6fc3b4}
 </style></head><body>
 <div class="container">
 <p class="top">每日精读 · 清单外</p>
@@ -86,6 +90,15 @@ footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0
 <p><strong>批评一:强烈的行业与语境局限。</strong>全书基于美国科技公司、尤其是有一定规模的成长型公司的经验。它对「工程组织」的假设(有清晰职级、有招聘预算、有 1:1 文化)不一定适用于小作坊、外包、非科技行业或强层级文化的环境;书里也较少覆盖远程/分布式团队这些后来才凸显的议题。迁移时要打折扣。</p>
 <p><strong>批评二:偏「操作清单」，理论深度有限。</strong>它的长处是具体、可照着做，但也因此更像一本贴心的<strong>field guide(实地手册)</strong>而非管理学理论。想要对「人为何这样协作」的更深解释(如动机、组织行为学的机制)，它给得不多——那更适合去别处补。把它当成「上手地图」而非「终极原理」，期待就对了。</p>
 <p><strong>争议:「当了经理还要写多少代码」没有标准答案。</strong>她主张保住技术手感，但到了更高层级(管经理、当 VP)，「保持技术」到底意味着什么，书里也承认因人因司而异。有人认为高管过度留恋技术反而越权、挤压下属;这条边界，读者得结合自己的层级与团队自行校准。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>神经科学 · 突触修剪（Huttenlocher）</b>：Peter Huttenlocher 1979 年起的测量显示，人类额叶皮层的突触密度幼年见顶、到青春期大幅回落，大脑靠剪掉连接变得更会思考；每升一级就放下一门手艺，是同一种「减法成长」。不像在于：修剪由用进废退自动完成，经理却得主动去剪自己最常用的那条回路。</li>
+<li><b>分布式系统 · 端到端原则（Saltzer、Reed、Clark，1984）</b>：中间层再可靠，正确性也只能在两端校验，所以文件传输的完整性要由收发两端核对。跳级会议就是端到端校验，不信中间那层的「传输成功」。不像的是，网络中间层不会为了好看改写数据，经理层会。</li>
+<li><b>免疫学 · 免疫记忆与胸腺阴性选择</b>：每次感染都会留下针对它的记忆细胞，流程这块「疤痕组织」也是对旧伤的特异应答。不像在于：胸腺会剔除攻击自身的 T 细胞，组织却很少有机制淘汰误伤正常工作的流程，所以过敏才是常态。</li>
+<li><b>佛学 · 十二因缘里的「受缘爱」</b>：感受（受，vedanā）生起后，心会立刻抓取、判断，把一时的不快当成对世界的结论；心情差就觉得下属态度有问题，正是这一环。不像的是，佛学要从这条链上解脱，管理只要求别把它传给团队。</li>
+<li><b>道家 · 老子「太上，不知有之」</b>：《道德经》第十七章说，最好的统治者，百姓只知道有这么个人，事成了都说「我们自己做到的」，这是授权的极致。不像在于：富尼耶的授权要留仪表盘、要能验证，老子的无为不谈验证。</li>
+</ul></div>
+
 <h2 data-tts="c6c7f69ccd19c79f">十句话精华</h2>
 <ul>
 <li>1. 管理是一次转行，不是一次晋升:写好代码和带好人是两套技能，后者要从头刻意去学。</li>

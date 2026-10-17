@@ -20,6 +20,10 @@ ul{margin:8px 0 8px 1.2em}
 li{margin:7px 0}
 .tl{background:#1b2f2b;border-left:3px solid #3f8b7f;border-radius:6px;padding:14px 18px;margin-top:10px}
 footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+.crossx{border:1px solid #2f5d57;border-radius:10px;padding:6px 22px;margin:18px 0;background:rgba(111,195,180,0.04)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.95rem}
+.crossx b{color:#6fc3b4}
 </style></head><body>
 <div class="container">
 <p class="top">好书精读 · READ 925</p>
@@ -138,6 +142,14 @@ footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0
 <li><strong>对权力谈得太轻。</strong>书里说「改变目标」「改变范式」，却很少处理一个硬问题：<strong>目标和范式恰恰是既得利益者用权力守着的东西。</strong>它把大部分改变写成了认知问题（看清结构就能改），而现实里更多是利益与政治的问题。这也是它读起来温和乐观、并带有明显环保立场的原因——若你带着组织政治的经验读它，会觉得最上面那三个杠杆点的可操作性远低于它的排序所暗示的。</li>
 <li><strong>它为什么仍值得读。</strong>把上面的保留全接受，剩下的依然锋利：存量与流量的区分、两种回路、延迟造成震荡、有限理性、八个陷阱的命名，以及那句方向警告。<strong>它给你的不是一套解法，而是一副眼镜——戴上之后，你会开始怀疑一切「换个人就好了」和「再加一把劲就好了」的方案。</strong></li>
 </ul>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>神经科学 · 应变稳态（allostasis，Sterling 与 Eyer，1988）</b>：恒温器式的平衡回路守着固定目标值；应变稳态说大脑会预判需求，主动把血压、激素的目标值挪走。像在都是平衡回路，不像在目标本身会动——梅多斯把目标下滑视作「目标侵蚀」之病，身体却靠挪目标活下来。</li>
+<li><b>佛学 · 十二因缘</b>：无明→行→识……→老死，又回到无明，是一条把苦一圈圈放大的增强回路；修行常被讲成在「受」与「爱」之间下手，在感受生起时不让它变成贪爱，像找杠杆点。不像在于：梅多斯想让系统转得更好，佛学要的是让这个轮子停下来。</li>
+<li><b>分布式系统 · 亚稳态故障（metastable failures，Bronson 等，HotOS 2021）</b>：一次短暂抖动让请求超时，客户端纷纷重试，重试本身把负载继续顶在高位——触发因素早已消失，服务仍起不来。这正是「延迟 + 反应过猛」被增强回路锁死，工程上的解药也正是梅多斯那句「反应慢一点」：指数退避加随机抖动、限流丢请求。不像的是，这里的回路由代码写死，可以被精确找到和改掉，不需要说服任何人。</li>
+<li><b>生物进化 · 红皇后假说（Leigh Van Valen，1973）</b>：捕食者与猎物、寄生虫与宿主互相加码，都得拼命跑才能留在原地，正是「竞争升级」。不像在于：进化里没有谁能「单方面停手」或坐下来谈新规则，停下来的一方直接被淘汰。</li>
+<li><b>心理学 · 坎贝尔定律（Donald Campbell，1976）</b>：一个量化指标越被用来做社会决策，就越会被扭曲，也越会腐蚀它本来要监测的过程，即「规则规避」与「追求错误的目标」。不像在于：梅多斯说换个更贴近结果的指标就好，坎贝尔暗示再好的指标一挂上奖惩也会被钻。</li>
+</ul></div>
 <h2 data-tts="d082468fa1f42441">十句话精华</h2>
 <div class="tl">
 <p>① 系统＝要素 + 连接 + 目标；换要素影响最小，换连接系统变样，换目标整个系统掉头——<strong>而真正的目标要看行为，不能听声明。</strong></p>

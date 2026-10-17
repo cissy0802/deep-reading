@@ -20,6 +20,10 @@ ul{margin:8px 0 8px 1.2em}
 li{margin:7px 0}
 .tl{background:#1b2f2b;border-left:3px solid #3f8b7f;border-radius:6px;padding:14px 18px;margin-top:10px}
 footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+.crossx{border:1px solid #2f5d57;border-radius:10px;padding:6px 22px;margin:18px 0;background:rgba(111,195,180,0.04)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.95rem}
+.crossx b{color:#6fc3b4}
 </style></head><body>
 <div class="container">
 <p class="top">好书精读 · READ 90</p>
@@ -135,6 +139,14 @@ footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0
 <p><strong>《人类理解论》(An Essay Concerning Human Understanding)</strong>：没有天赋观念，心灵初来时像一张白纸（<em>tabula rasa</em>），一切知识都来自经验——外部的<em>感觉（sensation）</em>与内省的<em>反省（reflection）</em>。这不是与政治无关的另一摊：<strong>既然没有人生来脑子里就刻着「服从国王」，一切权威就都必须在经验与同意中重新论证一遍。</strong>书里还有两个影响极深的区分：<em>第一性质</em>（形状、广延、运动——在物体本身）与<em>第二性质</em>（颜色、气味、声音——只是物体在我们身上引起感觉的能力）；以及一个非常现代的人格同一性理论：<strong>使你成为「你」的既不是某个灵魂实体，也不是同一具身体，而是意识的连续——说白了，是记忆。</strong></p>
 <p><strong>《论宗教宽容》(A Letter Concerning Toleration)</strong>：国家管的是「外在利益」（生命、自由、财产），灵魂的救赎不在它的管辖范围内；何况真信仰根本无法被强迫——强迫只能造出口是心非的人。</p>
 <p>三本书合起来看，洛克真正在反复做的是同一个动作：<strong>划界。</strong>知识能走到哪儿为止（认识论的界）、国家能管到哪儿为止（政治的界）、强制能伸到哪儿为止（宽容的界）。《政府论》只是这套划界术落在政治上的那一刀。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>分布式系统 · Raft 共识算法的领导者选举（Ongaro &amp; Ousterhout，2014）</b>：节点没有天生的主人，多数票选出 leader，权力只管一个任期、靠心跳维持，心跳一断就重选收回，像洛克的「多数决 + 可收回的信托」写成了代码。不像在哪：Raft 只防宕机不防作恶，照常发心跳却在做坏事的 leader 它察觉不到，而洛克要对付的正是这种有意背信。</li>
+<li><b>佛学 · 无我（《无我相经》）</b>：佛陀说色受想行识都不是「我」，因为它们不听使唤。洛克也不认人对自己有绝对所有权：不能自杀、不能自卖为奴。不像在于理由相反：洛克说你属于上帝，佛陀说根本没有那个所有者。</li>
+<li><b>进化生物学 · 「布尔乔亚策略」（John Maynard Smith，1982）</b>：「先占者就打、入侵者就让」可以是演化稳定策略，斑木蝶争光斑常是原住者胜：没有政府，先占也能被尊重。不像在于依据只是「谁先到」这个任意的不对称，与劳动、与「留下足够的给别人」都无关。</li>
+<li><b>心理学 · 儿童的劳动所有权直觉（Kanngiesser、Gjersoe、Hood，2010）</b>：实验里，学龄前儿童看到有人用别人的橡皮泥捏出新东西，倾向把它判给捏的人，像天生懂「掺入劳动」。不像在于这只说明我们会这样想，不证明东西就应该这样分。</li>
+<li><b>货币思想 · 盖塞尔的「会生锈的钱」</b>：Silvio Gesell 1916 年主张钱要定期贬值，1932 年奥地利小镇沃尔格尔真发过每月贴印花才保值的票证，等于把被货币绕开的「不得浪费」闸门装回去。不像在于盖塞尔只想逼钱流动，不问积累是否正当。</li>
+</ul></div>
 <h2 data-tts="18ee73cce6b19a69">十句话精华</h2>
 <div class="tl">
 <p>① 权利不是政府发的：在政府出现之前，人就已经拥有生命、自由、财产，以及惩罚侵犯者的权利——政府只是接管了最后那一项。</p>

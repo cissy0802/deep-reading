@@ -19,6 +19,10 @@ ul{margin:8px 0 8px 1.2em}
 li{margin:7px 0}
 .tl{background:#1b2f2b;border-left:3px solid #3f8b7f;border-radius:6px;padding:14px 18px;margin-top:10px}
 footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+.crossx{border:1px solid #2f5d57;border-radius:10px;padding:6px 22px;margin:18px 0;background:rgba(111,195,180,0.04)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.95rem}
+.crossx b{color:#6fc3b4}
 </style></head><body>
 <div class="container">
 <p class="top">DEEP READING · READ 919</p>
@@ -116,6 +120,15 @@ footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0
 <p><strong>Objection 2: the evidence is experience, not research.</strong> The material comes from a decade-plus on the ground plus the shared vocabulary of the engineering-leadership community (Larson, Camille Fournier and others) — <strong>not from empirical study.</strong> Nothing here shows that people who work this way succeed more often, and survivorship bias can't be ruled out: we hear the retrospectives of people for whom it worked. As a high-quality distillation of professional experience it's excellent; <strong>read as experience it's right, read as law it will disappoint.</strong></p>
 <p><strong>Objection 3: some readers find it long and soft.</strong> Compressed, a good deal of it comes to "communicate, write things down, choose deliberately" — hardly novel; the value is in how finely she operationalizes it. <strong>If you've already run cross-team projects in a large company for a few years, stretches of it will confirm what you know</strong>; if you've just arrived at this level, the "obvious" parts are precisely the valuable ones.</p>
 <p><strong>Objection 4: one question the book never really answers.</strong> The whole influence-without-authority approach presupposes an organization that is basically healthy and responsive to good arguments. <strong>And if it isn't?</strong> If decisions are made by a couple of people on instinct and no volume of documentation gets read? The answer offered is closer to "that's information too — this place may not be right for you," which is true and of limited use to someone currently stuck in it.</p>
+
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Distributed systems · The Byzantine generals problem (Lamport, Shostak and Pease, 1982)</b>: the four layers of agreement work like a consensus protocol, where a proposal means nothing until a majority acknowledges it, and "what counts as done" is the commit point. The difference: Raft-style protocols assume nodes are honest and merely crash; people can agree in the meeting and quietly not act, which is closer to Byzantine faults, and no algorithm guarantees convergence.</li>
+<li><b>Neuroscience · Glial cells</b>: Virchow named them "nerve glue" in 1856, and for about a century neuroscience studied almost nothing but spiking neurons; only later did glia turn out to regulate synapses, wrap axons in myelin and clear waste. They were overlooked for the same reason glue work is: they produce no output an electrode can record. The difference: nobody's fairness was at stake.</li>
+<li><b>Psychology · Global precedence (David Navon, 1977)</b>: show people a large letter built out of small ones and they usually see the large one first; altitude is the perceptual version of this. The difference: perception switches levels almost automatically, while a Staff engineer has to land and climb on purpose.</li>
+<li><b>Psychology · Idiosyncrasy credits (Edwin Hollander, 1958)</b>: members bank credit by meeting group norms and contributing, and only then are allowed to deviate; that is the credibility account. The difference: Hollander's credit is earned mostly by conforming, Reilly's by delivering, and it is spent precisely on doing the unconventional thing.</li>
+<li><b>Evolutionary biology · Costly signaling (Amotz Zahavi's handicap principle, 1975)</b>: a signal is believable because it is expensive to fake; sponsorship outweighs mentorship for the same reason, since the sponsor stakes their own reputation. The difference: a peacock's tail vouches for the peacock, while sponsorship vouches for someone else.</li>
+</ul></div>
 
 <h2>Ten Sentences</h2>
 <div class="tl">

@@ -20,6 +20,10 @@ ul{margin:8px 0 8px 1.2em}
 li{margin:7px 0}
 .tl{background:#1b2f2b;border-left:3px solid #3f8b7f;border-radius:6px;padding:14px 18px;margin-top:10px}
 footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+.crossx{border:1px solid #2f5d57;border-radius:10px;padding:6px 22px;margin:18px 0;background:rgba(111,195,180,0.04)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.95rem}
+.crossx b{color:#6fc3b4}
 </style></head><body>
 <div class="container">
 <p class="top">DEEP READ · 925</p>
@@ -153,6 +157,14 @@ footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0
 <li><strong>Why it is still worth reading.</strong> Grant every reservation above and the residue is still sharp: the stock/flow distinction, the two loops, delay-driven oscillation, bounded rationality, the naming of the eight traps, and that warning about direction. <strong>What it hands you is not a solution set but a pair of glasses—put them on and you will start distrusting every plan that amounts to "we just need different people" or "we just need to push harder."</strong></li>
 </ul>
 
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Neuroscience · Allostasis (Sterling and Eyer, 1988)</b>: a thermostat-style balancing loop defends a fixed set point; allostasis says the brain anticipates demand and moves the set points for blood pressure and hormones ahead of time. Same balancing loop, but here the goal itself moves. Meadows treats a sliding goal as a disease (drift to low performance); the body survives by sliding it.</li>
+<li><b>Buddhism · The twelve links of dependent origination</b>: ignorance leads to formations, to consciousness, on through aging and death, and back to ignorance, a reinforcing loop that keeps suffering turning. Practice is often taught as intervening between feeling and craving, catching a sensation before it becomes thirst, which looks a lot like a leverage point. The difference: Meadows wants the system to run better; Buddhism wants the wheel to stop.</li>
+<li><b>Distributed systems · Metastable failures (Bronson et al., HotOS 2021)</b>: a brief hiccup makes requests time out, clients retry, and the retries themselves keep the load pinned high. The trigger is long gone and the service still cannot recover. This is delay plus overreaction locked in by a reinforcing loop, and the engineering cure is Meadows's own advice to react more slowly: exponential backoff with jitter, load shedding. The difference: here the loop is written in code, so it can be found and changed precisely without persuading anyone.</li>
+<li><b>Evolutionary biology · The Red Queen hypothesis (Leigh Van Valen, 1973)</b>: predator and prey, parasite and host keep raising the stakes and must run as fast as they can just to stay in place, which is escalation exactly. The difference: evolution has no one who can stop unilaterally or negotiate new rules. The side that stops running is simply eliminated.</li>
+<li><b>Psychology · Campbell's law (Donald Campbell, 1976)</b>: the more a quantitative indicator is used for social decisions, the more it gets distorted and the more it corrupts the very process it was meant to monitor, which is rule beating and seeking the wrong goal. The difference: Meadows says pick a metric closer to the real outcome; Campbell implies that even a good metric gets gamed once rewards hang on it.</li>
+</ul></div>
 <h2>Ten Sentences</h2>
 <div class="tl">
 <p>1. A system = elements + interconnections + purpose. Swapping elements changes least, swapping interconnections changes what it is, swapping the purpose turns the whole thing around—<strong>and the real purpose is read off behaviour, never off the mission statement.</strong></p>

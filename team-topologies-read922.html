@@ -25,6 +25,10 @@ th{background:#1b2f2b;color:#bfe3db;font-weight:700}
 .cap{font-size:0.82rem;color:#8aa39d;font-style:italic;margin-top:-4px}
 .scroll{overflow-x:auto}
 footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+.crossx{border:1px solid #2f5d57;border-radius:10px;padding:6px 22px;margin:18px 0;background:rgba(111,195,180,0.04)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.95rem}
+.crossx b{color:#6fc3b4}
 </style></head><body>
 <div class="container">
 <p class="top">好书精读 · READ 922</p>
@@ -113,6 +117,14 @@ footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0
 <p><strong>反向康威操作有一个先有鸡还是先有蛋的问题。</strong>它要求你先知道目标架构，可对新领域而言，架构恰恰是要靠做才能发现的。此外，学术上关于「组织结构与架构相互映射」的假说（研究中称为 mirroring hypothesis）虽有大量支持，但并非普遍成立——开源项目常常是明显的反例：一群从不开会、分散在全球的人，照样能维护高度模块化的系统。<em>这提示康威定律描述的其实是沟通结构而非行政结构，而这两者在开源里恰好脱钩了。</em></p>
 <p><strong>邓巴数字本身在学界有争议</strong>——近年有复现研究质疑那个具体数值的可靠性。它作为「团队规模有上限」的直觉支撑没问题，作为精确阈值就不宜当真。</p>
 <p><strong>最后一条实践者的抱怨也值得记下：书很薄，难的部分它没讲。</strong>画出目标拓扑是最容易的一步；真正难的是预算怎么重分、谁的团队被拆、平台团队的价值如何向不写代码的高层证明。<em>这本书给了你一张地图和一套词汇，但没给你走过去的政治学。</em></p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>复杂性科学 · 西蒙的「近可分解性」（Herbert Simon，1962）</b>：西蒙在《复杂性的架构》里讲两个钟表匠：Hora 把表做成稳定的小部件再组装，Tempus 一次装整只，被打断就全散；复杂系统能演化出来，靠的是子系统内部交互远强于子系统之间。断裂面与认知负荷说的是同一件事。不像在于：西蒙描述的层级是自然筛出来的，本书要人主动去切。</li>
+<li><b>生物进化 · 模块化的自发演化（Kashtan &amp; Alon，2005）</b>：模拟演化中，目标若按「子目标的不同组合」周期性变化，网络就会自发长出模块；目标固定则长成纠缠的一坨。像反向康威：外部变化的结构塑造内部结构。不像的是演化没有设计者，没人能事先挑定目标架构。</li>
+<li><b>神经科学 · 弗里斯顿的「马尔可夫毯」（Karl Friston）</b>：一个系统能维持自身，是因为内部状态只经由一层边界状态（感知与行动）与外界相连；团队 API 正是这样一层毯子。不像在于：马尔可夫毯是统计上的条件独立，团队 API 是要人写下、谈定、维护的约定。</li>
+<li><b>分布式系统 · 通用可扩展性定律（Neil Gunther）</b>：加节点后吞吐会被两项拖垮，排队争用和节点间保持一致的「相干」开销，后者随节点数约按平方增长。团队间的沟通线也是这样涨的。不像的是，机器的相干开销由协议定死，团队可以把协作改成 X 即服务，直接砍掉那条线。</li>
+<li><b>心理学 · 技能习得三阶段（Fitts &amp; Posner，1967）</b>：新手靠刻意、费力的认知阶段起步，练熟后进入自动化阶段，工作记忆被腾出来。「先协作、再切成 X 即服务」是组织版的自动化。不像的是，自动化发生在一个脑子里，接口却要两个团队都同意才算数。</li>
+</ul></div>
 <h2 data-tts="d2fa5045a8c5cdf9">十句话精华</h2>
 <div class="tl">
 <p>1. <strong>组织图就是架构图。</strong>系统的形状必然向组织的沟通结构收敛——你不能靠一群纠缠在一起的团队，造出一个松耦合的系统。</p>

@@ -20,6 +20,10 @@ ul{margin:8px 0 8px 1.2em}
 li{margin:7px 0}
 .tl{background:#1b2f2b;border-left:3px solid #3f8b7f;border-radius:6px;padding:14px 18px;margin-top:10px}
 footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+.crossx{border:1px solid #2f5d57;border-radius:10px;padding:6px 22px;margin:18px 0;background:rgba(111,195,180,0.04)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.95rem}
+.crossx b{color:#6fc3b4}
 </style></head><body>
 <div class="container">
 <p class="top">好书精读 · READ 5</p>
@@ -91,6 +95,13 @@ footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0
 <p><strong>同情（sympathy）。</strong>斯密说的不是「可怜」，而是<em>设身处地</em>：我们靠想象把自己放进对方的处境，据此判断他的情绪与行为「合不合宜」。这是他整个道德体系的地基——人天生就在乎别人的感受与评价，并非只会算计的机器。</p>
 <p><strong>公正的旁观者（the impartial spectator）。</strong>每个人心里都会想象出一位不偏不倚的第三方，用他的眼光回看自己的所作所为；良心与自我约束，就来自「在这位旁观者眼里，我还可敬吗」。<strong>正是他，给《国富论》里的「自利」划了道德红线</strong>——面包师追逐利润可以，但不能坑蒙拐骗。</p>
 <p><strong>两书合读，斯密才完整。</strong>十九世纪有德国学者觉得两本书自相矛盾（史称「亚当·斯密问题」），今天看这是误解：在同一个斯密眼里，《道德情操论》讲人如何在乎他人、受良心约束，《国富论》讲人如何在市场里自利谋生——<strong>市场是道德社会的一部分，不是弱肉强食的替代品；「看不见的手」能运转，前提是社会已由正义与同情托底。</strong>（《道德情操论》本身分量十足，值得单独精读。）</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>分布式系统 · TCP 拥塞控制（Van Jacobson，1988）</b>：没人统一分配带宽，每台主机只看本地的丢包信号调窗口：不丢就慢慢加，一丢就砍半（AIMD）；Chiu 与 Jain 1989 年证明它会收敛到又高效又公平的分配，丢包就是价格。不像在于：这要靠几乎所有主机自愿跑同一套「礼貌」算法，无视丢包的贪婪者能抢走带宽，自发秩序也得有共同规范托底。</li>
+<li><b>生物进化 · 演化大转变（Maynard Smith 与 Szathmáry，1995）</b>：多细胞生命也靠分工起家，团藻（Volvox）分出只管繁殖和只管游动的细胞。不像的是：细胞不交换，体细胞放弃繁殖是因为基因相同而非自利；癌细胞正是背叛分工的那个。</li>
+<li><b>神经科学 · 伦敦出租车司机（Eleanor Maguire）</b>：背熟路网的司机海马体后部灰质更多，印证专做一件事会重塑人。不像的是：她 2006 年发现他们前部更小、学新的视觉空间信息更差——大脑是偏科，不是斯密担心的整体变钝。</li>
+<li><b>东方哲学 · 老子的「无为」</b>：「我无为而民自化」，统治者少折腾，秩序自己长出来，近似斯密的「自然自由体系」。不像的是：老子要「小国寡民」、少欲知足，斯密要市场越做越大、靠欲望推动分工。</li>
+</ul></div>
 <h2 data-tts="663065fcee2b9010">十句话精华</h2>
 <div class="tl">
 <p>① 国家的财富不是金库里的金银，而是<strong>全体人民每年靠劳动生产出的商品与服务总量</strong>——衡量富不富，看产出，不看存的钱。</p>

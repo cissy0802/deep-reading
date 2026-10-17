@@ -20,6 +20,10 @@ ul{margin:8px 0 8px 1.2em}
 li{margin:7px 0}
 .tl{background:#1b2f2b;border-left:3px solid #3f8b7f;border-radius:6px;padding:14px 18px;margin-top:10px}
 footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+.crossx{border:1px solid #2f5d57;border-radius:10px;padding:6px 22px;margin:18px 0;background:rgba(111,195,180,0.04)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.95rem}
+.crossx b{color:#6fc3b4}
 </style></head><body>
 <div class="container">
 <p class="top">好书精读 · READ 919</p>
@@ -104,6 +108,14 @@ footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0
 <p><strong>批评二：证据是经验，不是研究。</strong>这本书的知识来源是作者十几年的一线经验加上工程管理社群（拉尔森、卡米尔·富尼耶等人）的共同语汇，<strong>不是实证研究</strong>：书里没有数据证明「按这样做的人更可能成功」，也无法排除幸存者偏差——我们听到的都是这套打法奏效了的人的复盘。它是一份高质量的行业经验总结，<strong>当成经验读是对的，当成规律读会失望。</strong></p>
 <p><strong>批评三：有读者觉得它偏长、偏软。</strong>把全书压缩，很大一部分可以归结为「多沟通、写下来、有意识地选择」——这些道理本身并不新，价值在于她把它们拆到了可操作的粒度。<strong>如果你已经在大公司做过几年跨团队项目，会有相当篇幅读起来是在确认你已知的东西</strong>；反过来，如果你刚踏进这个层级，这些「显而易见」的东西正是最值钱的部分。</p>
 <p><strong>批评四：一个书里没有正面回答的问题。</strong>「影响力而非职权」这套打法，前提是组织本身基本健康、讲道理、认可好论证。<strong>可如果不是呢？</strong>如果决定就是由某几个人拍脑袋做的、写多少文档都不会被读？书里给的答案更多是「那也是一种信息，说明这里可能不适合你」——这在道理上没错，但对一个正卡在这种处境里的人来说，帮助有限。</p>
+<h2>越界 · 跨学科的联想</h2>
+<div class="crossx"><ul>
+<li><b>分布式系统 · 拜占庭将军问题（Lamport、Shostak、Pease，1982）</b>：四层共识很像共识协议——提议不算数，多数确认了才算「提交」，「什么叫做完」就是提交点。不像在于：Raft 这类协议假设节点诚实、只会宕机；组织里的节点各有利益、会口头同意后私下不执行，更接近拜占庭故障，而且没有算法能保证收敛。</li>
+<li><b>神经科学 · 胶质细胞（glia）</b>：魏尔肖 1856 年把它命名为「神经胶」，此后一百年神经科学几乎只研究会放电的神经元；后来才发现胶质细胞在调节突触、包髓鞘、清理废物。被低估的原因和胶水工作一样：它不产生电极能记录的「输出」。不像的是，胶质细胞的待遇不涉及公平分配。</li>
+<li><b>心理学 · 全局优先效应（David Navon，1977）</b>：用小字母拼成大字母，人通常先看出大的那个，这就是「飞行高度」的知觉版。不像在于：知觉的层级切换几乎是自动的，Staff 工程师却得刻意降落、刻意拉高。</li>
+<li><b>心理学 · 特质信用（idiosyncrasy credits，Edwin Hollander，1958）</b>：成员先守规范、做贡献攒下「信用」，攒够了才被允许偏离群体常规，这就是可信度账户。不像的是，Hollander 的信用主要靠顺从攒，赖利的可信度靠交付攒，花出去恰恰为了做不顺从的事。</li>
+<li><b>生物进化 · 昂贵信号（Amotz Zahavi 的累赘原理，1975）</b>：信号可信，正因为它代价高、作假划不来；保荐比指导更有分量，也因为担保人押上了自己的信誉。不像在于：孔雀尾巴证明的是发信号者本身，保荐证明的是被担保的另一个人。</li>
+</ul></div>
 <h2 data-tts="ff7616fcfe111679">十句话精华</h2>
 <div class="tl">
 <p>① Staff+ 不是「更资深的资深」，是换了一份工作：衡量标准从<strong>你产出了多少</strong>，变成<strong>因为你在，组织多产出了多少</strong>。</p>

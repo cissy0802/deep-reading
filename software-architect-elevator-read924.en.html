@@ -20,6 +20,10 @@ ul{margin:8px 0 8px 1.2em}
 li{margin:7px 0}
 .tl{background:#1b2f2b;border-left:3px solid #3f8b7f;border-radius:6px;padding:14px 18px;margin-top:10px}
 footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0.82rem;color:#5c6663}
+.crossx{border:1px solid #2f5d57;border-radius:10px;padding:6px 22px;margin:18px 0;background:rgba(111,195,180,0.04)}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.95rem}
+.crossx b{color:#6fc3b4}
 </style></head><body>
 <div class="container">
 <p class="top">DEEP READ · 924</p>
@@ -118,6 +122,13 @@ footer{margin-top:50px;padding-top:16px;border-top:1px solid #242a2e;font-size:0
 <p>But the part that connects directly to this book is its most-quoted judgment (paraphrased): <strong>loose coupling reduces the assumptions each party makes about the other, at the price of higher overall complexity.</strong> Asynchronous messaging means two systems need not be up at the same time and never block each other — and in exchange you forfeit everything a synchronous call gives you for free: ordering, immediate error feedback, a stack trace you can read. Now you handle duplicates, out-of-order delivery and eventual consistency yourself. <strong>That is "architecture is selling options" in its technical form: decoupling is the option, complexity is the premium.</strong> Seventeen years apart, the two books make the same point: <strong>there are no free goods in architecture, only trade-offs with the price written on them.</strong></p>
 <p>His later <em>Cloud Strategy</em> (2020) and <em>Platform Strategy</em> (2023) continue the line: the main return on cloud is not a cheaper data center but speed and optionality — spinning up a hundred machines for an afternoon drives the cost of "let's just try it" toward zero. And a platform has exactly one success criterion: <strong>using it has to be easier than not using it</strong>, or the most beautiful internal platform in the world will simply be routed around.</p>
 
+<h2>Crossovers</h2>
+<div class="crossx"><ul>
+<li><b>Evolutionary biology · Evolvability (Kirschner &amp; Gerhart, 1998)</b>: the two biologists argued that modular parts and "weak linkage" between them make random mutation far likelier to yield usable variants, so evolution favors not just bodies that fit today but bodies that can change: a first derivative. The difference: evolution has no foresight and never prepays a premium; evolvability is only filtered in after the fact.</li>
+<li><b>Cybernetics · Ashby's law of requisite variety (1956)</b>: only variety can absorb variety; a controller with fewer possible responses than the system has states cannot keep it in check, which is why one penthouse cannot steer hundreds of teams. The difference: Ashby states a hard limit, while Hohpe offers a way out: don't grow the center, rewire the loops and push decisions down.</li>
+<li><b>Buddhism · Skillful means (upāya)</b>: in the Lotus Sutra's burning-house parable, a father promises each child the cart it likes best (goat, deer, or ox) just to get them out of the fire; drawing different diagrams for penthouse and engine room is the same audience-shaped telling. The difference: skillful means permits a provisional story, while the architect's translation must keep the facts intact on every floor.</li>
+<li><b>Neuroscience · Gazzaniga's "interpreter"</b>: in split-brain patients, whose corpus callosum has been cut, the left hemisphere never receives what the right one saw, yet fluently invents a reason for what the body just did; a penthouse cut off by a broken elevator tells equally coherent stories. The difference: a split brain cannot be rejoined, while an organization's elevator can be repaired.</li>
+</ul></div>
 <h2>Ten Sentences</h2>
 <div class="tl">
 <p>1. What's broken in a big company is neither the penthouse nor the engine room but <strong>the elevator between them</strong>: strategy can't get down, reality can't get up, and every floor rounds off the edges.</p>
