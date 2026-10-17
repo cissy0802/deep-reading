@@ -220,3 +220,10 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《Secrets to Winning at Office Politics》— Marie G. McIntyre — 职场政治不是脏活而是影响力的经营：分清组织里的权力从哪来、按「赢-赢」而非零和去争取目标，并识破那些毁掉自己声誉的政治自杀行为（组织心理学家写的「正派政治」手册）
 - 《The Office Politics Handbook: Winning the Game of Power and Politics at Work》— Jack Godwin — 政治学家把权力、联盟与正当性这套政治学工具搬进办公室：职场本来就是一个小政体（与上一条 McIntyre 同题，但走政治学而非组织心理学的路，故分列）
 - 《Leadership and Self-Deception 领导与自欺》— The Arbinger Institute — 「自我背叛」与「盒子」：当你违背自己「该为别人做点什么」的直觉，就会开始给自己找理由、把别人看成物件而非人——问题从此出在你身上，而你看不见（**并入**同机构续作《The Anatomy of Peace 化解冲突》：同一套「盒子」理论从职场搬到家庭与冲突，用一节即可讲清）
+
+<!-- 组织 · 文化 · 行为（清单外） -->
+- 《Organizational Culture and Leadership 组织文化与领导力》— Edgar H. Schein — 文化有三层：看得见的人造物、嘴上宣称的价值观、没人说出口的基本假设——真正驱动组织行为的是最底下那层，而领导者最核心的工作就是创造和管理文化（组织文化研究的奠基作）
+- 《The Fifth Discipline 第五项修炼》— Peter Senge — 学习型组织：自我超越、心智模型、共同愿景、团队学习，再用「系统思考」这第五项把前四项串起来；啤酒游戏说明，系统结构会让每个理性的人一起制造灾难（与《Thinking in Systems》相通，但落在组织上）
+- 《Overcoming Organizational Defenses》— Chris Argyris — 单环学习只改做法，双环学习连背后的目标与假设一起改；组织为了躲开尴尬与威胁，会形成一整套「大家默契回避、且回避本身也不许讨论」的防卫惯例，于是越聪明的人越学不会（**并入** Argyris 1991 年 HBR 名文《Teaching Smart People How to Learn》与他和 Schön 的「信奉理论 vs 使用理论」）
+- 《The Fearless Organization 无畏的组织》— Amy C. Edmondson — 心理安全感：团队里的人敢不敢说真话、提问题、承认错误而不怕被惩罚；她最初发现「好团队上报的差错反而更多」——不是犯错更多，而是更敢说（Google「亚里士多德计划」把它列为高效团队第一因素）
+- 《An Evolutionary Theory of Economic Change 经济变迁的演化理论》— Richard R. Nelson & Sidney G. Winter — 组织惯例（routines）就是组织的基因与记忆：企业不是在每个时刻做最优计算，而是按惯例运行、靠搜寻改良、在市场里被选择——「组织习惯」这个学术概念的源头（最硬核的一本）
