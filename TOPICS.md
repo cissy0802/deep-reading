@@ -227,3 +227,11 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《Overcoming Organizational Defenses》— Chris Argyris — 单环学习只改做法，双环学习连背后的目标与假设一起改；组织为了躲开尴尬与威胁，会形成一整套「大家默契回避、且回避本身也不许讨论」的防卫惯例，于是越聪明的人越学不会（**并入** Argyris 1991 年 HBR 名文《Teaching Smart People How to Learn》与他和 Schön 的「信奉理论 vs 使用理论」）
 - 《The Fearless Organization 无畏的组织》— Amy C. Edmondson — 心理安全感：团队里的人敢不敢说真话、提问题、承认错误而不怕被惩罚；她最初发现「好团队上报的差错反而更多」——不是犯错更多，而是更敢说（Google「亚里士多德计划」把它列为高效团队第一因素）
 - 《An Evolutionary Theory of Economic Change 经济变迁的演化理论》— Richard R. Nelson & Sidney G. Winter — 组织惯例（routines）就是组织的基因与记忆：企业不是在每个时刻做最优计算，而是按惯例运行、靠搜寻改良、在市场里被选择——「组织习惯」这个学术概念的源头（最硬核的一本）
+
+<!-- 书店畅销台（BigCat 2026-10 拍照补入；Atomic Habits 已有，其 Workbook 是配套练习册不另列） -->
+- 《The Let Them Theory》— Mel Robbins — 「Let Them」：别人怎么想、怎么做，让他们去；「Let Me」：把精力收回到自己能控制的那一半——一句话的边界感与控制二分法
+- 《Inner Excellence》— Jim Murphy — 前职业棒球手、表现教练：卓越表现的瓶颈不在技术而在内心，恐惧与自我（ego）是最大的干扰，先练心再练技（**并入**同作者 2026 年新书《The Best Possible Life》：同一套内在修炼从赛场扩到整个人生）
+- 《The Anxious Generation 焦虑的一代》— Jonathan Haidt — 2010 年代初起，「玩耍型童年」被「手机型童年」替换，青少年焦虑与抑郁随之陡升；他给出四条集体对策（写时务必把 Candice Odgers 等人对因果证据的批评一并讲透）
+- 《Things No One Taught Us About Love》— Vex King — 健康的关系先从和自己的关系开始：自爱、边界与依恋模式（**并入**同作者《You Can't Please Everyone》：不再为别人的认可而活——同一套自我价值论换个场景）
+- 《Notes on Being a Man》— Scott Galloway — 年轻男性在教育、工作、关系上集体掉队：一个父亲兼商学教授写给男孩的「怎样成为一个男人」
+- 《Vibe: The Secrets of Strong Connections in a Lonely World》— Adam Grant — 两个人之间的「化学反应」不是玄学：在越来越孤独的时代，相似不是团结的前提，亲近也未必需要很久（2026-10 新书、尚未过时间关）
