@@ -216,6 +216,8 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《The Software Engineer's Guidebook》— Gergely Orosz — 从 senior 到 staff 的成长地图，贴近当下大厂现实
 - 《The Effective Engineer》— Edmond Lau — 用「杠杆率」思考：把精力投在回报最高的地方
 - 《Team Topologies》— Matthew Skelton & Manuel Pais — 团队与系统边界怎么切：康威定律的实操版
+- 《The First 90 Days》— Michael Watkins — 新 leader 接手的局面分五种（STARS：新创、扭转、加速增长、重新对齐、保持成功），先诊断局面再出手：读懂新官为什么常在头几个月动结构
+- 《ReOrg: How to Get It Right》— Stephen Heidari-Robinson & Suzanne Heywood — 多数重组没能按时兑现预期价值：从高层视角拆开一次 reorg 从定目标到落地的完整流程与常见失败点（**并入**两人 2016 年 HBR 文章《Getting Reorgs Right》）
 - 《Accelerate》— Nicole Forsgren / Jez Humble / Gene Kim — 用 DORA 指标把「工程效能」讲成科学
 - 《The Software Architect Elevator》— Gregor Hohpe — Principal/架构师在「顶楼(战略)与机房(代码)」之间坐电梯来回
 - 《Thinking in Systems》— Donella Meadows — 系统思维与「杠杆点」：Principal 看组织与技术系统的心智模型
@@ -264,6 +266,7 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《Profits, Prophets, Coaches and Kings: (When) Do Leaders Matter?》— Jared Diamond — 写了一辈子「地理与环境决定文明」的人回头问：个人领导者到底在什么条件下才真正起作用？横跨政治、商业、体育、宗教（2026 新书；写时须与《枪炮、病菌与钢铁》read4、《崩溃》read4b 对照——这是戴蒙德对自己结构论的一次修正还是补充）
 - 《Secrets to Winning at Office Politics》— Marie G. McIntyre — 职场政治不是脏活而是影响力的经营：分清组织里的权力从哪来、按「赢-赢」而非零和去争取目标，并识破那些毁掉自己声誉的政治自杀行为（组织心理学家写的「正派政治」手册）
 - 《The Office Politics Handbook: Winning the Game of Power and Politics at Work》— Jack Godwin — 政治学家把权力、联盟与正当性这套政治学工具搬进办公室：职场本来就是一个小政体（与上一条 McIntyre 同题，但走政治学而非组织心理学的路，故分列）
+- 《Power: Why Some People Have It—and Others Don't》— Jeffrey Pfeffer — 斯坦福组织行为学者的现实主义：工作做得好没你想的那么管用，权力来自资源、关系与可见度（**并入**同作者 2022 年《7 Rules of Power》；写时须讲清它与 McIntyre「赢-赢」政治观的对立，以及由此引出的伦理争议）
 - 《Leadership and Self-Deception 领导与自欺》— The Arbinger Institute — 「自我背叛」与「盒子」：当你违背自己「该为别人做点什么」的直觉，就会开始给自己找理由、把别人看成物件而非人——问题从此出在你身上，而你看不见（**并入**同机构续作《The Anatomy of Peace 化解冲突》：同一套「盒子」理论从职场搬到家庭与冲突，用一节即可讲清）
 
 <!-- 组织 · 文化 · 行为（清单外） -->
