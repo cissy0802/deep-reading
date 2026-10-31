@@ -294,3 +294,8 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《The Alignment Problem 对齐问题》— Brian Christian — 从 COMPAS 量刑到奖励黑客：机器学到的从来不是我们以为在教的东西——对齐问题的工程史
 - 《If Anyone Builds It, Everyone Dies》— Eliezer Yudkowsky & Nate Soares — 超级智能悲观论的最强版本：为什么「造出来就完了」，以及这条论证链哪一环最可疑（与 #80《超级智能》对读）
 - 《What We Owe the Future 我们欠未来什么》— William MacAskill — 长期主义：未来的人也是人，此刻的选择可能把价值锁定上千年（**并入** Toby Ord《The Precipice 危崖》对存在性风险的量化——同一体系，一节讲清；写时一并讲 SBF/FTX 之后长期主义受到的批评）
+
+<!-- 杰弗瑞·菲佛（清单外）：《Power》read972 之外单列三本——都与「权力」不是同一个命题 -->
+- 《The Knowing-Doing Gap 知行差距》— Jeffrey Pfeffer & Robert I. Sutton — 公司不缺知识缺行动：拿开会和报告冒充做事、拿过去的做法冒充思考、恐惧让人不敢动、指标挤掉判断、内部竞争把同事变成对手（**并入**两人 2006 年《Hard Facts》的「循证管理」：管理决策也该像医学一样看证据，而不是看流行、看直觉）
+- 《Leadership BS》— Jeffrey Pfeffer — 领导力产业年年宣讲谦逊、真诚、讲真话、信任、关怀下属，可真实的领导者很少如此、员工满意度也没因此变好——与其信这套说法，不如研究领导者实际在做什么
+- 《Dying for a Paycheck》— Jeffrey Pfeffer — 工作本身在杀人：长工时、工作不安全感、工作与家庭冲突等压力源，在美国每年与数以万计的死亡和巨额医疗支出相关；企业对员工健康的伤害应当像环境污染一样被计量
