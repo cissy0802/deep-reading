@@ -311,3 +311,4 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《Skin in the Game 非对称风险》— Nassim Nicholas Taleb — 不承担后果的人不该有决策权：风险与收益的对称、少数派规则、林迪效应（#26《反脆弱》页已发布、未覆盖此书，故单列）
 - 《智慧书》(Oráculo manual y arte de prudencia) — 巴尔塔萨·葛拉西安 & 《箴言集》(Maximes) — 拉罗什富科 — 十七世纪两位「冷眼看人性」的格言家合为一条：葛拉西安教你在宫廷般的世界里如何审慎地处世与自保，拉罗什富科则揭穿「我们的美德，多半只是伪装起来的恶」（大意）、一切行为背后都有自爱（amour-propre）在作祟——一个教你怎么活，一个告诉你人为什么这样活
 - 《The Source: Open Your Mind, Change Your Life》— Tara Swart — 神经科学家讲「显化」：用神经可塑性、注意力过滤与行动板，把「心想事成」翻译成大脑如何筛选机会、如何被反复练习重塑（**并入**同作者 2025 年《The Signs》：相信直觉、读懂生活给你的信号，同一套主张；写时务必把「借神经科学外衣包装吸引力法则」这一批评与证据强度讲透）
+- 《Neuroscience for Leadership: Harnessing the Brain Gain Advantage》— Tara Swart, Kitty Chisholm & Paul Brown — 领导力的硬件是大脑：睡眠、营养、压力与情绪怎样直接改变判断与决策，以及神经可塑性意味着领导者的大脑可以被训练（与上一条《The Source》同作者，但讲的是脑科学在管理上的应用，不是「显化」，故分列）
