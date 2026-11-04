@@ -313,3 +313,13 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《The Source: Open Your Mind, Change Your Life》— Tara Swart — 神经科学家讲「显化」：用神经可塑性、注意力过滤与行动板，把「心想事成」翻译成大脑如何筛选机会、如何被反复练习重塑（**并入**同作者 2025 年《The Signs》：相信直觉、读懂生活给你的信号，同一套主张；写时务必把「借神经科学外衣包装吸引力法则」这一批评与证据强度讲透）
 - 《Neuroscience for Leadership: Harnessing the Brain Gain Advantage》— Tara Swart, Kitty Chisholm & Paul Brown — 领导力的硬件是大脑：睡眠、营养、压力与情绪怎样直接改变判断与决策，以及神经可塑性意味着领导者的大脑可以被训练（与上一条《The Source》同作者，但讲的是脑科学在管理上的应用，不是「显化」，故分列）
 - 《The Untethered Soul 不羁的灵魂》— Michael A. Singer — 你不是脑子里那个喋喋不休的声音，而是听见它的「觉察者」；痛苦来自抓住体验不放、堆成心结（samskara），解脱就是在它升起时放松、让它流过（**并入**同作者自传《The Surrender Experiment 臣服实验》：对生活送来的一切说「好」，一个隐居冥想者如何因此意外建起一家上市公司、又卷入联邦调查——理论付诸实践的那一半；写时须讲清灵性主张缺乏实证、「臣服」被滥用成逃避的风险，可与《为什么佛学是真的》对照）
+
+<!-- 佛学 · 灵性 · 内在（清单外，BigCat 2026-11 开此板块；与《不羁的灵魂》read979、《为什么佛学是真的》read956 同区。灵性类主张多来自体验而非实证，写时批评一节须讲清证据边界） -->
+- 《The Power of Now 当下的力量》— Eckhart Tolle — 你不是你的念头：痛苦来自对过去与未来的执着，把注意力放回当下就是出路；积压的旧情绪会自己活过来，他称之为「痛苦之身」（pain-body）（**并入**同作者《A New Earth 新世界》：把同一套觉察从个人扩到「小我」如何驱动关系与社会）
+- 《When Things Fall Apart 当生命陷落时》— Pema Chödrön — 藏传佛教比丘尼教你在崩溃时不逃、不抓，而是靠近痛苦、待在无常的不确定里：无根基（groundlessness）本身就是修行的地面
+- 《Radical Acceptance 全然接受》— Tara Brach — 心理学家兼冥想老师：「不够好」的恍惚感如何困住人，以及用 RAIN（觉察、允许、探究、滋养）带着慈悲接纳自己——灵性与心理治疗之间的一座桥
+- 《Zen Mind, Beginner's Mind 禅者的初心》— Shunryu Suzuki — 把禅带到美国的经典小书：「初学者的心里有许多可能，专家的心里却很少」（大意）；坐禅不是为了得到什么，修行本身就是开悟的表现
+- 《The Miracle of Mindfulness 正念的奇迹》— Thich Nhat Hanh — 洗碗时就只是洗碗：最朴素的正念入门，用呼吸把散乱的心带回眼前这一件事
+- 《Loving What Is 一念之转》— Byron Katie — 用四个问题加一个「反转」去拷问让你痛苦的念头：「这是真的吗？」——让你受苦的不是现实，而是你和现实争辩
+- 《The Wisdom of Insecurity 不安的智慧》— Alan Watts — 越想抓住安全感就越焦虑：「逆向法则」（backwards law）——追求确定是痛苦之源，接受无常反而得到平静；西方最会讲东方思想的人之一
+- 《Waking Up 觉醒》— Sam Harris — 神经科学家写「没有宗教的灵性」：冥想可以让人直接看穿「自我」是个幻觉，而这不需要任何信仰（与《为什么佛学是真的》同一座科学-灵性之桥）
