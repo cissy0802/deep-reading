@@ -214,6 +214,9 @@ BigCat 人工维护的「值得逐本精读」清单。routine 每次挑**编号
 - 《Staff Engineer》— Will Larson — 不走管理、走资深技术专家线：Staff+ 工程师怎么定位与晋升
 - 《The Great CEO Within》— Matt Mochary — 硅谷高管教练手册：极其操作化的公司运营 playbook
 - 《Turn the Ship Around!》— David Marquet — 核潜艇长的「授权式领导」：把执行者变成主人
+- 《Multipliers 乘数效应》— Liz Wiseman — 有的领导让手下人变聪明（乘数型），有的让人变笨（削减型）：五组对照行为与「无心的削减者」——判断一位老板、也检查自己
+- 《The Effective Executive 卓有成效的管理者》— Peter F. Drucker — 管理者的有效性可以学：管时间、问贡献、用人所长、要事优先、少而精的决策——放大 scope 前先放大自己
+- 《The Progress Principle 进步原则》— Teresa Amabile & Steven Kramer — 1.2 万篇员工日记：最能点燃一天工作的，是在有意义的事上取得进展；并入 Daniel Pink《Drive》(2009) 作对照：自主、精通、目的三要素的通俗版（自我决定理论）
 - 《Measure What Matters》— John Doerr — OKR 圣经：目标与关键结果如何驱动组织聚焦
 - 《The Five Dysfunctions of a Team》— Patrick Lencioni — 团队失灵的五层：从缺乏信任到无视结果
 - 《Team of Teams》— Stanley McChrystal — 规模化下的指挥与自治：让大组织像小团队一样敏捷
